@@ -1,0 +1,26 @@
+<sl-card class="card-overview">
+    <strong>Mittens</strong><br />
+      This kitten is as cute as he is playful. Bring him home today!<br />
+  <small>6 weeks old</small>
+
+  <div slot="footer">
+    <sl-button variant="primary" pill>More Info</sl-button>
+    <sl-rating></sl-rating>
+  </div>
+</sl-card>
+
+<style>
+  .card-overview {
+    max-width: 300px;
+  }
+
+  .card-overview small {
+    color: var(--sl-color-neutral-500);
+  }
+
+  .card-overview [slot='footer'] {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+</style>

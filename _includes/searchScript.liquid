@@ -1,0 +1,83 @@
+<script type='module'>
+import {
+    search,
+    insert,
+    } from 'https://unpkg.com/@lyrasearch/lyra@latest/dist/esm/src/lyra.js';
+    import { filterResultsByTag } from './assets/js/filterResultsByTag.js';
+    import { profiles } from './assets/js/instantiateDatabase.js';
+    import { emptyNest } from './assets/js/emptyNest.js';
+    import { populateSelect } from './assets/js/populateFilterSelectInputs.js';
+    import { buildResultCards } from './assets/js/buildResultCards.js';
+    import { filterStore } from './assets/js/filterStore.js';
+
+    {% include 'populateDatabase.liquid' %}
+
+// Declare filter modal elements
+const dialog = document.querySelector('.dialog-overview');
+const openButton = document.querySelector('.dialogToggle');
+const closeButton = dialog.querySelector('sl-button[slot="footer"]');
+
+// Create event listeners to open & close filter modal
+openButton.addEventListener('click', () => dialog.show());
+closeButton.addEventListener('click', () => dialog.hide());
+
+const targetIDs = ['tags_current_position', 'tags_past_positions', 'tags_experience', 'tags_general', 'tags_current_sector', 'tags_past_sectors', 'tags_current_industry', 'tags_past_industries', 'tags_current_board_service', 'tags_past_board_service'];
+
+// Populate select inputs in filter modal with tags
+targetIDs.forEach(x => {
+  populateSelect(x);
+});
+
+// Handle form submit and clear
+const searchInput = document.querySelector('.searchInput');
+const form = document.querySelector('.WOB-Search');
+const resultsContainer = document.querySelector('.searchResults');
+
+// Clear results when search box is cleared
+searchInput.addEventListener('sl-clear', event => {
+  emptyNest(resultsContainer);
+})
+
+// Clear results when search box content is empty
+searchInput.addEventListener('sl-input', event => {
+  searchInput.value == '' ? emptyNest(resultsContainer) : 0;
+})
+
+// Handle submit
+form.addEventListener('submit', event => {
+  event.preventDefault();
+
+  // Remove old results
+  emptyNest(resultsContainer);
+
+  // Initiate Lyra search
+  const searchResult = search(profiles, {
+    term: `${searchInput.value}`,
+    properties: ['bio','name','currentTitle','currentOrg', 'boards_current_corporate_private', 'boards_current_corporate_public', 'boards_current_nonprofit', 'boards_current_privateequity', 'boards_current_spac', 'boards_current_vc', 'boards_past_corporate_private', 'boards_past_corporate_public', 'boards_past_nonprofit', 'boards_past_privateequity', 'boards_past_spac', 'boards_past_vc' ],
+    limit: 600
+  });
+
+  // Now that search has been performed, build result cards
+  buildResultCards(searchResult.hits, resultsContainer);
+
+  // Create array containing all select inputs in filter modal
+  const filterSelects = document.querySelectorAll('sl-select');
+
+  // Update filter store when value of any filter select input changes
+  for (let i=0; i< filterSelects.length; i++) {
+    filterSelects[i].addEventListener('sl-change', event => {
+      emptyNest(resultsContainer);
+      let filteredResults = searchResult.hits;
+      filterStore[filterSelects[i].id] = filterSelects[i].value.flat(Infinity);
+
+      for (let filterArray in filterStore) {
+        if (filterArray.length != 0) {
+          filteredResults = filterResultsByTag(filteredResults, filterStore[filterArray], filterArray);
+        }
+      }
+      // Rebuild result cards
+      buildResultCards(filteredResults, resultsContainer);
+    })
+  }
+});
+</script>

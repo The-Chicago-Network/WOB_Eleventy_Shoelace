@@ -1,0 +1,52 @@
+<!-- Filter Selection Modal -->
+<sl-dialog label="Select some filters to narrow your results:" class="dialog-overview">
+  <sl-tab-group>
+    <sl-tab slot="nav" panel="Role & Experience">Role & Experience</sl-tab>
+    <sl-tab slot="nav" panel="Sector & Industry" >Sector & Industry</sl-tab>
+    <sl-tab slot="nav" panel="Board Service" >Board Service</sl-tab>
+
+    <sl-tab-panel name="Role & Experience">
+
+      Current Position:
+      <sl-select placeholder="Select one or more tags" multiple clearable id="tags_current_position"></sl-select>
+
+      Past Positions held:
+      <sl-select placeholder="Select one or more tags" multiple clearable id="tags_past_positions"></sl-select>
+
+      Desired Experience:
+      <sl-select placeholder="Select one or more tags" multiple clearable id="tags_experience"></sl-select>
+
+    </sl-tab-panel>
+
+    <sl-tab-panel name="Sector & Industry">
+
+      Current Sectors:
+      <sl-select placeholder="Select one or more tags" multiple clearable id="tags_current_sector"></sl-select>
+
+      Past Sectors:
+      <sl-select placeholder="Select one or more tags" multiple clearable id="tags_past_sectors"></sl-select>
+
+      Current Industry:
+      <sl-select placeholder="Select one or more tags" multiple clearable id="tags_current_industry"></sl-select>
+
+      Past Industries:
+      <sl-select placeholder="Select one or more tags" multiple clearable id="tags_past_industries"></sl-select>
+
+    </sl-tab-panel>
+
+    <sl-tab-panel name="Board Service">
+
+      Current Board Service:
+      <sl-select placeholder="Select one or more tags" multiple clearable id="tags_current_board_service"></sl-select>
+
+      Past Board Service:
+      <sl-select placeholder="Select one or more tags" multiple clearable id="tags_past_board_service"></sl-select>
+
+      General:
+      <sl-select placeholder="Select one or more tags" multiple clearable id="tags_general"></sl-select>
+
+    </sl-tab-panel>
+
+  </sl-tab-group>
+  <sl-button slot="footer" variant="primary">Close</sl-button>
+</sl-dialog>

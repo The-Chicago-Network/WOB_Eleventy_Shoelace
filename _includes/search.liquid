@@ -1,0 +1,23 @@
+<form class="WOB-Search">
+  <sl-input
+    placeholder="Try entering a role or experience"
+    size="large"
+    type="search"
+    class="searchInput label-on-left"
+    clearable
+    pill
+  >
+  <label slot="label" class="hidden">Search</label>
+    <sl-icon name="search" slot="prefix"></sl-icon>
+  </sl-input>
+  <div class="buttonContainer">
+    <sl-button type="submit" variant="primary" class="submitButton">Search</sl-button>
+    <sl-button type="button" variant="secondary" class="dialogToggle filterButton">Filter</sl-button>
+  </div>
+</form>
+
+{% include 'filterModal.liquid' %}
+<div class="searchResults"></div>
+{% include 'resultCard.liquid' %}
+{% include 'selectionItem.liquid' %}
+{% include 'searchScript.liquid' %}

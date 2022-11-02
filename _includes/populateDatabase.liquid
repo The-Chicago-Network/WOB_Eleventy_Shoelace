@@ -1,0 +1,35 @@
+// Populate database locally via liquid
+{% assign tags = profile.data.tags %}
+{% for profile in collections.profiles %}
+	// Apply HTML encoding to user-supplied data via liquid escape filter
+	const { id: {{ profile.data.id | escape }} } = insert(profiles, {
+		name: '{{ profile.data.title | escape}}',
+		profileID: '{{ profile.data.id | escape }}',
+		currentTitle: '{{ profile.data.currentTitle | escape }}',
+		currentOrg: '{{ profile.data.currentOrg | escape }}',
+		// Get rid of break tags via liquid replace filter
+		bio: '{{ profile.data.bio | replace: "<br />", " " | escape}}',
+		smallHeadshotPath: '{{ profile.data.smallHeadshotURL | escape }}',
+		largeHeadshotPath: '{{ profile.data.originalHeadshotURL | escape }}',
+		// Join tag arrays into string via liquid join filter
+		tags_experience: '{{ profile.data.tags-experience | join: '; ' }}',
+		tags_current_industries: '{{ profile.data.tags-current-industries | join: '; ' }}',
+		tags_current_position: '{{ profile.data.tags-current-position | join: '; ' }}',
+		tags_past_industries: '{{ profile.data.tags-past-industries | join: '; ' }}',
+		tags_past_position: '{{ profile.data.tags-past-position | join: '; ' }}',
+		tags_current_board_service: '{{ profile.data.tags-current-board-service | join: '; ' }}',
+		tags_past_board_service: '{{ profile.data.tags-past-board-service | join: '; ' }}',
+		boards_current_corporate_private: '{{ profile.data.boards-current-corporate-private | join: '; ' | escape }}',
+		boards_current_corporate_public: '{{ profile.data.boards-current-corporate-public | join: '; ' | escape }}',
+		boards_current_nonprofit: '{{ profile.data.boards-current-nonprofit | join: '; ' | escape }}',
+		boards_current_privateequity: '{{ profile.data.boards-current-privateequity | join: '; ' | escape }}',
+		boards_current_spac: '{{ profile.data.boards-current-spac | join: '; ' | escape }}',
+		boards_current_vc: '{{ profile.data.boards-current-vc | join: '; ' | escape }}',
+		boards_past_corporate_private: '{{ profile.data.boards-past-corporate-private | join: '; ' | escape }}',
+		boards_past_corporate_public: '{{ profile.data.boards-past-corporate-public | join: '; ' | escape }}',
+		boards_past_nonprofit: '{{ profile.data.boards-past-nonprofit | join: '; ' | escape }}',
+		boards_past_privateequity: '{{ profile.data.boards-past-privateequity | join: '; ' | escape }}',
+		boards_past_spac: '{{ profile.data.boards-past-spac | join: '; ' | escape }}',
+		boards_past_vc: '{{ profile.data.boards-past-vc | join: '; ' | escape }}'
+	});
+{% endfor %}
