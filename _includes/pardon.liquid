@@ -1,0 +1,11 @@
+<sl-alert variant="warning" closable>
+  <sl-icon slot="icon" name="exclamation-triangle"></sl-icon>
+  <strong>Pardon our dust</strong><br />
+  Thanks for trying our Women Lead beta! This app is actively undergoing development, so expect to see some glitches. We welcome <a href="https://form.jotform.com/223075529259058">contributions via bug reports, profile corrections, usability suggestions, and feature requests</a>.
+</sl-alert>
+
+<script>
+	const alertButton = document.querySelector(`.submitButton`);
+	const alert = document.querySelector(`sl-alert[variant="warning"]`);
+	alertButton.addEventListener('click', () => alert.toast());
+</script>
