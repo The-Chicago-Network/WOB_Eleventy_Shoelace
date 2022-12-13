@@ -2,7 +2,6 @@ import { htmlDecode } from './htmlDecode.js';
 
 // Build result cards
 export const buildResultCards = (resultArray, resultsContainer) => {
-	console.log(resultArray);
 	resultArray.forEach(x => {
 		const resultTemplate = document.querySelector('.result');
 		const result = resultTemplate.content.cloneNode(true);

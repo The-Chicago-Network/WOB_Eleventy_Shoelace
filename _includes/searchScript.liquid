@@ -46,7 +46,6 @@ searchInput.addEventListener('sl-input', event => {
 // Handle submit
 form.addEventListener('submit', event => {
   event.preventDefault();
-  console.log(filterStore.isEmpty());
 
   // Remove old results
   emptyNest(resultsContainer);
