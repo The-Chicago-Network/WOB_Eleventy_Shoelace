@@ -7,7 +7,6 @@ first: Joan
 middle: Elizabeth
 last: Steel
 suffix: 
-email: jsteel@alphaadvisorllc.com
 currentTitle: Founder & CEO Alpha Wealth , LLC., Corporate Board Director, NonProfit Trustee
 currentOrg: Alpha Wealth Advisors, LLC. - Founder & CEO, Mercer Funds - Independent Director & Audit Chair, Chair- National Association of Corporate Directors Chicago Chapter, Rush University Medical Center - Trustee, Cuneo Foundation - Trustee and Treasurer
 bio: 

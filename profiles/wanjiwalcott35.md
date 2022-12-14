@@ -7,7 +7,6 @@ first: Wanji
 middle: 
 last: Walcott
 suffix: 
-email: 
 currentTitle: Chief Legal Officer
 currentOrg: Discover Financial Services
 bio:
