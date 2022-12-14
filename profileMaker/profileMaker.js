@@ -123,7 +123,6 @@ first: ${object.name.first}
 middle: ${object.name.middle}
 last: ${object.name.last}
 suffix: ${object.name.suffix}
-email: ${object.email}
 currentTitle: ${sanitize(object.currentTitle, true)}
 currentOrg: ${sanitize(object.currentOrg, true)}
 bio: ${sanitize(object.bio, true)}

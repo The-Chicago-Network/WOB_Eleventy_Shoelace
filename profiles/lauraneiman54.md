@@ -7,7 +7,6 @@ first: Laura
 middle: M.
 last: Neiman
 suffix: 
-email: 
 currentTitle: CEO & President
 currentOrg: Neiman Brothers Company, Inc.
 bio: Laura Neiman, President & CEO of Neiman Brothers Company, Inc., joined her family's business in the spring of 1997 immediately upon completion of her BA in Economics and Managerial Finance from Brandeis University. Ms. Neiman represents the third generation of her family who is dedicated to growing and continuing the 100+ year old business that manufactures, processes and distributes a full line of ingredients. Ms. Neiman has been instrumental in developing and expanding the market sectors in which Neiman Brothers operates and she has cultivated new opportunities in the ever changing food industry.<br /><br />Ms. Neiman is a member of Young Presidents’ Organization (YPO) and she sits on the Chicago Alumni Board of Brandeis University, the Alumni Board of the Francis W. Parker School and the Women’s Board of the University of Chicago Cancer Research Foundation. Ms. Neiman is also a member of The Economic Club of Chicago as well as The Chicago Network.<br /><br />Ms. Neiman lives in Chicago with her husband and two daughters.

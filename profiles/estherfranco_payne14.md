@@ -7,7 +7,6 @@ first: Esther
 middle: 
 last: Franco-Payne
 suffix: 
-email: efpayne1@gmail.com
 currentTitle: Vice President of Programs
 currentOrg: Public Welfare Foundation
 bio: <br /><br />Cook County Census Committee (appointed 02/20) Member <br /><br />Forefront, Non-Profit CEO Roundtable (09/19 – 08/20) Co-Chair, <br /><br />The Chicago Network (TCN) (04/19 – present) Member, Legal Committee<br /><br />US District Court Northern District of Illinois Magistrate Judge Selection Committee (appointed 08/2018 – 08/21) <br /><br />Member Status of Women and Girls Working Group (SWAGG) (10/2018 – 01/20) Member, Public Safety Committee <br /><br />Leadership Greater Chicago (LGC) – Fellow, Class of 2015 / Leadership Fellows Association (LFA) 2015 Representative <br /><br />University of Chicago – School of Social Service Administration Alumni Board of Directors (appointed 06/2015 - 08/20) <br /><br />Board Member and Committee Chairperson Illinois Juvenile Justice Commission – (Gubernatorial appointee 12/2010 - 06/22) Commissioner and Co-chair for Committees on Communications and Racial and Ethnic Disparities <br /><br />Cook County Equity Task Force (04/20 - Present)

@@ -3,6 +3,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("assets/images");
   eleventyConfig.addPassthroughCopy("assets/css");
   eleventyConfig.addPassthroughCopy("assets/js");
+  eleventyConfig.addPassthroughCopy("admin");
   eleventyConfig.ignores.add("README.md");
   eleventyConfig.ignores.add("**/profileMaker/**");
   eleventyConfig.ignores.add("**/node_modules/**");

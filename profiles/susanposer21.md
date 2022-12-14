@@ -7,7 +7,6 @@ first: Susan
 middle: 
 last: Poser
 suffix: 
-email: susan.poser@hofstra.edu
 currentTitle: President, Hofstra University
 currentOrg: Hofstra University
 bio: Susan Poser is the President of Hofstra University in Hempstead, New York. Prior to her appointment at Hofstra, she served as the Provost and Vice Chancellor for Academic Affairs at the University of Illinois Chicago (UIC)from 2016-2021.Before joining UIC, Poser was a Professor of Law at the University of Nebraska College of Law, where she served as the Dean of the College of Law from 2010-2016 and as Associate to the Chancellor from 2007-2010.Susan holds a bachelor’s degree from Swarthmore College in Ancient Greek and a JD and PhD (Jurisprudence & Social Policy) from the University of California, Berkeley. After law school, she clerked for the Honorable Dolores K. Sloviter, Chief Judge of the United States Court of Appeals for the Third Circuit in Philadelphia, and then practiced law for a year while serving as the Zicklin Fellow in Ethics at the Wharton School at the University of Pennsylvania. Susan currently serves as chair of the higher education subcommittee of the TCN Membership Committee. She is a former member of the board of the Chicago chapter of the International Women’s Forum where she served as chair of its Programs committee in 2020-21. She is a former member of the board of the ACLU Nebraska and of the ACLU National Board of Directors, as well as several other nonprofits. She is an inactive member of the Pennsylvania and Nebraska bar associations.
