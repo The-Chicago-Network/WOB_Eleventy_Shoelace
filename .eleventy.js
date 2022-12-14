@@ -15,7 +15,7 @@ module.exports = function(eleventyConfig) {
     jsTruthy: true
   });
   eleventyConfig.addLiquidShortcode("encodeIt", function(string) {
-      return encodeURIComponent(string);admin
+      return encodeURIComponent(string);
     });
   eleventyConfig.addLiquidShortcode("searchBio", function(string) {
       return string.replace(/'/g, "/'").replace(/"/g, '/"').replace("<br />", "");
