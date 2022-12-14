@@ -12,7 +12,7 @@ import {
 
     {% include 'populateDatabase.liquid' %}
 
-// Declare filter modal elements
+    // Declare filter modal elements
 const dialog = document.querySelector('.dialog-overview');
 const openButton = document.querySelector('.dialogToggle');
 const closeButton = dialog.querySelector('sl-button[slot="footer"]');
@@ -58,6 +58,7 @@ form.addEventListener('submit', event => {
   });
 
   // Now that search has been performed, build result cards
+  console.log(searchResult);
   buildResultCards(searchResult.hits, resultsContainer);
 
   // Create array containing all select inputs in filter modal
@@ -70,14 +71,17 @@ form.addEventListener('submit', event => {
       let filteredResults = searchResult.hits;
       filterStore[filterSelects[i].id] = filterSelects[i].value.flat(Infinity);
 
-      for (let filterArray in filterStore) {
-        if (filterArray.length != 0) {
-          filteredResults = filterResultsByTag(filteredResults, filterStore[filterArray], filterArray);
+      for (let key in filterStore) {
+        if (typeof filterStore[key] == 'object') {
+          if (filterStore[key].length != 0) {
+              filteredResults = filterResultsByTag(filteredResults, filterStore[key], key);
+          }
         }
       }
+      console.log(filterStore);
       // Rebuild result cards
       buildResultCards(filteredResults, resultsContainer);
     })
   }
-});
+})
 </script>
