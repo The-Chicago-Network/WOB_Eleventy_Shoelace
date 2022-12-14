@@ -7,7 +7,7 @@ export const filterResultsByTag = (resultsArr, tagsArr, targetProperty) => {
   return resultsArr.filter((result) => {
     let allMatchesSuccessful = true;
     tagsArr.forEach(x => {
-      new RegExp(`(^${x};)|(; ${x};)|(; ${x}$)|(^${x}$)`).test(result[targetProperty]) ? null : allMatchesSuccessful = false;
+      new RegExp(`(^${x};)|(; ${x};)|(; ${x}$)|(^${x}$)`).test(result.document[targetProperty]) ? null : allMatchesSuccessful = false;
     })
     return allMatchesSuccessful;
   })

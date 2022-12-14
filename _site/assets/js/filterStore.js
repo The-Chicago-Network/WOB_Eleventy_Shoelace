@@ -6,7 +6,7 @@ export const filterStore = {
 	tags_general: [],
 	tags_current_sector: [],
 	tags_past_sectors: [],
-	tags_current_industry: [],
+	tags_current_industries: [],
 	tags_past_industries: [],
 	tags_current_board_service: [],
 	tags_past_board_service: [],
