@@ -5,7 +5,7 @@ publish_mode: editorial_workflow
 media_folder: "assets/images/uploads"
 collections:
   - name: "profiles" # Used in routes, e.g., /admin/collections/blog
-    label: "Blog" # Used in the UI
+    label: "Member Profiles" # Used in the UI
     folder: "profiles" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: "{{slug}}_{{year}}{{month}}{{day}}" # Filename template, e.g., YYYY-MM-DD-title.md
