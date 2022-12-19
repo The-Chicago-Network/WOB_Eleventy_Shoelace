@@ -5,4 +5,5 @@ TODO
 * Implement nav
 * Build out profile template
 * Delete Andee Harris Heather
-* FIX issue in searchScript filter handling
+* Add 'X results' on filter popup indicating number of filtered results
+~~* FIX issue in searchScript filter handling~~

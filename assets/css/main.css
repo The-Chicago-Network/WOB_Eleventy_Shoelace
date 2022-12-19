@@ -1,3 +1,9 @@
+/* Establish cascade layer order */
+@layer reset, defaults, patterns, components, utilities, overrides;
+
+/* Imports */
+@import url('sanitize.css') layer(reset);
+
 .buttonContainer {
   margin: .5rem 0rem 3rem 0rem;
   text-align: center;
