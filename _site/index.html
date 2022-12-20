@@ -2220,7 +2220,6 @@ form.addEventListener('submit', event => {
   });
 
   // Now that search has been performed, build result cards
-  console.log(searchResult);
   buildResultCards(searchResult.hits, resultsContainer);
 
   // Create array containing all select inputs in filter modal
@@ -2240,7 +2239,6 @@ form.addEventListener('submit', event => {
           }
         }
       }
-      console.log(filterStore);
       // Rebuild result cards
       buildResultCards(filteredResults, resultsContainer);
     })
