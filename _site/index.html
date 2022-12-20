@@ -15,7 +15,6 @@
     <link rel="apple-touch-icon" href="icon.png" />
     <!-- Place favicon.ico in the root directory -->
 
-    <link rel="stylesheet" href="/assets/css/sanitize.css" />
     <link rel="stylesheet" href="/assets/css/main.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.83/dist/themes/light.css" />
     <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.83/dist/shoelace.js"></script>
@@ -26,8 +25,13 @@
     @import url('https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,800;1,7..72,200;1,7..72,800&display=swap');
     </style>
   </head>
-
   <body>
+  <nav>
+	<a href="/">Search</a>
+	<a href="/about">About</a>
+	<a href="/contact">Contact</a>
+</nav>
+
     <main>
 
 <div class="header">
@@ -138,18 +142,16 @@
 
 
 <script type='module'>
-import {
-    search,
-    insert,
-    } from 'https://unpkg.com/@lyrasearch/lyra@latest/dist/esm/src/lyra.js';
-    import { filterResultsByTag } from './assets/js/filterResultsByTag.js';
-    import { profiles } from './assets/js/instantiateDatabase.js';
-    import { emptyNest } from './assets/js/emptyNest.js';
-    import { populateSelect } from './assets/js/populateFilterSelectInputs.js';
-    import { buildResultCards } from './assets/js/buildResultCards.js';
-    import { filterStore } from './assets/js/filterStore.js';
+  import { insert } from 'https://unpkg.com/@lyrasearch/lyra@latest/dist/esm/src/lyra.js';
+  import { profiles } from './assets/js/instantiateDatabase.js';
+  import { filterResultsByTag } from './assets/js/filterResultsByTag.js';
+  import { emptyNest } from './assets/js/emptyNest.js';
+  import { populateSelect } from './assets/js/populateFilterSelectInputs.js';
+  import { buildResultCards } from './assets/js/buildResultCards.js';
+  import { filterStore } from './assets/js/filterStore.js';
+  import { runSearch } from './assets/js/runSearch.js';
 
-    // Populate database locally via liquid
+  // Populate database locally via liquid
 
 
 	// Apply HTML encoding to user-supplied data via liquid escape filter
@@ -2170,78 +2172,52 @@ import {
 
 
 
-    // Declare filter modal elements
-const dialog = document.querySelector('.dialog-overview');
-const openButton = document.querySelector('.dialogToggle');
-const closeButton = dialog.querySelector('sl-button[slot="footer"]');
+  const dialog = document.querySelector('.dialog-overview');
+  const openButton = document.querySelector('.dialogToggle');
+  const closeButton = dialog.querySelector('sl-button[slot="footer"]');
+  const searchInput = document.querySelector('.searchInput');
+  const form = document.querySelector('.WOB-Search');
+  const resultsContainer = document.querySelector('.searchResults');
+  filterStore.watchedElements = document.querySelectorAll('sl-select');
 
-// Create event listeners to open & close filter modal
-openButton.addEventListener('click', () => dialog.show());
-closeButton.addEventListener('click', () => dialog.hide());
+  openButton.addEventListener('click', () => dialog.show());
+  closeButton.addEventListener('click', () => dialog.hide());
 
-const targetIDs = ['tags_current_position', 'tags_past_positions', 'tags_experience', 'tags_general', 'tags_current_sector', 'tags_past_sectors', 'tags_current_industry', 'tags_past_industries', 'tags_current_board_service', 'tags_past_board_service'];
+  // Target element IDs to populate with tags
+  const targetIDs = ['tags_current_position', 'tags_past_positions', 'tags_experience', 'tags_general', 'tags_current_sector', 'tags_past_sectors', 'tags_current_industry', 'tags_past_industries', 'tags_current_board_service', 'tags_past_board_service'];
 
-// Populate select inputs in filter modal with tags
-targetIDs.forEach(x => {
-  populateSelect(x);
-});
+  // Properties to be injected into search
+  const properties = ['bio','name','currentTitle','currentOrg', 'boards_current_corporate_private', 'boards_current_corporate_public', 'boards_current_nonprofit', 'boards_current_privateequity', 'boards_current_spac', 'boards_current_vc', 'boards_past_corporate_private', 'boards_past_corporate_public', 'boards_past_nonprofit', 'boards_past_privateequity', 'boards_past_spac', 'boards_past_vc' ];
 
-// Handle form submit and clear
-const searchInput = document.querySelector('.searchInput');
-const form = document.querySelector('.WOB-Search');
-const resultsContainer = document.querySelector('.searchResults');
-
-// Clear results when search box is cleared
-searchInput.addEventListener('sl-clear', event => {
-  emptyNest(resultsContainer);
-})
-
-// Clear results when search box content is empty
-searchInput.addEventListener('sl-input', event => {
-  searchInput.value == '' ? emptyNest(resultsContainer) : 0;
-})
-
-// Handle submit
-form.addEventListener('submit', event => {
-  event.preventDefault();
-
-  // Remove old results
-  emptyNest(resultsContainer);
-
-  // Initiate Lyra search
-  const searchResult = search(profiles, {
-    term: `${searchInput.value}`,
-    properties: ['bio','name','currentTitle','currentOrg', 'boards_current_corporate_private', 'boards_current_corporate_public', 'boards_current_nonprofit', 'boards_current_privateequity', 'boards_current_spac', 'boards_current_vc', 'boards_past_corporate_private', 'boards_past_corporate_public', 'boards_past_nonprofit', 'boards_past_privateequity', 'boards_past_spac', 'boards_past_vc' ],
-    limit: 600
+  // Populate select inputs in filter modal with tags
+  targetIDs.forEach(x => {
+    populateSelect(x);
   });
 
-  // Now that search has been performed, build result cards
-  console.log(searchResult);
-  buildResultCards(searchResult.hits, resultsContainer);
+  // Clear results when search box is cleared
+  searchInput.addEventListener('sl-clear', event => {
+    emptyNest(resultsContainer);
+    filterStore.searchResults = null;
+  })
 
-  // Create array containing all select inputs in filter modal
-  const filterSelects = document.querySelectorAll('sl-select');
-
-  // Update filter store when value of any filter select input changes
-  for (let i=0; i< filterSelects.length; i++) {
-    filterSelects[i].addEventListener('sl-change', event => {
+  // Clear results when search box content is empty
+  searchInput.addEventListener('sl-input', event => {
+    if (searchInput.value == '') {
       emptyNest(resultsContainer);
-      let filteredResults = searchResult.hits;
-      filterStore[filterSelects[i].id] = filterSelects[i].value.flat(Infinity);
+      filterStore.searchResults = null;
+    }
+  })
 
-      for (let key in filterStore) {
-        if (typeof filterStore[key] == 'object') {
-          if (filterStore[key].length != 0) {
-              filteredResults = filterResultsByTag(filteredResults, filterStore[key], key);
-          }
-        }
-      }
-      console.log(filterStore);
-      // Rebuild result cards
-      buildResultCards(filteredResults, resultsContainer);
-    })
-  }
-})
+  // Handle submit
+  form.addEventListener('submit', event => {
+    event.preventDefault();
+    const searchResult = runSearch(properties, `${searchInput.value}`, 600);
+    filterStore.searchResults = searchResult;
+    filterStore.render(filterStore.searchResults, resultsContainer);
+  })
+
+  filterStore.watch(resultsContainer);
+
 </script>
 
 
