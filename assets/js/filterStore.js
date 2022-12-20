@@ -1,5 +1,8 @@
-// Somewhere to store our tag filter arrays for later
-export const filterStore = {
+import { buildResultCards } from './buildResultCards.js';
+import { emptyNest } from './emptyNest.js';
+import { runSearch } from './runSearch.js';
+
+export let filterStore = {
 	tags_current_position: [],
 	tags_past_positions: [],
 	tags_experience: [],
@@ -11,13 +14,49 @@ export const filterStore = {
 	tags_current_board_service: [],
 	tags_past_board_service: [],
 	isEmpty: function() {
-		console.log(filterStore);
 		let empty = true;
 		for ( const key in filterStore ) {
-			if (typeof filterStore.key == 'object') {
+			if (key.match("tags")) {
 				filterStore.key[0] ? null : empty = false;
 			};
 		};
 		return empty;
+	},
+	watchedElements: [],
+	searchResults: null,
+	filterResultsByTag: function(resultsArr, tagsArr, targetProperty) {
+		return resultsArr.filter((result) => {
+			let allMatchesSuccessful = true;
+			tagsArr.forEach(x => {
+				new RegExp(`(^${x};)|(; ${x};)|(; ${x}$)|(^${x}$)`).test(result.document[targetProperty]) ? null : allMatchesSuccessful = false;
+			})
+			return allMatchesSuccessful;
+		})
+	},
+	update: function(key, watchedElementIndex) {
+		this[key] = this.watchedElements[watchedElementIndex].value.flat(Infinity);
+	},
+	render: function(searchResults, outputContainer) {
+		// Clear unfiltered search result from DOM
+		emptyNest(outputContainer);
+		let filteredResults = searchResults.hits;
+		for (let key in filterStore) {
+			if (key.match("tags")) {
+				filteredResults = this.filterResultsByTag(filteredResults, filterStore[key], key);
+			}
+		}
+		buildResultCards(filteredResults, outputContainer);
+	},
+	watch: function(outputContainer) {
+		// Add event listener to each watched element
+		for (let i=0; i< this.watchedElements.length; i++) {
+			this.watchedElements[i].addEventListener('sl-change', event => {
+				//let filteredResults = this.searchResults.hits;
+				let key = this.watchedElements[i].id;
+				// Update this.key with value of watched element with matching ID
+				this.update(key, i);
+				this.isEmpty && !this.searchResults ? null : this.render(this.searchResults, outputContainer);
+			})
+		}
 	}
 };
