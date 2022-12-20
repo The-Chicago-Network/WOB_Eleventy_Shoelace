@@ -5,7 +5,6 @@
 /**
  * Add border box sizing in all browsers (opinionated).
  */
-
 *,
 ::before,
 ::after {
