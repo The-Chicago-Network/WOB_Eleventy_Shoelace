@@ -2,104 +2,380 @@
 @layer reset, defaults, patterns, components, utilities, overrides;
 
 /* Imports */
-@import url('sanitize.css') layer(reset);
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,400;0,600;0,900;1,200&display=swap');
 
-.buttonContainer {
-  margin: .5rem 0rem 3rem 0rem;
-  text-align: center;
+:root {
+  /* Color Tokens */
+  --sl-color-primary-50: rgb(244 250 255);
+  --sl-color-primary-100: rgb(217 239 255);
+  --sl-color-primary-200: rgb(187 227 255);
+  --sl-color-primary-300: rgb(172 212 239);
+  --sl-color-primary-400: rgb(155 191 215);
+  --sl-color-primary-500: rgb(133 164 185);
+  --sl-color-primary-600: rgb(110 135 153);
+  --sl-color-primary-700: rgb(90 111 125);
+  --sl-color-primary-800: rgb(74 91 103);
+  --sl-color-primary-900: rgb(53 65 73);
+  --sl-color-primary-950: rgb(32 40 45);
+
+  /* Type */
+  --sl-font-sans: 'Noto Sans', sans-serif;
+
+  --font-weight-thin: 100;
+  --sl-font-weight-light: 200;
+  --sl-font-weight-normal: 400;
+  --sl-font-weight-semibold: 600;
+  --sl-font-weight-bold: 900;
+
+  /* Shadow */
+  --shadow-color: 201deg 42% 54%;
+  --shadow-elevation-low:
+  0.3px 0.5px 0.7px hsl(var(--shadow-color) / 0.34),
+  0.4px 0.8px 1px -1.2px hsl(var(--shadow-color) / 0.34),
+  1px 2px 2.5px -2.5px hsl(var(--shadow-color) / 0.34);
+  --shadow-elevation-medium:
+  0.3px 0.5px 0.7px hsl(var(--shadow-color) / 0.36),
+  0.8px 1.6px 2px -0.8px hsl(var(--shadow-color) / 0.36),
+  2.1px 4.1px 5.2px -1.7px hsl(var(--shadow-color) / 0.36),
+  5px 10px 12.6px -2.5px hsl(var(--shadow-color) / 0.36);
+  --shadow-elevation-high:
+  0.3px 0.5px 0.7px hsl(var(--shadow-color) / 0.34),
+  1.5px 2.9px 3.7px -0.4px hsl(var(--shadow-color) / 0.34),
+  2.7px 5.4px 6.8px -0.7px hsl(var(--shadow-color) / 0.34),
+  4.5px 8.9px 11.2px -1.1px hsl(var(--shadow-color) / 0.34),
+  7.1px 14.3px 18px -1.4px hsl(var(--shadow-color) / 0.34),
+  11.2px 22.3px 28.1px -1.8px hsl(var(--shadow-color) / 0.34),
+  17px 33.9px 42.7px -2.1px hsl(var(--shadow-color) / 0.34),
+  25px 50px 62.9px -2.5px hsl(var(--shadow-color) / 0.34);
 }
 
-.card-overview {
-  margin-bottom: 2rem;
-  width: 100%; /* Prevent short cards for missing / short bios */
+@layer defaults {
+  body {
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: var(--sl-font-weight-normal);
+    font-size: var(--sl-font-size-small);
+    overflow-x: hidden;
+
+  }
+  body::before {
+    content: "";
+    background-color: var(--sl-color-primary-200);
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    z-index: -2;
+  }
+  body::after {
+    content: "";
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-image: url("../images/rohit-tandon-9wg5jCEPBsw-unsplash(1).jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    z-index: -1;
+    opacity: .3;
+  }
+  h1 {
+    font-size: var(--sl-font-size-2x-large);
+    font-weight: var(--sl-font-weight-normal);
+  }
+  h2 {
+    font-weight: var(--font-weight-thin);
+    font-size: var(--sl-font-size-small);
+  }
+  main {
+    max-width: 40rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  p {
+    letter-spacing: var(--sl-letter-spacing-normal);
+    width: 30rem;
+    margin-top: var(--sl-spacing-small);
+    margin-bottom: var(--sl-spacing-3x-large);
+  }
+
 }
 
-.card-overview small {
-  color: var(--sl-color-neutral-500);
-}
-
-.card-overview [slot="footer"] {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.filterButton {
-  width: 5rem;
-}
-
-p {
-  font-size: .9rem;
-  letter-spacing: .1rem;
-}
-
-h1 {
-    font-family: 'Literata', serif;
-    font-size: 5rem;
-    font-style: italic;
-    font-weight: 500;
-}
-
-h1.profileH1 {
-  font-size: 3rem;
-}
-
-.header {
+@layer patterns {
+  .bioContainer {
+    max-width: 60rem;
+    padding: 2rem 4rem 2rem 4rem;
+    background-color: white;
+    border-radius: var(--sl-border-radius-medium);
+    box-shadow: var(--shadow-elevation-high);
+  }
+  .bioContainer sl-tag {
+    margin-bottom: .5rem;
+  }
+  header {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    margin-bottom: var(--sl-spacing-2x-large);
+    margin-top: var(--sl-spacing-2x-large);
+  }
+  header p {
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+  .headerCopy {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-start;
+    margin-left: var(--sl-spacing-x-large);
+  }
+  #indexHeader {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
     text-align: center;
+  }
+  #indexHeader p {
+    margin-top: var(--sl-spacing-1x-large);
+    margin-bottom: var(--sl-spacing-2x-large);
+  }
+  .titleEmployer {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-start;
+    font-weight: var(--sl-font-weight-light);
+    font-size: var(--sl-font-size-large);
+  }
 }
 
-.hidden {
-  overflow: hidden;
-  clip: rect (1px, 1px, 1px, 1px);
-  clip-path: inset (50%);
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  border: 0;
-  word-wrap: normal;
+@layer components {
+  .buttonContainer {
+    text-align: center;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    height: 100%;
+    margin-left: .5rem;
+  }
+  .card-overview [slot="footer"] {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #closeButton {
+    width: 100%;
+  }
+  .contactLinks a {
+    margin-left: var(--sl-spacing-x-small);
+    color: var(--sl-color-primary-500);
+  }
+  .filterButton {
+    width: 3.5rem;
+  }
+  .filterButton::part(base) {
+    background-color: var(--sl-color-neutral-400);
+  }
+  form {
+    background-color: white;
+    padding: 1rem 1rem 1rem 1rem;
+    align-items: center;
+    border-radius: var(--sl-border-radius-medium);
+    display: flex;
+    flex-flow: row nowrap;
+    height: 2rem;
+    margin-bottom: 3rem;
+    box-shadow: var(--shadow-elevation-high);
+  }
+  #largeAvatar {
+    --size: 10rem;
+  }
+  nav {
+    background-color: white;
+    width: 100vw;
+    padding: var(--sl-spacing-x-small);
+    padding-top: var(--sl-spacing-small);
+    padding-left: var(--sl-spacing-2x-large);
+    margin-top: -.5rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+  }
+  nav a {
+    color: var(--sl-color-neutral-500);
+    margin-right: .5rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: var(--sl-letter-spacing-looser);
+    font-size: var(--sl-font-size-2x-small);
+    transition: all .5s;
+  }
+  nav a:hover {
+    color: var(--sl-color-neutral-800);
+  }
+  .profileHeader {
+    display: flex;
+    flex-flow: row nowrap;
+  }
+  .resultHeader {
+    font-size: var(--sl-font-size-large);
+    font-weight: var(--sl-font-weight-semibold);
+  }
+  .resultHeader sl-avatar {
+    margin-right: var(--sl-spacing-small);
+  }
+  .searchInput {
+    width: 80%;
+    height: 100%;
+    margin-top: -2.95rem;
+  }
+  .searchResults {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+  }
+  /* Prevent short cards for missing / short bios */
+  .searchResults sl-card {
+    margin-bottom: 2rem;
+    width: 95%;
+    box-shadow: var(--shadow-elevation-medium);
+  }
+  sl-avatar.profileAvatar {
+    --size: 10rem;
+    margin-top: 6rem;
+    margin-right: 2rem;
+    margin-left: -1.5rem;
+  }
+  sl-button {
+    margin-left: var(--sl-spacing-2x-small);
+  }
+  sl-button::part(base) {
+    background-color: var(--sl-color-teal-500);
+  }
+  sl-button::part(label) {
+    color: white;
+    font-family: var(--sl-font-sans);
+  }
+  sl-card::part(body) {
+    font-weight: var(--sl-font-weight-light);
+  }
+  sl-dialog::part(body) {
+    margin-top: -1rem;
+  }
+  sl-dialog::part(overlay) {
+    background-color: var(--sl-color-primary-200);
+    opacity: .3;
+  }
+  sl-dialog::part(footer) {
+    margin-top: -2.5rem;
+  }
+  sl-dialog::part(panel) {
+    box-shadow: var(--shadow-elevation-high);
+  }
+  sl-input::part(base) {
+    background-color: var(--sl-color-primary-200);
+  }
+  sl-input::part(input) {
+    background-color: var(--sl-color-primary-200);
+    font-family: var(--sl-font-sans);
+  }
+  sl-input::part(prefix) {
+    background-color: var(--sl-color-primary-200);
+  }
+  sl-tab-panel sl-select {
+    margin-bottom: var(--sl-spacing-large);
+  }
+  .subhead {
+    font-size: var(--sl-font-size-medium);
+    font-style: italic;
+  }
+  .submitButton {
+    width: 7rem;
+  }
 }
 
-main {
-  max-width: 40rem;
-  margin-left: auto;
-  margin-right: auto;
+@layer utilities {
+
 }
 
-.profileHeader {
-  display: flex;
-  flex-flow: row nowrap;
-}
+@layer overrides {
+  @media screen and (max-width: 950px) {
+    .bioContainer {
+      padding: 1rem;
+    }
+    .buttonContainer {
+      width: 100%;
+      margin-left: 0;
+      margin-top: .5rem;
+    }
+    form {
+      text-align: center;
+      flex-flow: column nowrap;
+      align-items: center;
+      height: 5rem;
+    }
+    .contactLinks a {
+      margin-left: 0;
+    }
+    h1 {
+      font-size: var(--sl-font-size-x-large);
+    }
+    header {
+      flex-flow: column wrap;
+      text-align: center;
+      align-items: center;
+      justify-content: center;
+    }
+    header:not(#indexHeader):before {
+      display: none;
+    }
+    .headerCopy h1 {
+      width: 100%;
+    }
+    main {
+      width: 95vw;
+    }
+    p {
+      width: 100%;
 
-.searchResults {
-  max-height: 20vh;
-}
-
-sl-avatar.profileAvatar {
-  --size: 10rem;
-  margin-top: 6rem;
-  margin-right: 2rem;
-  margin-left: -1.5rem;
-}
-
-.subhead {
-  margin-top: -4.5rem;
-  font-style: italic;
-  text-transform: uppercase;
-  letter-spacing: .25rem;
-  color: #808080;
-  font-size: .85rem;
-  margin-bottom: 5rem;
-}
-
-.submitButton {
-  width: 32rem;
-}
-
-.titleEmployer {
-  font-size: 1.2rem;
-  font-family: 'Literata', serif;
-  font-weight: 500;
-  margin-top: -3rem;
-  margin-bottom: 3rem;
+    }
+    sl-input {
+      margin-top: -1.4rem;
+      width: 100%;
+    }
+    sl-tag::part(content) {
+      max-width: 80vw;
+      overflow: clip;
+    }
+    .submitButton {
+      width: 100%;
+      margin-left: 0;
+    }
+    .titleEmployer {
+      width: 100%;
+    }
+  }
+  header .description {
+    font-weight: var(--sl-font-weight-light);
+  }
+  header:not(#indexHeader):before {
+    content: "";
+    width: 100vw;
+    height: 40vh;
+    background-color: var(--sl-color-primary-500);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  #indexHeader {
+    margin-top: 15vh;
+  }
 }

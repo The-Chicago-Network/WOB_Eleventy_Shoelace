@@ -1,5 +1,6 @@
 <!-- Filter Selection Modal -->
-<sl-dialog label="Select some filters to narrow your results:" class="dialog-overview">
+<sl-dialog class="dialog-overview">
+<label slot="label"><sl-visually-hidden>Select some filters to narrow your results:</sl-visually-hidden></label>
   <sl-tab-group>
     <sl-tab slot="nav" panel="Role & Experience">Role & Experience</sl-tab>
     <sl-tab slot="nav" panel="Sector & Industry" >Sector & Industry</sl-tab>
@@ -48,5 +49,5 @@
     </sl-tab-panel>
 
   </sl-tab-group>
-  <sl-button slot="footer" variant="primary">Close</sl-button>
+  <sl-button slot="footer" variant="primary" id="closeButton">Close</sl-button>
 </sl-dialog>

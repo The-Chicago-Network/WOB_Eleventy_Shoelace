@@ -1,5 +1,213 @@
 {% include 'head.liquid' %}
-<h1>{{ title }}</h1>
-<p class="titleEmployer">{{ currentTitle }}, {{ currentOrg }}</p>
+<header>
+		<sl-avatar shape="circle" label="Circle avatar" image="../../{{originalHeadshotURL}}" id="largeAvatar"></sl-avatar>
+		<div class="headerCopy">
+		<h1>{{ title }}</h1>
+			<div class="titleEmployer">
+				<p class="title">{{currentTitle}}</p>
+				<p class="employer">{{currentOrg}}</p>
+			</div>
+		</div>
+</header>
+
+<div class="bioContainer">
+{% if linkedin or tiktok or twitter or aboutme or insta or orgURL or snapchat or personalURL %}
+<p class="contactLinks">Contact me on:
+{% if linkedin %}
+<a href="{{linkedin}}">LinkedIn</a>
+{% endif %}
+{% if tiktok %}
+<a href="{{tiktok}}">TikTok</a>
+{% endif %}
+{% if twitter %}
+<a href="{{twitter}}">Twitter</a>
+{% endif %}
+{% if aboutme %}
+<a href="{{aboutme}}">About.Me</a>
+{% endif %}
+{% if insta %}
+<a href="{{insta}}">Instagram</a>
+{% endif %}
+{% if orgURL %}
+<a href="{{orgURL}}">{{orgURL}}</a>
+{% endif %}
+{% if snapchat %}
+<a href="{{snapchat}}">Snapchat</a>
+{% endif %}
+{% if personalURL %}
+<a href="{{personalURL}}">{{personalURL}}</a>
+{% endif %}
+<hr>
+</p>
+{% endif %}
+
+{% if boards-current-corporate-private or boards-current-corporate-public or boards-current-nonprofit or boards-current-privateequity or boards-current-spac or boards-current-vc %}
+	<h2>Current Board Service:</h2>
+	{% if boards-current-corporate-private %}
+		{% for x in boards-current-corporate-private %}
+			<sl-tag size="small" pill>{{x}}</sl-tag>
+		{% endfor %}
+	{% endif %}
+
+	{% if boards-current-corporate-public %}
+		{% for x in boards-current-corporate-public %}
+			<sl-tag size="small" pill>{{x}}</sl-tag>
+		{% endfor %}
+	{% endif %}
+
+	{% if boards-current-nonprofit %}
+		{% for x in boards-current-nonprofit %}
+			<sl-tag size="small" pill>{{x}}</sl-tag>
+		{% endfor %}
+	{% endif %}
+
+	{% if boards-current-privateequity %}
+		{% for x in boards-current-privateequity %}
+			<sl-tag size="small" pill>{{x}}</sl-tag>
+		{% endfor %}
+	{% endif %}
+
+	{% if boards-current-spac %}
+		{% for x in boards-current-spac %}
+			<sl-tag size="small" pill>{{x}}</sl-tag>
+		{% endfor %}
+	{% endif %}
+
+	{% if boards-current-vc %}
+		{% for x in boards-current-vc %}
+			<sl-tag size="small" pill>{{x}}</sl-tag>
+		{% endfor %}
+	{% endif %}
+{% endif %}
+
+{% if boards-past-corporate-private or boards-past-corporate-public or boards-past-nonprofit or boards-past-privateequity or boards-past-spac or boards-past-vc %}
+	<h2>Past Board Service:</h2>
+	{% if boards-past-corporate-private %}
+		{% for x in boards-past-corporate-private %}
+			<sl-tag size="small" pill>{{x}}</sl-tag>
+		{% endfor %}
+	{% endif %}
+
+	{% if boards-past-corporate-public %}
+		{% for x in boards-past-corporate-public %}
+			<sl-tag size="small" pill>{{x}}</sl-tag>
+		{% endfor %}
+	{% endif %}
+
+	{% if boards-past-nonprofit %}
+		{% for x in boards-past-nonprofit %}
+			<sl-tag size="small" pill>{{x}}</sl-tag>
+		{% endfor %}
+	{% endif %}
+
+	{% if boards-past-privateequity %}
+		{% for x in boards-past-privateequity %}
+			<sl-tag size="small" pill>{{x}}</sl-tag>
+		{% endfor %}
+	{% endif %}
+
+	{% if boards-past-spac %}
+		{% for x in boards-past-spac %}
+			<sl-tag size="small" pill>{{x}}</sl-tag>
+		{% endfor %}
+	{% endif %}
+
+	{% if boards-past-vc %}
+		{% for x in boards-past-vc %}
+			<sl-tag size="small" pill>{{x}}</sl-tag>
+		{% endfor %}
+	{% endif %}
+{% endif %}
+
+<h2>Bio:</h2>
 <p>{{ bio }}</p>
+
+{% if tags-experience %}
+
+	<h2>Experience:</h2>
+	{% for x in tags-experience %}
+		<sl-tag size="small" pill>{{x}}</sl-tag>
+	{% endfor %}
+
+{% endif %}
+
+{% if tags-current-industries %}
+
+	<h2>Current Industry:</h2>
+	{% for x in tags-current-industries %}
+		<sl-tag size="small" pill>{{x}}</sl-tag>
+	{% endfor %}
+
+{% endif %}
+
+{% if tags-current-position %}
+
+	<h2>Current Position Tags:</h2>
+	{% for x in tags-current-position %}
+		<sl-tag size="small" pill>{{x}}</sl-tag>
+	{% endfor %}
+
+{% endif %}
+
+{% if tags-past-industries %}
+
+	<h2>Has Experience in These Industries:</h2>
+	{% for x in tags-past-industries %}
+		<sl-tag size="small" pill>{{x}}</sl-tag>
+	{% endfor %}
+
+{% endif %}
+
+{% if tags-past-position %}
+
+	<h2>Has Held These Positions:</h2>
+	{% for x in tags-past-position %}
+		<sl-tag size="small" pill>{{x}}</sl-tag>
+	{% endfor %}
+
+{% endif %}
+
+{% if tags-current-board-service %}
+
+	<h2>Current Board Service Categories:</h2>
+	{% for x in tags-current-board-service %}
+		<sl-tag size="small" pill>{{x}}</sl-tag>
+	{% endfor %}
+
+{% endif %}
+
+{% if tags-past-board-service %}
+
+	<h2>Past Board Service Categories:</h2>
+	{% for x in tags-past-board-service %}
+		<sl-tag size="small" pill>{{x}}</sl-tag>
+	{% endfor %}
+
+{% endif %}
+
+</div>
+
+{% comment %}
+<sl-button type="button" variant="primary" class="download">Download PDF</sl-button>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script>
+	const downloadButton = document.querySelector('.download');
+	downloadButton.addEventListener('click', () => {
+		 const printElement = document.querySelector('.bioContainer');
+		const config = {
+			margin:       1,
+			filename:     '{{title | replace: " ", "_"}}-profile-womenlead.io.pdf',
+			image:        { type: 'jpeg', quality: 1 },
+			html2canvas:  { scale: 1 },
+			jsPDF:        { unit: 'in', format: 'letter', orientation: 'portrait' },
+			pagebreak: { mode: 'avoid-all' }
+		};
+		html2pdf().set(config).from(printElement).save();
+
+	});
+</script>
+{% endcomment %}
+
 {% include 'foot.liquid' %}

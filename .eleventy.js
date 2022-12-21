@@ -1,8 +1,6 @@
 module.exports = function(eleventyConfig) {
   // Copy the `img` and `css` folders to the output
-  eleventyConfig.addPassthroughCopy("assets/images");
-  eleventyConfig.addPassthroughCopy("assets/css");
-  eleventyConfig.addPassthroughCopy("assets/js");
+  eleventyConfig.addPassthroughCopy("assets/");
   eleventyConfig.addPassthroughCopy("admin");
   eleventyConfig.ignores.add("README.md");
   eleventyConfig.ignores.add("**/profileMaker/**");

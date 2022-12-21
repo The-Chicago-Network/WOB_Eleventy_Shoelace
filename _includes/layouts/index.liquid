@@ -1,9 +1,10 @@
 {% include 'head.liquid' %}
-<div class="header">
-<h1>{{ h1 }}</h1>
-<p class="subhead">{{ subhead }}</p>
-<span class="description">{{ content }}<span>
-</div>
+<header id="indexHeader">
+	<h1>{{ h1 }}</h1>
+	{% if subhead %}
+	<p class="subhead">{{ subhead }}</p>
+	{% endif %}
+	<span class="description">{{ content }}<span>
+</header>
 {% include 'search.liquid' %}
-{% include 'pardon.liquid' %}
 {% include 'foot.liquid' %}
