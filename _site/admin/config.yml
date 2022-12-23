@@ -1,0 +1,52 @@
+backend:
+  name: git-gateway
+  branch: main
+publish_mode: editorial_workflow
+media_folder: "_site/assets/images/uploads"
+public_folder: "assets/images/uploads"
+collections:
+  - name: "profiles" # Used in routes, e.g., /admin/collections/blog
+    label: "Member Profile" # Used in the UI
+    folder: "profiles" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{slug}}_{{year}}{{month}}{{day}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+      - {label: "Layout", name: "layout", widget: "hidden", default: "layouts/profile.liquid"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "ID", name: "", widget: "string", default: "{{prefix}}{{first}}{{middle}}{{last}}{{suffix}}_{{year}}{{month}}{{day}}"}
+      - {label: "Prefix", name: "prefix", widget: "string"}
+      - {label: "First", name: "first", widget: "string"}
+      - {label: "Middle", name: "middle", widget: "string"}
+      - {label: "Last", name: "last", widget: "string"}
+      - {label: "Suffix", name: "suffix", widget: "string"}
+      - {label: "CurrentTitle", name: "currentTitle", widget: "string"}
+      - {label: "CurrentOrg", name: "currentOrg", widget: "string"}
+      - {label: "Bio", name: "bio", widget: "markdown"}
+      - {label: "TikTok", name: "tiktok", widget: "string"}
+      - {label: "Twitter", name: "twitter", widget: "string"}
+      - {label: "Aboutme", name: "aboutme", widget: "string"}
+      - {label: "Insta", name: "insta", widget: "string"}
+      - {label: "Current Organization Website Address", name: "orgURL", widget: "string"}
+      - {label: "Snapchat", name: "snapchat", widget: "string"}
+      - {label: "Personal Website Address", name: "personalURL", widget: ""}
+      - {label: "Small Headshot", name: "smallHeadshotURL", widget: "image"}
+      - {label: "Original Headshot", name: "originalHeadshotURL", widget: "image"}
+      - {label: "Tags: Experience", name: "tags-experience", widget: "list"}
+      - {label: "Tags: Current Industries", name: "tags-current-industries", widget: "list"}
+      - {label: "Tags: Current Position", name: "tags-current-position", widget: "list"}
+      - {label: "Tags: Past Industries", name: "tags-past-industries", widget: "list"}
+      - {label: "Tags: Past Position", name: "tags-past-position", widget: "list"}
+      - {label: "Tags: Current Board Service", name: "tags-current-board-service", widget: "list"}
+      - {label: "Tags: Past Board Service", name: "tags-past-board-service", widget: "list"}
+      - {label: "Boards: Current Corporate Private", name: "boards-current-corporate-private", widget: "list"}
+      - {label: "Boards: Current Corporate Public", name: "boards-current-corporate-public", widget: "list"}
+      - {label: "Boards: Current Nonprofit", name: "boards-current-nonprofit", widget: "list"}
+      - {label: "Boards: Current privateequity", name: "boards-current-privateequity", widget: "list"}
+      - {label: "Boards: Current SPAC", name: "boards-current-spac", widget: "list"}
+      - {label: "Boards: Current VC", name: "boards-current-vc", widget: "list"}
+      - {label: "Boards: Past Corporate Private", name: "boards-past-corporate-private", widget: "list"}
+      - {label: "Boards: Past Corporate Public", name: "boards-past-corporate-public", widget: "list"}
+      - {label: "Boards: Past Nonprofit", name: "boards-past-nonprofit", widget: "list"}
+      - {label: "Boards: Past Private Equity", name: "boards-past-privateequity", widget: "list"}
+      - {label: "Boards: Past SPAC", name: "boards-past-spac", widget: "list"}
+      - {label: "Boards: Past VC", name: "boards-past-vc", widget: "list"}

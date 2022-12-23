@@ -3,7 +3,4 @@ TODO
 
 * Add option to clear or retain filters on new search
 * Implement nav
-* Build out profile template
-* Delete Andee Harris Heather
 * Add 'X results' on filter popup indicating number of filtered results
-~~* FIX issue in searchScript filter handling~~
