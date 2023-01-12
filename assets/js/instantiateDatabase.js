@@ -1,4 +1,4 @@
-import { create } from 'https://unpkg.com/@lyrasearch/lyra@latest/dist/esm/src/lyra.js';
+import { create } from 'https://unpkg.com/@lyrasearch/lyra@0.3.1/dist/esm/src/lyra.js';
 
 export const profiles = create({
 	schema: {
