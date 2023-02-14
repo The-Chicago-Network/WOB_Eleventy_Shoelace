@@ -1,11 +1,15 @@
 module.exports = function(eleventyConfig) {
-  // Copy the `img` and `css` folders to the output
+  // Copy folders to the output
   eleventyConfig.addPassthroughCopy("assets/");
   eleventyConfig.addPassthroughCopy("admin");
+  eleventyConfig.addPassthroughCopy("node_modules/@lyrasearch");
+
+  // Ignore during site generation:
   eleventyConfig.ignores.add("README.md");
   eleventyConfig.ignores.add("**/profileMaker/**");
-  eleventyConfig.ignores.add("**/node_modules/**");
   eleventyConfig.ignores.add("**/assets/images/headshots/originals/**");
+
+  // Create "Profiles" collection
   eleventyConfig.addCollection("profiles", function(collection) {
         return collection.getFilteredByGlob("**/profiles/*.md");
     });

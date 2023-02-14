@@ -1,7 +1,6 @@
-<script type='module'>
-  import { insert } from 'https://unpkg.com/@lyrasearch/lyra@0.3.1/dist/esm/src/lyra.js';
+<script type="module" async>
+  import { insert } from "../node_modules/@lyrasearch/lyra/dist/index.js";
   import { profiles } from './assets/js/instantiateDatabase.js';
-  import { filterResultsByTag } from './assets/js/filterResultsByTag.js';
   import { emptyNest } from './assets/js/emptyNest.js';
   import { populateSelect } from './assets/js/populateFilterSelectInputs.js';
   import { buildResultCards } from './assets/js/buildResultCards.js';
@@ -47,10 +46,10 @@
   })
 
   // Handle submit
-  form.addEventListener('submit', event => {
+  form.addEventListener('submit', async event => {
     event.preventDefault();
-    const searchResult = runSearch(properties, `${searchInput.value}`, 600);
-    filterStore.searchResults = searchResult;
+    const searchResult = await runSearch(properties, `${searchInput.value}`, 600);
+    filterStore.searchResults = await searchResult;
     filterStore.render(filterStore.searchResults, resultsContainer);
   })
 

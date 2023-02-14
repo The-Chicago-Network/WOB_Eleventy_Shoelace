@@ -1,6 +1,6 @@
-import { create } from 'https://unpkg.com/@lyrasearch/lyra@0.3.1/dist/esm/src/lyra.js';
+import { create, insert, remove, search } from "../../node_modules/@lyrasearch/lyra/dist/index.js";
 
-export const profiles = create({
+export const profiles = await create({
 	schema: {
 		name: 'string',
 		profileID: 'string',
