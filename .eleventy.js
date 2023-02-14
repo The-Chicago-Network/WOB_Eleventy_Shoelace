@@ -13,9 +13,13 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addCollection("profiles", function(collection) {
         return collection.getFilteredByGlob("**/profiles/*.md");
     });
+
+  // Use JS truthiness in Liquid
   eleventyConfig.setLiquidOptions({
     jsTruthy: true
   });
+
+  // Custom Shortcodes
   eleventyConfig.addLiquidShortcode("encodeIt", function(string) {
       return encodeURIComponent(string);
     });

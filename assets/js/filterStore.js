@@ -2,6 +2,7 @@ import { buildResultCards } from './buildResultCards.js';
 import { emptyNest } from './emptyNest.js';
 import { runSearch } from './runSearch.js';
 
+// Holds filter states and renders page elements on change.
 export let filterStore = {
 	tags_current_position: [],
 	tags_past_positions: [],
@@ -33,6 +34,7 @@ export let filterStore = {
 			return allMatchesSuccessful;
 		})
 	},
+	// Pass the contents of a watched input element to this[key]
 	update: function(key, watchedElementIndex) {
 		this[key] = this.watchedElements[watchedElementIndex].value.flat(Infinity);
 	},
@@ -47,6 +49,7 @@ export let filterStore = {
 		}
 		buildResultCards(filteredResults, outputContainer);
 	},
+	// Add event listeners to each input element to be watched for changes
 	watch: function(outputContainer) {
 		// Add event listener to each watched element
 		for (let i=0; i< this.watchedElements.length; i++) {

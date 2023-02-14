@@ -15,6 +15,8 @@
   const searchInput = document.querySelector('.searchInput');
   const form = document.querySelector('.WOB-Search');
   const resultsContainer = document.querySelector('.searchResults');
+
+  // Provide filterStore with a list of input elements to watch for changes
   filterStore.watchedElements = document.querySelectorAll('sl-select');
 
   openButton.addEventListener('click', () => dialog.show());
@@ -49,7 +51,7 @@
   form.addEventListener('submit', async event => {
     event.preventDefault();
     const searchResult = await runSearch(properties, `${searchInput.value}`, 600);
-    filterStore.searchResults = await searchResult;
+    filterStore.searchResults = searchResult;
     filterStore.render(filterStore.searchResults, resultsContainer);
   })
 
