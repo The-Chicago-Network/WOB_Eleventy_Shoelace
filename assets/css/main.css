@@ -5,7 +5,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,400;0,600;0,900;1,200&display=swap');
 
 :root {
-  /* Color Tokens */
+  /* Color */
   --sl-color-primary-50: rgb(244 250 255);
   --sl-color-primary-100: rgb(217 239 255);
   --sl-color-primary-200: rgb(187 227 255);
@@ -302,7 +302,14 @@
 }
 
 @layer utilities {
-
+  .center {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
 }
 
 @layer overrides {
@@ -377,5 +384,19 @@
   }
   #indexHeader {
     margin-top: 15vh;
+  }
+  #loader {
+    border: 12px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 12px solid #444444;
+    width: 70px;
+    height: 70px;
+    animation: spin 1s linear infinite;
+  }
+
+  @keyframes spin {
+    100% {
+      transform: rotate(360deg);
+    }
   }
 }
