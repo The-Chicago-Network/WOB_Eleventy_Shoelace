@@ -18,6 +18,27 @@ This project is licensed under the GPLv3 license with the following exceptions:
 [^1]: To put it another way, the structure of these files is licensed under the GPLv3, but the profile content therein is not.
 
 ## Documentation
+### Using profileMaker
+profileMaker.js takes data.json, containing profile data, and spits out individual .md files into /profiles so that 11ty can turn them into HTML documents.
+
+#### Setup
+```bash
+npm install sanitize-html
+npm i -g sanitize-html csvtojson
+```
+
+1. Ensure your data CSV contains the following columns:
+TODO: Add columns
+
+2. Convert to data.json using the csvtojson cli:
+```bash
+csvtojson my.csv > data.json
+```
+3. Move data.json into /profileMaker and run:
+```bash
+node ./profileMaker.js
+```
+
 ### Filtering and Rendering Results with filterStore
 #### Rendering Filtered Results
 /assets/js/filterStore.js manages state as it relates to user search-results filtering. `filterStore.render()` is used to render filtered results to the DOM. This method is also used to render initial search results as it may be used whether or not the user has selected any filters:

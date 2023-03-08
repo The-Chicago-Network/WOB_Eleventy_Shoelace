@@ -1,5 +1,6 @@
 // Require filesystem module
 const fs = require("fs");
+const sanitizeHtml = require('sanitize-html');
 
 // Create object from JSON file
 const data = fs.readFileSync("./data.json");
@@ -23,13 +24,18 @@ fs.access(mkdirPath, (error) => {
   }
 });
 
+// TODO: Store all these RegExp in an array and iterate through it
 // Handle newline characters and colons in YAML frontmatter
-const sanitize = (string, allowNewline) => {
+const sanitize = (string, allowNewLine) => {
     let newString = string;
-    if (allowNewline) {
-        newString = newString.replace(/\n+/g, "<br /><br />");
+    if (allowNewLine) { // Remove excessive newlines and replace all with <br /> tags
+        newString = newString.replace(/(?:(?:\\n|\n)+(?:\\n+|\n+|\s+)+)+/gm, "<br /><br />").replace(/\n/g, "<br />");
     }
-    return newString.replace(/:/g, "&#58;");
+    return newString = newString.replace(/§/g, "")
+      .replace(/ +/g, " ")
+      .replace(/ +(?= )/g,"")
+      .replace(/:/g, "&#58;")
+      .replace(/![a-zA-Z]/, "");
 }
 
 // Split and format tag strings
@@ -49,7 +55,7 @@ const tagSplitter = (string) => {
 const boardSpitter = (arr) => {
   let newString = "";
   arr.forEach((x) => {
-    if (x.name) {
+    if (x.name && x.name != "<") {
       newString += `\n    - ${x.name}, ${x.position}`;
     }
     return "";
@@ -76,7 +82,7 @@ const printName = (obj) => {
 
 // Format ID
 const formatID = (string) => {
-  return string.replace(/-/g,"_").replace(/[^a-zA-Z0-9_]/g,"").toLowerCase();
+  return string.replace(/ /g,"_").replace(/[^a-zA-Z0-9_]/g,"").toLowerCase();
 }
 
 // Format headshot URL
@@ -117,7 +123,7 @@ const generateFrontmatter = (object) => {
   return `---
 layout: layouts/profile.liquid
 title: ${printName(object.name)}
-id: ${formatID(object.id)}
+id: ${formatID(printName(object.name))}
 prefix: ${object.name.prefix}
 first: ${object.name.first}
 middle: ${object.name.middle}
@@ -125,7 +131,10 @@ last: ${object.name.last}
 suffix: ${object.name.suffix}
 currentTitle: ${sanitize(object.currentTitle, true)}
 currentOrg: ${sanitize(object.currentOrg, true)}
-bio: ${sanitize(object.bio, true)}
+bio: ${sanitize(sanitizeHtml(object.bio, {
+  allowedTags: ['br'],
+  allowedAttributes: {}
+}), true)}
 linkedin: ${object.linkedin}
 tiktok: ${object.tiktok}
 twitter: ${object.twitter}
@@ -134,8 +143,8 @@ insta: ${object.insta}
 orgURL: ${object.orgURL}
 snapchat: ${object.snapchat}
 personalURL: ${object.personalURL}
-smallHeadshotURL: ${formatHeadshotURL(object.headshotURL, true)}
-originalHeadshotURL: ${formatHeadshotURL(object.headshotURL, true)}
+smallHeadshotURL: ${formatHeadshotURL(object.originalHeadshotURL, true)}
+originalHeadshotURL: ${formatHeadshotURL(object.originalHeadshotURL, true)}
 tags-experience: ${tagSplitter(object.tags.currentexperience)}${tagSplitter(object.tags.pastexperience)}
 tags-current-industries: ${tagSplitter(object.tags.currentindustries)}
 tags-current-position: ${tagSplitter(object.tags.currentposition)}
@@ -161,7 +170,7 @@ boards-past-vc: ${boardSpitter(object.boards.pastvc)}
 // Generate MD files in ./profiles
 const generateFiles = (object) => {
   for (const x in object) {
-    const namepath = `${exportPath}${formatID(obj[x].id)}.md`;
+    const namepath = `${exportPath}${formatID(printName(obj[x].name))}.md`;
     fs.writeFileSync(
       namepath,
       generateFrontmatter(obj[x]),

@@ -13,6 +13,7 @@
     "@11ty/eleventy": "^1.0.2"
   },
   "dependencies": {
-    "@lyrasearch/lyra": "^0.4.8"
+    "@lyrasearch/lyra": "^0.4.8",
+    "sanitize-html": "^2.10.0"
   }
 }
