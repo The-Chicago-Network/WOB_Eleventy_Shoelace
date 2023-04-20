@@ -17,7 +17,7 @@ aboutme:
 insta: 
 orgURL: 
 snapchat: 
-personalURL: www.verit.com
+personalURL: https://www.verit.com
 smallHeadshotURL: assets/images/headshots/Mary%20Josephs-former%20HS1_converted_scaled.avif
 originalHeadshotURL: assets/images/headshots/Mary%20Josephs-former%20HS1_converted_scaled.avif
 tags-experience: 

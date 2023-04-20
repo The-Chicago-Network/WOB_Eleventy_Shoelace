@@ -10,7 +10,7 @@ suffix:
 currentTitle: Chief Legal Officer
 currentOrg: Discover Financial Services
 bio: 
-linkedin: www.linkedin.com/in/wanjiwalcott
+linkedin: https://www.linkedin.com/in/wanjiwalcott
 tiktok: 
 twitter: 
 aboutme: 

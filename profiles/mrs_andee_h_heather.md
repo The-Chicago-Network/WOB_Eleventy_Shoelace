@@ -15,7 +15,7 @@ tiktok:
 twitter: 
 aboutme: 
 insta: 
-orgURL: www.challengerinc.com
+orgURL: https://www.challengerinc.com
 snapchat: 
 personalURL: 
 smallHeadshotURL: assets/images/headshots/Harris_Andee%20copy%203_converted_scaled.avif

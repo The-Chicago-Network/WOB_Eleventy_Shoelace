@@ -15,7 +15,7 @@ tiktok:
 twitter: https://twitter.com/karentamley?s=21&t=qF0byOLZ_kdzZwxg8fxz2A
 aboutme: 
 insta: https://www.instagram.com/accounts/login/?next=/karentamley/
-orgURL: Accessliving.org
+orgURL: https://Accessliving.org
 snapchat: 
 personalURL: 
 smallHeadshotURL: assets/images/headshots/

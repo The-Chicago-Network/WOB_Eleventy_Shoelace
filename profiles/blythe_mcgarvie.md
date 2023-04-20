@@ -17,7 +17,7 @@ aboutme:
 insta: 
 orgURL: 
 snapchat: 
-personalURL: www.BlytheMcGarvie.com
+personalURL: https://www.BlytheMcGarvie.com
 smallHeadshotURL: assets/images/headshots/
 originalHeadshotURL: assets/images/headshots/
 tags-experience: 

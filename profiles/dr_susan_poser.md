@@ -15,7 +15,7 @@ tiktok:
 twitter: https://twitter.com/SusanPoser
 aboutme: https://www.hofstra.edu/president/
 insta: https://www.instagram.com/susanposerhofstra/
-orgURL: www.hofstra.edu
+orgURL: https://www.hofstra.edu
 snapchat: 
 personalURL: 
 smallHeadshotURL: assets/images/headshots/Hofstra%20University%2C%20Dr.%20Susan%20Poser%2C%205-9-22%20%2823%29_converted_scaled.avif

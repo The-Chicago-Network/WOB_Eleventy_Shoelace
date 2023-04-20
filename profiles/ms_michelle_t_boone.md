@@ -15,7 +15,7 @@ tiktok:
 twitter: https://twitter.com/artscrusader
 aboutme: 
 insta: https://www.instagram.com/michelletboone/
-orgURL: www.poetryfoundation.org
+orgURL: https://www.poetryfoundation.org
 snapchat: 
 personalURL: 
 smallHeadshotURL: assets/images/headshots/

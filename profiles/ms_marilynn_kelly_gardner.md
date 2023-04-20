@@ -17,7 +17,7 @@ aboutme:
 insta: 
 orgURL: 
 snapchat: 
-personalURL: navypier.org
+personalURL: https://navypier.org
 smallHeadshotURL: assets/images/headshots/MKG-OFFICIAL-2022%20%28credit%20Maria%20Ponce%20Bere%29_converted_scaled.avif
 originalHeadshotURL: assets/images/headshots/MKG-OFFICIAL-2022%20%28credit%20Maria%20Ponce%20Bere%29_converted_scaled.avif
 tags-experience: 

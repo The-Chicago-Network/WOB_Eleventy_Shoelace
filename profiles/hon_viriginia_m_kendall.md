@@ -15,7 +15,7 @@ tiktok:
 twitter: 
 aboutme: 
 insta: 
-orgURL: www.ilnd.uscourts.gov
+orgURL: https://www.ilnd.uscourts.gov
 snapchat: 
 personalURL: 
 smallHeadshotURL: assets/images/headshots/Kendall%20headshot%202013.JPG

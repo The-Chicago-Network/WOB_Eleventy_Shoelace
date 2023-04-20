@@ -10,7 +10,7 @@ suffix:
 currentTitle: Founder & CEO Alpha Wealth , LLC., Corporate Board Director, NonProfit Trustee
 currentOrg: Alpha Wealth Advisors, LLC. - Founder & CEO, Mercer Funds - Independent Director & Audit Chair, Chair- National Association of Corporate Directors Chicago Chapter, Rush University Medical Center - Trustee, Cuneo Foundation - Trustee and Treasurer
 bio: 
-linkedin: www.linkedin.com/in/joan-steel-88065840
+linkedin: https://www.linkedin.com/in/joan-steel-88065840
 tiktok: 
 twitter: 
 aboutme: https://www.alphaadvisorllc.com

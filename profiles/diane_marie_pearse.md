@@ -10,7 +10,7 @@ suffix:
 currentTitle: Corporate Board Director/Former CEO of Hickory Farms/Executive Coach
 currentOrg: MSA Safety Incorporated and Basic American Foods Incorporated
 bio: Diane Pearse is an experienced independent director and an SEC Financial Expert with more than a decade of public and private company board experience. She is an experienced Audit Committee chair and an experienced Compensation Committee and Law Committee member. <br /><br />Diane was a successful C-Suite executive, having held CEO, COO and CFO roles for several companies. She is the retired Chief Executive Officer and President of Hickory Farms, LLC, a leading multi-channel retailer of food gifts and specialty foods. During her tenure in the role, she led a transformation of the company to reinvent the brand, aggressively grow the eCommerce business and increase profitability.<br /><br />Diane possesses exceptional leadership, financial and operating skills that were demonstrated through her success as the CEO of Hickory Farms and in other senior roles, including as the Senior Vice President of Operations and Merchandising for Redbox and as the Chief Financial Officer for Crate and Barrel. Her financial expertise was developed by holding progressive roles within the Finance function of Amoco Corporation and BP.
-linkedin: http://www.linkedin.com/in/diane-pearse-3a87a917/
+linkedin: https://http://www.linkedin.com/in/diane-pearse-3a87a917/
 tiktok: 
 twitter: 
 aboutme: 

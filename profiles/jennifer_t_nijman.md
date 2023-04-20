@@ -15,7 +15,7 @@ tiktok:
 twitter: 
 aboutme: 
 insta: 
-orgURL: Nijmanfranzetti.com
+orgURL: https://Nijmanfranzetti.com
 snapchat: 
 personalURL: 
 smallHeadshotURL: assets/images/headshots/NZ2_0231%20JN%20Headshot%20%2800087085xA9B67%29_converted_scaled.avif

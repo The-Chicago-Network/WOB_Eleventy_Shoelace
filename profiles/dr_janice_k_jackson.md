@@ -15,7 +15,7 @@ tiktok:
 twitter: https://twitter.com/janicejackson
 aboutme: https://linktr.ee/JaniceKJackson
 insta: https://www.instagram.com/janicekjackson/?hl=en
-orgURL: www.hopechicago.org
+orgURL: https://www.hopechicago.org
 snapchat: 
 personalURL: 
 smallHeadshotURL: assets/images/headshots/

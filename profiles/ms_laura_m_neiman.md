@@ -14,8 +14,8 @@ linkedin: https://www.linkedin.com/in/laura-neiman-9a2a141/
 tiktok: 
 twitter: 
 aboutme: 
-insta: laura.neimanrifkin
-orgURL: www.neimanbrothers.com
+insta: https://laura.neimanrifkin
+orgURL: https://www.neimanbrothers.com
 snapchat: 
 personalURL: 
 smallHeadshotURL: assets/images/headshots/IMG_6866_converted_scaled.avif

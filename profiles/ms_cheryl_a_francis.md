@@ -15,7 +15,7 @@ tiktok:
 twitter: 
 aboutme: 
 insta: 
-orgURL: www.corporateleadership.org
+orgURL: https://www.corporateleadership.org
 snapchat: 
 personalURL: 
 smallHeadshotURL: assets/images/headshots/Cheryl%20Francis_MG_9839_converted_scaled.avif

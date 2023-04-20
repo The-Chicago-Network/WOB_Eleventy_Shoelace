@@ -17,7 +17,7 @@ aboutme:
 insta: 
 orgURL: 
 snapchat: 
-personalURL: clg.schneider@comcast.net
+personalURL: https://clg.schneider@comcast.net
 smallHeadshotURL: assets/images/headshots/
 originalHeadshotURL: assets/images/headshots/
 tags-experience: 
