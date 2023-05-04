@@ -1,0 +1,18 @@
+{
+	"currentBoardStringMap": [
+		["currentcorporateprivate", "\n    - Corporate Private"],
+		["currentcorporatepublic", "\n    - Corporate Public"],
+		["currentnonprofit", "\n    - Nonprofit"],
+		["currentspac", "\n    - SPAC"],
+		["currentvc", "\n    - VC"],
+		["currentprivateequity", "\n    - Private Equity"]
+	],
+	"pastBoardStringMap": [
+		["pastcorporateprivate", "\n    - Corporate Private"],
+		["pastcorporatepublic", "\n    - Corporate Public"],
+		["pastnonprofit", "\n    - Nonprofit"],
+		["pastspac", "\n    - SPAC"],
+		["pastvc", "\n    - VC"],
+		["pastprivateequity", "\n    - Private Equity"]
+	]
+}

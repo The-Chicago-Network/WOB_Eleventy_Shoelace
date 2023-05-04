@@ -7,59 +7,71 @@ first: Karen
 middle: 
 last: Case
 suffix: 
-currentTitle: President, US Commercial Real Estate
-currentOrg: CIBC Bank USA
-bio: <br /><br />Karen Case is Executive Managing Director and President of US Commercial Real Estate for CIBC US. She oversees the business units that develop and manage real estate finance and banking relationships with dynamic and growing commercial real estate developers, investors, owners and operators nationally. Ms. Case is a member of the CIBC US Region Executive Committee.<br /><br />Ms. Case joined The PrivateBank in 2007 (Toronto-based CIBC acquired The PrivateBank in June 2017) as President, Commercial Real Estate. Previously, Ms. Case served as executive vice president in LaSalle Bank's Commercial Real Estate Department (LaSalle Bank was acquired by Bank of America in October 2007). Prior to joining LaSalle in 1992, Ms. Case managed banking relationships with Midwest-based real estate development and syndication firms for New York-based Marine Midland Bank (now HSBC) and The First National Bank of Chicago (now Chase).<br /><br />Ms. Case earned her MBA from The University of Chicago and a BS in Business Administration from Washington University in St. Louis. She also attended The University of London and The American College in Paris.<br /><br />A native of New York, Ms. Case lives in Chicago ‘s West Loop neighborhood with her husband, Jay. They have three grown children.
-linkedin: https://<
-tiktok: https://<
-twitter: https://<
-aboutme: https://<
-insta: https://<
-orgURL: https://<
-snapchat: https://<
-personalURL: https://<
+currentTitle: Vice Chair, CIBC U.S.; Executive Committee Member; Board Member; Commercial Real Estate Executive
+currentOrg: Vice Chair, CIBC U.S.
+bio: Vice Chair of CIBC U.S. recognized for leadership and success building a commercial real estate business ranking in the top 20 among U.S. commercial banks. From 2007 to 2023, Karen served as President, U.S. Commercial Real Estate – first with The PrivateBank, and then with CIBC (NYSE&#58; CM) after it acquired The PrivateBank in 2017 – with P&amp;L responsibility for a $500 million revenue business. During that period, she built a $25 billion loan portfolio and a team of 150 professionals in 12 offices across the United States, consistently exceeding plan for revenue, operating profit, and asset quality.<br />Karen established the business’s reputation for quality of service, certainty of execution, and valued counsel, cementing trusted, long-term client relationships. Moreover, Karen cultivated a team culture that prioritized the interest of clients while balancing the bank’s risk posture and strategic direction.
+linkedin: https://www.linkedin.com/in/karen-spigner-case/
+tiktok: 
+twitter: 
+aboutme: 
+insta: 
+orgURL: https://us.cibc.com
+snapchat: 
+personalURL: 
 smallHeadshotURL: assets/images/headshots/Karen%20Case%205x7%20Web%20Size_converted_scaled.avif
 originalHeadshotURL: assets/images/headshots/Karen%20Case%205x7%20Web%20Size_converted_scaled.avif
 tags-experience: 
+ - Business Development
+ - Capital Markets
+ - Finance
+ - Business Development
+ - Capital Markets
+ - Finance
+ - P&L&#58; $500M-$1B
+ - Transformational and Growth
 tags-current-industries: 
+ - Community Development/Organizing
+ - Construction
+ - Construction of Buildings
+ - Finance and Insurance
+ - Financial Activities
+ - Furniture and Home Furnishings Stores
+ - General Merchandise Stores
+ - Health and Personal Care Stores
+ - Miscellaneous Store Retailers
+ - Nonstore Retailers
+ - Real Estate
+ - Real Estate and Rental and Leasing
 tags-current-position: 
- - Executive Director
- - President
 tags-past-industries: 
+ - Construction of Buildings
+ - Finance and Insurance
+ - Leisure and Hospitality
+ - Real Estate
+ - Real Estate and Rental and Leasing
 tags-past-position: 
- - Executive Director
  - President
 tags-current-board-service: 
-    - Corporate Private
-    - Corporate Public
     - Nonprofit
-    - SPAC
-    - VC
-    - Private Equity
 tags-past-board-service: 
-    - Corporate Private
-    - Corporate Public
     - Nonprofit
-    - SPAC
-    - VC
-    - Private Equity
 boards-current-corporate-private: 
 boards-current-corporate-public: 
 boards-current-nonprofit: 
- - Community Investment Corporation, Executive Committee
- - Rush University Medical Center, Facilities Committee Co-Chair
- - JDRF Illinois Chapter, Lifetime Board Member
- - TimeLine Theatre, Executive Committee
+ - Rush University Medical Center, Trustee and Facilities Committee
+ - Community Investment Corp, Member, Executive Committee
+ - JDRF Illinois Chapter, Board Member and past President
+ - TimeLine Theatre, Member, Executive Committee
 boards-current-privateequity: 
 boards-current-spac: 
 boards-current-vc: 
 boards-past-corporate-private: 
 boards-past-corporate-public: 
 boards-past-nonprofit: 
- - The Chicago Network, Board Member
+ - JDRF International, Executive Committee, Finance Chair, Audit Chair
+ - The Chicago Network , Board Member; Chaired Future Leaders, Engagement, Membership and Women in the Forefront Committees
  - Girl Scouts of Chicago, Past President
- - JDRF International, Director Emeritus
- - International Council of Shopping Centers, Board Member
+ - Chicago Architecture Center, Board Member
 boards-past-privateequity: 
 boards-past-spac: 
 boards-past-vc: 
