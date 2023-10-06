@@ -1,9 +1,9 @@
 ---
 layout: layouts/profile.liquid
-title: Hon. Viriginia M. Kendall
+title: Hon. Virginia M. Kendall
 id: hon_viriginia_m_kendall
 prefix: Hon.
-first: Viriginia
+first: Virginia
 middle: M.
 last: Kendall
 suffix: 
