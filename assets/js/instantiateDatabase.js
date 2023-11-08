@@ -1,4 +1,4 @@
-import { create, insert, remove, search } from "../../node_modules/@lyrasearch/lyra/dist/index.js";
+import { create, insert, remove, search } from "../../node_modules/@orama/orama/dist/index.js";
 
 export const profiles = await create({
 	schema: {
