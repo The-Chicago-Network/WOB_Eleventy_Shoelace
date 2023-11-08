@@ -65,7 +65,7 @@ tags-past-board-service:
   - Private Equity
 boards-current-corporate-private:
   - Hofstra University Board of Trustees (ex officio),
-boards-current-corporate-public: null
+boards-current-corporate-public: []
 boards-current-nonprofit: null
 boards-current-privateequity: null
 boards-current-spac: null
