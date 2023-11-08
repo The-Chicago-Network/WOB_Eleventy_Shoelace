@@ -6,7 +6,7 @@ Women Lead is a webapp from The Chicago Network that allows recruiters to search
 Built with:
 * [Eleventy](https://github.com/11ty/eleventy)
 * [Shoelace](https://github.com/shoelace-style/shoelace)
-* [Lyra](https://github.com/LyraSearch/lyra)
+* [Orama](https://github.com/oramasearch/orama)
 * [Sanitize.css](https://github.com/csstools/sanitize.css)
 
 ## License
