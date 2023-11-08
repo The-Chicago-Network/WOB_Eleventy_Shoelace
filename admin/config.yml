@@ -36,7 +36,7 @@ collections:
       - {label: "Tags: Current Position", name: "tags-current-position", widget: "list", required: "false"}
       - {label: "Tags: Past Industries", name: "tags-past-industries", widget: "list", required: "false"}
       - {label: "Tags: Past Position", name: "tags-past-position", widget: "list", required: "false"}
-      - {label: "Tags: Current Board Service", name: "tags-current-board-service", widget: "list", required: "false"}
+      - {label: "Tags: Current Board Service", name: "tags-current-board-service", widget: "select", multiple: "true", options: ["Corporate Private", "Corporate Public", "Nonprofit", "SPAC", "VC", "Private Equity"], required: "false"}
       - {label: "Tags: Past Board Service", name: "tags-past-board-service", widget: "list", required: "false"}
       - {label: "Boards: Current Corporate Private", name: "boards-current-corporate-private", widget: "list", required: "false"}
       - {label: "Boards: Current Corporate Public", name: "boards-current-corporate-public", widget: "list", required: "false"}
