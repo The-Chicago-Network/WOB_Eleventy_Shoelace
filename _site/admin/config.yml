@@ -14,39 +14,39 @@ collections:
       - {label: "Layout", name: "layout", widget: "hidden", default: "layouts/profile.liquid"}
       - {label: "Title", name: "title", widget: "string"}
       - {label: "ID", name: "id", widget: "string", default: "{{prefix}}{{first}}{{middle}}{{last}}{{suffix}}_{{year}}{{month}}{{day}}"}
-      - {label: "Prefix", name: "prefix", widget: "string", required: "false"}
+      - {label: "Prefix", name: "prefix", widget: "string", required: false}
       - {label: "First", name: "first", widget: "string"}
-      - {label: "Middle", name: "middle", widget: "string", required: "false"}
+      - {label: "Middle", name: "middle", widget: "string", required: false}
       - {label: "Last", name: "last", widget: "string"}
-      - {label: "Suffix", name: "suffix", widget: "string", required: "false"}
+      - {label: "Suffix", name: "suffix", widget: "string", required: false}
       - {label: "CurrentTitle", name: "currentTitle", widget: "string"}
-      - {label: "CurrentOrg", name: "currentOrg", widget: "string", required: "false"}
+      - {label: "CurrentOrg", name: "currentOrg", widget: "string", required: false}
       - {label: "Bio", name: "bio", widget: "markdown"}
-      - {label: "TikTok", name: "tiktok", widget: "string", required: "false"}
-      - {label: "Twitter", name: "twitter", widget: "string", required: "false"}
-      - {label: "Aboutme", name: "aboutme", widget: "string", required: "false"}
-      - {label: "Insta", name: "insta", widget: "string", required: "false"}
-      - {label: "Current Organization Website Address", name: "orgURL", widget: "string", required: "false"}
-      - {label: "Snapchat", name: "snapchat", widget: "string", required: "false"}
-      - {label: "Personal Website Address", name: "personalURL", widget: "", required: "false"}
-      - {label: "Small Headshot", name: "smallHeadshotURL", widget: "image", required: "false"}
-      - {label: "Original Headshot", name: "originalHeadshotURL", widget: "image", required: "false"}
-      - {label: "Tags: Experience", name: "tags-experience", widget: "list", required: "false"}
-      - {label: "Tags: Current Industries", name: "tags-current-industries", widget: "list", required: "false"}
-      - {label: "Tags: Current Position", name: "tags-current-position", widget: "list", required: "false"}
-      - {label: "Tags: Past Industries", name: "tags-past-industries", widget: "list", required: "false"}
-      - {label: "Tags: Past Position", name: "tags-past-position", widget: "list", required: "false"}
-      - {label: "Tags: Current Board Service", name: "tags-current-board-service", widget: "select", multiple: "true", options: ["Corporate Private", "Corporate Public", "Nonprofit", "SPAC", "VC", "Private Equity"], required: "false"}
-      - {label: "Tags: Past Board Service", name: "tags-past-board-service", widget: "list", required: "false"}
-      - {label: "Boards: Current Corporate Private", name: "boards-current-corporate-private", widget: "list", required: "false"}
-      - {label: "Boards: Current Corporate Public", name: "boards-current-corporate-public", widget: "list", required: "false"}
-      - {label: "Boards: Current Nonprofit", name: "boards-current-nonprofit", widget: "list", required: "false"}
-      - {label: "Boards: Current privateequity", name: "boards-current-privateequity", widget: "list", required: "false"}
-      - {label: "Boards: Current SPAC", name: "boards-current-spac", widget: "list", required: "false"}
-      - {label: "Boards: Current VC", name: "boards-current-vc", widget: "list", required: "false"}
-      - {label: "Boards: Past Corporate Private", name: "boards-past-corporate-private", widget: "list", required: "false"}
-      - {label: "Boards: Past Corporate Public", name: "boards-past-corporate-public", widget: "list", required: "false"}
-      - {label: "Boards: Past Nonprofit", name: "boards-past-nonprofit", widget: "list", required: "false"}
-      - {label: "Boards: Past Private Equity", name: "boards-past-privateequity", widget: "list", required: "false"}
-      - {label: "Boards: Past SPAC", name: "boards-past-spac", widget: "list", required: "false"}
-      - {label: "Boards: Past VC", name: "boards-past-vc", widget: "list", required: "false"}
+      - {label: "TikTok", name: "tiktok", widget: "string", required: false}
+      - {label: "Twitter", name: "twitter", widget: "string", required: false}
+      - {label: "Aboutme", name: "aboutme", widget: "string", required: false}
+      - {label: "Insta", name: "insta", widget: "string", required: false}
+      - {label: "Current Organization Website Address", name: "orgURL", widget: "string", required: false}
+      - {label: "Snapchat", name: "snapchat", widget: "string", required: false}
+      - {label: "Personal Website Address", name: "personalURL", widget: "", required: false}
+      - {label: "Small Headshot", name: "smallHeadshotURL", widget: "image", required: false}
+      - {label: "Original Headshot", name: "originalHeadshotURL", widget: "image", required: false}
+      - {label: "Tags: Experience", name: "tags-experience", widget: "list", required: false}
+      - {label: "Tags: Current Industries", name: "tags-current-industries", widget: "list", required: false}
+      - {label: "Tags: Current Position", name: "tags-current-position", widget: "list", required: false}
+      - {label: "Tags: Past Industries", name: "tags-past-industries", widget: "list", required: false}
+      - {label: "Tags: Past Position", name: "tags-past-position", widget: "list", required: false}
+      - {label: "Tags: Current Board Service", name: "tags-current-board-service", widget: "select", multiple: true, options: ["Corporate Private", "Corporate Public", "Nonprofit", "SPAC", "VC", "Private Equity"], required: false}
+      - {label: "Tags: Past Board Service", name: "tags-past-board-service", widget: "list", required: false}
+      - {label: "Boards: Current Corporate Private", name: "boards-current-corporate-private", widget: "list", required: false}
+      - {label: "Boards: Current Corporate Public", name: "boards-current-corporate-public", widget: "list", required: false}
+      - {label: "Boards: Current Nonprofit", name: "boards-current-nonprofit", widget: "list", required: false}
+      - {label: "Boards: Current privateequity", name: "boards-current-privateequity", widget: "list", required: false}
+      - {label: "Boards: Current SPAC", name: "boards-current-spac", widget: "list", required: false}
+      - {label: "Boards: Current VC", name: "boards-current-vc", widget: "list", required: false}
+      - {label: "Boards: Past Corporate Private", name: "boards-past-corporate-private", widget: "list", required: false}
+      - {label: "Boards: Past Corporate Public", name: "boards-past-corporate-public", widget: "list", required: false}
+      - {label: "Boards: Past Nonprofit", name: "boards-past-nonprofit", widget: "list", required: false}
+      - {label: "Boards: Past Private Equity", name: "boards-past-privateequity", widget: "list", required: false}
+      - {label: "Boards: Past SPAC", name: "boards-past-spac", widget: "list", required: false}
+      - {label: "Boards: Past VC", name: "boards-past-vc", widget: "list", required: false}
