@@ -2,8 +2,8 @@ backend:
   name: git-gateway
   branch: main
 publish_mode: editorial_workflow
-media_folder: "../assets/images/headshots"
-public_folder: "../assets/images/headshots"
+media_folder: ../assets/images/headshots
+public_folder: ../assets/images/headshots
 collections:
   - name: "profiles" # Used in routes, e.g., /admin/collections/blog
     label: "Member Profile" # Used in the UI
