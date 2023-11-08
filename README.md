@@ -1,5 +1,6 @@
 # Women Lead
  [![License: AGPL v3](https://img.shields.io/badge/License-AGPL_v3-blue.svg)](https://www.gnu.org/licenses/agpl-3.0)
+ [![Netlify Status](https://api.netlify.com/api/v1/badges/337aba9b-0427-483c-8e76-b27436517605/deploy-status)](https://app.netlify.com/sites/lovely-toffee-bde8eb/deploys)
 
 Women Lead is a webapp from The Chicago Network that allows recruiters to search through a database of top Chicago women to find diverse, qualified candidates for board service.
 
