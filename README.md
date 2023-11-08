@@ -9,6 +9,7 @@ Built with:
 * [Shoelace](https://github.com/shoelace-style/shoelace)
 * [Orama](https://github.com/oramasearch/orama)
 * [Sanitize.css](https://github.com/csstools/sanitize.css)
+* [Decap CMS](https://decapcms.org/)
 
 ## License
 This project is licensed under the GPLv3 license with the following exceptions:
