@@ -59,15 +59,10 @@ tags-past-board-service:
 boards-current-corporate-private: null
 boards-current-corporate-public: null
 boards-current-nonprofit:
-  - Rush University Medical Center
-  - Trustee and Facilities Committee
-  - Community Investment Corp
-  - Member
-  - Executive Committee
-  - JDRF Illinois Chapter
-  - Board Member and past President
-  - WTTW/Chicago PBS and WFMT
-  - Member
+  - Rush University Medical Center - Trustee and Facilities Committee
+  - Community Investment Corp - Member - Executive Committee
+  - JDRF Illinois Chapter - Board Member and past President
+  - WTTW/Chicago PBS and WFMT - Member
 boards-current-privateequity: null
 boards-current-spac: null
 boards-current-vc: null
