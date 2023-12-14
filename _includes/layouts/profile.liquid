@@ -11,7 +11,7 @@
 </header>
 
 <div class="bioContainer">
-{% if linkedin or tiktok or twitter or aboutme or insta or orgURL or snapchat or personalURL %}
+{% if linkedin or tiktok or twitter or aboutme or insta or orgURL or snapchat or personalURL or resumeFile %}
 <p class="contactLinks">Contact me on:
 {% if linkedin %}
 <a href="{{linkedin}}">LinkedIn</a>
@@ -36,6 +36,13 @@
 {% endif %}
 {% if personalURL %}
 <a href="{{personalURL}}">{{personalURL}}</a>
+{% endif %}
+{% if resumeFile %}
+<br>
+<sl-button class="downloadButton" type="button" variant="primary" size="small" href="/{{resumeFile}}" pill>
+	<sl-icon slot="prefix" name="paperclip"></sl-icon>
+	Download Resume
+</sl-button>
 {% endif %}
 <hr>
 </p>
