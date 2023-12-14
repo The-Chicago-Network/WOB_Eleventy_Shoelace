@@ -3,6 +3,7 @@
 
 /* Imports */
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,400;0,600;0,900;1,200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
 
 :root {
   /* Color */
@@ -20,6 +21,7 @@
 
   /* Type */
   --sl-font-sans: 'Noto Sans', sans-serif;
+  --font-serif: 'DM Serif Display', serif;
 
   --font-weight-thin: 100;
   --sl-font-weight-light: 200;
@@ -89,6 +91,7 @@
   h1 {
     font-size: var(--sl-font-size-2x-large);
     font-weight: var(--sl-font-weight-normal);
+    font-family: var(--font-serif);
   }
   h2 {
     font-weight: var(--font-weight-thin);
@@ -171,6 +174,10 @@
   }
   #closeButton {
     width: 100%;
+  }
+  .downloadButton {
+    margin-left: -.2rem;
+    margin-top: .5rem;
   }
   .contactLinks a {
     margin-left: var(--sl-spacing-x-small);
@@ -397,6 +404,24 @@
   @keyframes spin {
     100% {
       transform: rotate(360deg);
+    }
+  }
+  @media print {
+    body, body::before, body::after, html {
+      background: white;
+    }
+    h2 {
+      font-weight: var(--sl-font-weight-normal);
+    }
+    .bioContainer {
+      max-width: auto;
+      padding: 0;
+      background-color: white;
+      border-radius: 0;
+      box-shadow: none;
+    }
+    p {
+      width: auto;
     }
   }
 }
