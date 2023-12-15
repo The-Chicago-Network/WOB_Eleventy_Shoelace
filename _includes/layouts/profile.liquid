@@ -50,80 +50,84 @@
 
 {% if boards-current-corporate-private or boards-current-corporate-public or boards-current-nonprofit or boards-current-privateequity or boards-current-spac or boards-current-vc %}
 	<h2>Current Board Service:</h2>
-	{% if boards-current-corporate-private %}
-		{% for x in boards-current-corporate-private %}
-			<sl-tag size="small" pill>{{x | truncate: 50}}</sl-tag>
-		{% endfor %}
-	{% endif %}
+		<ul>
+		{% if boards-current-corporate-private %}
+			{% for x in boards-current-corporate-private %}
+				<li>{{x}}</li>
+			{% endfor %}
+		{% endif %}
 
-	{% if boards-current-corporate-public %}
-		{% for x in boards-current-corporate-public %}
-			<sl-tag size="small" pill>{{x | truncate: 50}}</sl-tag>
-		{% endfor %}
-	{% endif %}
+		{% if boards-current-corporate-public %}
+			{% for x in boards-current-corporate-public %}
+				<li>{{x}}</li>
+			{% endfor %}
+		{% endif %}
 
-	{% if boards-current-nonprofit %}
-		{% for x in boards-current-nonprofit %}
-			<sl-tag size="small" pill>{{x | truncate: 50}}</sl-tag>
-		{% endfor %}
-	{% endif %}
+		{% if boards-current-nonprofit %}
+			{% for x in boards-current-nonprofit %}
+				<li>{{x}}</li>
+			{% endfor %}
+		{% endif %}
 
-	{% if boards-current-privateequity %}
-		{% for x in boards-current-privateequity %}
-			<sl-tag size="small" pill>{{x | truncate: 50}}</sl-tag>
-		{% endfor %}
-	{% endif %}
+		{% if boards-current-privateequity %}
+			{% for x in boards-current-privateequity %}
+				<li>{{x}}</li>
+			{% endfor %}
+		{% endif %}
 
-	{% if boards-current-spac %}
-		{% for x in boards-current-spac %}
-			<sl-tag size="small" pill>{{x | truncate: 50}}</sl-tag>
-		{% endfor %}
-	{% endif %}
+		{% if boards-current-spac %}
+			{% for x in boards-current-spac %}
+				<li>{{x}}</li>
+			{% endfor %}
+		{% endif %}
 
-	{% if boards-current-vc %}
-		{% for x in boards-current-vc %}
-			<sl-tag size="small" pill>{{x | truncate: 50}}</sl-tag>
-		{% endfor %}
-	{% endif %}
+		{% if boards-current-vc %}
+			{% for x in boards-current-vc %}
+				<li>{{x}}</li>
+			{% endfor %}
+		{% endif %}
+	</ul>
 {% endif %}
 
 {% if boards-past-corporate-private or boards-past-corporate-public or boards-past-nonprofit or boards-past-privateequity or boards-past-spac or boards-past-vc %}
 	<h2>Past Board Service:</h2>
-	{% if boards-past-corporate-private %}
-		{% for x in boards-past-corporate-private %}
-			<sl-tag size="small" pill>{{x | truncate: 50}}</sl-tag>
-		{% endfor %}
-	{% endif %}
+	<ul>
+		{% if boards-past-corporate-private %}
+			{% for x in boards-past-corporate-private %}
+				<li>{{x}}</li>
+			{% endfor %}
+		{% endif %}
 
-	{% if boards-past-corporate-public %}
-		{% for x in boards-past-corporate-public %}
-			<sl-tag size="small" pill>{{x | truncate: 50}}</sl-tag>
-		{% endfor %}
-	{% endif %}
+		{% if boards-past-corporate-public %}
+			{% for x in boards-past-corporate-public %}
+				<li>{{x}}</li>
+			{% endfor %}
+		{% endif %}
 
-	{% if boards-past-nonprofit %}
-		{% for x in boards-past-nonprofit %}
-			<sl-tag size="small" pill>{{x | truncate: 50}}</sl-tag>
-		{% endfor %}
-	{% endif %}
+		{% if boards-past-nonprofit %}
+			{% for x in boards-past-nonprofit %}
+				<li>{{x}}</li>
+			{% endfor %}
+		{% endif %}
 
-	{% if boards-past-privateequity %}
-		{% for x in boards-past-privateequity %}
-			<sl-tag size="small" pill>{{x | truncate: 50}}</sl-tag>
-		{% endfor %}
-	{% endif %}
+		{% if boards-past-privateequity %}
+			{% for x in boards-past-privateequity %}
+				<li>{{x}}</li>
+			{% endfor %}
+		{% endif %}
 
-	{% if boards-past-spac %}
-		{% for x in boards-past-spac %}
-			<sl-tag size="small" pill>{{x | truncate: 50}}</sl-tag>
-		{% endfor %}
-	{% endif %}
+		{% if boards-past-spac %}
+			{% for x in boards-past-spac %}
+				<li>{{x}}</li>
+			{% endfor %}
+		{% endif %}
 
-	{% if boards-past-vc %}
-		{% for x in boards-past-vc %}
-			<sl-tag size="small" pill>{{x | truncate: 50}}</sl-tag>
-		{% endfor %}
-	{% endif %}
+		{% if boards-past-vc %}
+			{% for x in boards-past-vc %}
+				<li>{{x}}</li>
+			{% endfor %}
+		{% endif %}
+	</ul>
 {% endif %}
 
 <h2>Bio:</h2>

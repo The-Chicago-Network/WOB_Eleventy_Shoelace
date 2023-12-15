@@ -94,8 +94,9 @@
     font-family: var(--font-serif);
   }
   h2 {
-    font-weight: var(--font-weight-thin);
-    font-size: var(--sl-font-size-small);
+    font-weight: var(--font-weight-normal);
+    font-size: var(--sl-font-size-large);
+    font-family: var(--font-serif);
   }
   main {
     max-width: 40rem;
