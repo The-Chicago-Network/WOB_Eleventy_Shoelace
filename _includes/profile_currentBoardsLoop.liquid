@@ -1,0 +1,40 @@
+{% if boards-current-corporate-private or boards-current-corporate-public or boards-current-nonprofit or boards-current-privateequity or boards-current-spac or boards-current-vc %}
+	<h2>Current Board Service:</h2>
+		<ul>
+		{% if boards-current-corporate-private %}
+			{% for x in boards-current-corporate-private %}
+				<li>{{x}}</li>
+			{% endfor %}
+		{% endif %}
+
+		{% if boards-current-corporate-public %}
+			{% for x in boards-current-corporate-public %}
+				<li>{{x}}</li>
+			{% endfor %}
+		{% endif %}
+
+		{% if boards-current-nonprofit %}
+			{% for x in boards-current-nonprofit %}
+				<li>{{x}}</li>
+			{% endfor %}
+		{% endif %}
+
+		{% if boards-current-privateequity %}
+			{% for x in boards-current-privateequity %}
+				<li>{{x}}</li>
+			{% endfor %}
+		{% endif %}
+
+		{% if boards-current-spac %}
+			{% for x in boards-current-spac %}
+				<li>{{x}}</li>
+			{% endfor %}
+		{% endif %}
+
+		{% if boards-current-vc %}
+			{% for x in boards-current-vc %}
+				<li>{{x}}</li>
+			{% endfor %}
+		{% endif %}
+	</ul>
+{% endif %}

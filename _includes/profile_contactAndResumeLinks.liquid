@@ -1,0 +1,58 @@
+{% if linkedin or tiktok or twitter or aboutme or insta or orgURL or snapchat or personalURL or resumeFile %}
+<p class="contactLinks">
+{% if linkedin %}
+	<sl-button class="downloadButton" type="button" variant="primary" size="small" href="{{ linkedin }}" pill>
+		<sl-icon slot="prefix" name="linkedin"></sl-icon>
+		LinkedIn
+	</sl-button>
+{% endif %}
+{% if tiktok %}
+	<sl-button class="downloadButton" type="button" variant="primary" size="small" href="{{ tiktok }}" pill>
+		<sl-icon slot="prefix" name="tiktok"></sl-icon>
+		TikTok
+	</sl-button>
+{% endif %}
+{% if twitter %}
+	<sl-button class="downloadButton" type="button" variant="primary" size="small" href="{{ X }}" pill>
+		<sl-icon slot="prefix" name="twitter-x"></sl-icon>
+		X
+	</sl-button>
+{% endif %}
+{% if aboutme %}
+	<sl-button class="downloadButton" type="button" variant="primary" size="small" href="{{ aboutme }}" pill>
+		<sl-icon slot="prefix" name="file-earmark-person"></sl-icon>
+		About.me
+	</sl-button>
+{% endif %}
+{% if insta %}
+	<sl-button class="downloadButton" type="button" variant="primary" size="small" href="{{ insta }}" pill>
+		<sl-icon slot="prefix" name="instagram"></sl-icon>
+		Instagram
+	</sl-button>
+{% endif %}
+{% if orgURL %}
+	<sl-button class="downloadButton" type="button" variant="primary" size="small" href="{{ orgURL }}" pill>
+		<sl-icon slot="prefix" name="link-45deg"></sl-icon>
+		{{ orgURL }}
+	</sl-button>
+{% endif %}
+{% if snapchat %}
+	<sl-button class="downloadButton" type="button" variant="primary" size="small" href="{{ snapchat }}" pill>
+		<sl-icon slot="prefix" name="snapchat"></sl-icon>
+		Snapchat
+	</sl-button>
+{% endif %}
+{% if personalURL %}
+	<sl-button class="downloadButton" type="button" variant="primary" size="small" href="{{ personalURL }}" pill>
+		<sl-icon slot="prefix" name="link-45deg"></sl-icon>
+		{{ personalURL }}
+	</sl-button>
+{% endif %}
+{% if resumeFile %}
+	<sl-button class="resourceButton" type="button" variant="primary" size="small" href="/{{resumeFile}}" pill>
+		<sl-icon slot="prefix" name="paperclip"></sl-icon>
+		Download Resume
+	</sl-button>
+{% endif %}
+</p>
+{% endif %}

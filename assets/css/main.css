@@ -3,8 +3,7 @@
 
 /* Imports */
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,400;0,600;0,900;1,200&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Display:ital,wght@0,600;1,400;1,600&display=swap');
 :root {
   /* Color */
   --sl-color-primary-50: rgb(244 250 255);
@@ -21,7 +20,7 @@
 
   /* Type */
   --sl-font-sans: 'Noto Sans', sans-serif;
-  --font-serif: 'DM Serif Display', serif;
+  --font-serif: 'Noto Serif Display', serif;
 
   --font-weight-thin: 100;
   --sl-font-weight-light: 200;
@@ -90,13 +89,14 @@
   }
   h1 {
     font-size: var(--sl-font-size-2x-large);
-    font-weight: var(--sl-font-weight-normal);
+    font-weight: var(--sl-font-weight-semibold);
     font-family: var(--font-serif);
   }
   h2 {
     font-weight: var(--font-weight-normal);
     font-size: var(--sl-font-size-large);
     font-family: var(--font-serif);
+    font-style: italic;
   }
   main {
     max-width: 40rem;
@@ -119,6 +119,17 @@
     background-color: white;
     border-radius: var(--sl-border-radius-medium);
     box-shadow: var(--shadow-elevation-high);
+  }
+  .bioContainer p:first-of-type:first-letter {
+    float: left;
+    font-size: 4rem;
+    line-height: 60px;
+    padding: .5rem .5rem .5rem .5rem;
+    font-family: var(--font-serif);
+    font-weight: var(--font-weight-semibold);
+    border-radius: .2em;
+    border-top-left-radius: 0;
+    margin-bottom: -.2em;
   }
   .bioContainer sl-tag {
     margin-bottom: .5rem;
@@ -154,8 +165,10 @@
     display: flex;
     flex-flow: column nowrap;
     align-items: flex-start;
-    font-weight: var(--sl-font-weight-light);
+    font-weight: var(--sl-font-weight-semibold);
     font-size: var(--sl-font-size-large);
+    font-family: var(--font-serif);
+    font-style: italic;
   }
 }
 
@@ -176,13 +189,17 @@
   #closeButton {
     width: 100%;
   }
-  .downloadButton {
-    margin-left: -.2rem;
+  .resourceButton {
     margin-top: .5rem;
   }
+  .contactLinks {
+    margin-left: -.2rem;
+  }
   .contactLinks a {
-    margin-left: var(--sl-spacing-x-small);
     color: var(--sl-color-primary-500);
+  }
+  .contactLinks sl-button {
+    margin-top: .5rem;
   }
   .filterButton {
     width: 3.5rem;
@@ -384,7 +401,7 @@
     content: "";
     width: 100vw;
     height: 40vh;
-    background-color: var(--sl-color-primary-500);
+    background-color: white;
     position: absolute;
     top: 0;
     left: 0;
