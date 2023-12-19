@@ -12,15 +12,29 @@
 
 <div class="bioContainer">
 
-<p>{{ bio }}</p>
+	<p>{{ bio }}</p>
 
-{% include 'profile_currentBoardsLoop.liquid' %}
-{% include 'profile_pastBoardsLoop.liquid' %}
+	{% include 'profile_currentBoardsLoop.liquid' %}
+	{% include 'profile_pastBoardsLoop.liquid' %}
 
-<sl-details summary="Details">
-{% include 'profile_printTags.liquid' %}
-</sl-details>
+	<div class="printOnly">
+	{% include 'profile_print_contactAndResumeLinks.liquid' %}
+	{% include 'profile_print_printTags.liquid' %}
+	</div>
+
+	<sl-details summary="Details">
+	{% include 'profile_printTags.liquid' %}
+	</sl-details>
+
+	<div class="printOnly">
+		<p class="noCap" id="credit"><em>Profile hosted on womenlead.io, a directory of diverse talent for board service from The Chicago Network.</em></p>
+	</div>
 
 </div>
+
+<sl-button class="printButton" type="button" variant="default" size="medium" onclick="window.print()">
+	<sl-icon slot="prefix" name="printer"></sl-icon>
+	Print this Profile
+</sl-button>
 
 {% include 'foot.liquid' %}

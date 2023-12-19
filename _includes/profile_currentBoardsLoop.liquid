@@ -1,4 +1,5 @@
 {% if boards-current-corporate-private or boards-current-corporate-public or boards-current-nonprofit or boards-current-privateequity or boards-current-spac or boards-current-vc %}
+<div class="noBreak">
 	<h2>Current Board Service:</h2>
 		<ul>
 		{% if boards-current-corporate-private %}
@@ -37,4 +38,5 @@
 			{% endfor %}
 		{% endif %}
 	</ul>
+</div>
 {% endif %}

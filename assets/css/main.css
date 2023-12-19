@@ -120,7 +120,7 @@
     border-radius: var(--sl-border-radius-medium);
     box-shadow: var(--shadow-elevation-high);
   }
-  .bioContainer p:first-of-type:first-letter {
+  .bioContainer p:not(.noCap):first-of-type:first-letter {
     float: left;
     font-size: 4rem;
     line-height: 60px;
@@ -245,6 +245,10 @@
   nav a:hover {
     color: var(--sl-color-neutral-800);
   }
+  .printButton {
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+  }
   .profileHeader {
     display: flex;
     flex-flow: row nowrap;
@@ -281,10 +285,10 @@
   sl-button {
     margin-left: var(--sl-spacing-2x-small);
   }
-  sl-button::part(base) {
+  sl-button::part(base):not(.printButton) {
     background-color: var(--sl-color-teal-500);
   }
-  sl-button::part(label) {
+  sl-button::part(label):not(.printButton) {
     color: white;
     font-family: var(--sl-font-sans);
   }
@@ -335,6 +339,9 @@
     right: 0;
     margin: auto;
   }
+  .printOnly {
+    display: none;
+  }
 }
 
 @layer overrides {
@@ -377,6 +384,13 @@
     p {
       width: 100%;
 
+    }
+    sl-button.printButton::part(base) {
+      background-color: white;
+    }
+    sl-button.printButton::part(label) {
+      color: black;
+      font-family: var(--sl-font-sans);
     }
     sl-input {
       margin-top: -1.4rem;
@@ -427,9 +441,11 @@
   @media print {
     body, body::before, body::after, html {
       background: white;
+      color: black;
     }
     h2 {
       font-weight: var(--sl-font-weight-normal);
+      page-break-after: avoid;
     }
     .bioContainer {
       max-width: auto;
@@ -438,8 +454,40 @@
       border-radius: 0;
       box-shadow: none;
     }
+    .contactLinks {
+      display: none;
+    }
+    #credit {
+      border-top: 1px solid black;
+      margin-top: 2rem;
+      padding-top: 1rem;
+    }
+    header {
+      border-bottom: 1px solid black;
+      padding-bottom: 1rem;
+    }
+    .headerCopy {
+      margin-left: auto;
+    }
+    .noBreak {
+      page-break-inside: avoid;
+    }
     p {
       width: auto;
+    }
+    .printButton {
+      display: none;
+    }
+    .printOnly {
+      display: block;
+    }
+    sl-avatar {
+      margin-right: 1.5rem;
+      padding-top: 2rem;
+      --size: 7rem;
+    }
+    sl-details {
+      display: none;
     }
   }
 }

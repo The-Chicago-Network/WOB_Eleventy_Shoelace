@@ -1,4 +1,5 @@
 {% if boards-past-corporate-private or boards-past-corporate-public or boards-past-nonprofit or boards-past-privateequity or boards-past-spac or boards-past-vc %}
+<div class="noBreak">
 	<h2>Past Board Service:</h2>
 	<ul>
 		{% if boards-past-corporate-private %}
@@ -37,4 +38,5 @@
 			{% endfor %}
 		{% endif %}
 	</ul>
+</div>
 {% endif %}
