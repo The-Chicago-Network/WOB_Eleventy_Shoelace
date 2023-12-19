@@ -1,0 +1,30 @@
+{% if linkedin or tiktok or twitter or aboutme or insta or orgURL or snapchat or personalURL or resumeFile %}
+<!-- Contact links for print -->
+<h2>Links</h2>
+<ul>
+{% if linkedin %}
+	<li>LinkedIn: {{ linkedin }}</li>
+{% endif %}
+{% if tiktok %}
+	<li>TikTok: {{ tiktok }}</li>
+{% endif %}
+{% if twitter %}
+	<li>X: {{ X }}</li>
+{% endif %}
+{% if aboutme %}
+	<li>About.me: {{ aboutme }}</li>
+{% endif %}
+{% if insta %}
+	<li>Instagram: {{ insta }}</li>
+{% endif %}
+{% if orgURL %}
+	<li>{{ orgURL }}</li>
+{% endif %}
+{% if snapchat %}
+	<li>Snapchat: {{ snapchat }}</li>
+{% endif %}
+{% if personalURL %}
+	<li>{{ personalURL }}</li>
+{% endif %}
+</ul>
+{% endif %}
