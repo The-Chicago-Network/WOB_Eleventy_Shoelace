@@ -1,6 +1,5 @@
 import { buildResultCards } from './buildResultCards.js';
 import { emptyNest } from './emptyNest.js';
-import { runSearch } from './runSearch.js';
 
 // Holds filter states and renders page elements on change.
 export let filterStore = {
@@ -16,7 +15,7 @@ export let filterStore = {
 	tags_past_board_service: [],
 	isEmpty: function() {
 		let empty = true;
-		for ( const key in filterStore ) {
+		for (const key in filterStore) {
 			if (key.match("tags")) {
 				filterStore.key[0] ? null : empty = false;
 			};
@@ -34,6 +33,11 @@ export let filterStore = {
 			return allMatchesSuccessful;
 		})
 	},
+	// Stores current number of filtered results
+	resultCount: 0,
+	getResultCount: function(resultsArr) {
+		this.resultCount = resultsArr.length;
+	},
 	// Pass the contents of a watched input element to this[key]
 	update: function(key, watchedElementIndex) {
 		this[key] = this.watchedElements[watchedElementIndex].value.flat(Infinity);
@@ -47,12 +51,24 @@ export let filterStore = {
 				filteredResults = this.filterResultsByTag(filteredResults, filterStore[key], key);
 			}
 		}
+
+		// Get elements to update with result count in filter dialog
+		let resultCount = document.getElementById('resultCount');
+		let resultWord = document.getElementById('resultWord');
+
+		// Update this.resultCount
+		this.getResultCount(filteredResults);
+
+		// Update element text in filter dialog with result count
+		resultCount.textContent = this.resultCount;
+		this.resultCount != 1 ? null : resultWord.textContent = 'result found.';
+
 		buildResultCards(filteredResults, outputContainer);
 	},
 	// Add event listeners to each input element to be watched for changes
 	watch: function(outputContainer) {
 		// Add event listener to each watched element
-		for (let i=0; i< this.watchedElements.length; i++) {
+		for (let i = 0; i < this.watchedElements.length; i++) {
 			this.watchedElements[i].addEventListener('sl-change', event => {
 				//let filteredResults = this.searchResults.hits;
 				let key = this.watchedElements[i].id;

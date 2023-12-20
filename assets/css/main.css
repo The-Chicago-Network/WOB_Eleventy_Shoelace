@@ -285,15 +285,18 @@
   sl-button {
     margin-left: var(--sl-spacing-2x-small);
   }
-  sl-button::part(base):not(.printButton) {
+  sl-button:not(.printButton, .filterButton)::part(base) {
     background-color: var(--sl-color-teal-500);
   }
-  sl-button::part(label):not(.printButton) {
+  sl-button:not(.printButton)::part(label) {
     color: white;
     font-family: var(--sl-font-sans);
   }
   sl-card::part(body) {
     font-weight: var(--sl-font-weight-light);
+  }
+  sl-details {
+    margin-top: 2rem;
   }
   sl-dialog::part(body) {
     margin-top: -1rem;
