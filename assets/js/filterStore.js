@@ -1,5 +1,7 @@
 import { buildResultCards } from './buildResultCards.js';
 import { emptyNest } from './emptyNest.js';
+import { spacesOrUnderscores } from './spacesOrUnderscores.js'
+
 
 // Holds filter states and renders page elements on change.
 export let filterStore = {
@@ -7,8 +9,6 @@ export let filterStore = {
 	tags_past_positions: [],
 	tags_experience: [],
 	tags_general: [],
-	tags_current_sector: [],
-	tags_past_sectors: [],
 	tags_current_industries: [],
 	tags_past_industries: [],
 	tags_current_board_service: [],
@@ -40,7 +40,7 @@ export let filterStore = {
 	},
 	// Pass the contents of a watched input element to this[key]
 	update: function(key, watchedElementIndex) {
-		this[key] = this.watchedElements[watchedElementIndex].value.flat(Infinity);
+		this[key] = this.watchedElements[watchedElementIndex].value.flat(Infinity).map(x => spacesOrUnderscores(x));
 	},
 	render: function(searchResults, outputContainer) {
 		// Clear unfiltered search result from DOM
@@ -60,8 +60,7 @@ export let filterStore = {
 		this.getResultCount(filteredResults);
 
 		// Update element text in filter dialog with result count
-		resultCount.textContent = this.resultCount;
-		this.resultCount != 1 ? null : resultWord.textContent = 'result found.';
+		resultCount.textContent = this.resultCount + `${this.resultCount != 1 ? ' results found.' : ' result found.'}`;
 
 		buildResultCards(filteredResults, outputContainer);
 	},

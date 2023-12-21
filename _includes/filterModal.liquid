@@ -1,10 +1,15 @@
 <!-- Filter Selection Modal -->
 <sl-dialog class="dialog-overview">
 <label slot="label"><sl-visually-hidden>Select some filters to narrow your results:</sl-visually-hidden></label>
-<p><span id="resultCount"></span><span id="resultWord"> results found.</span></p>
+
+<sl-alert id="resultCount" variant="primary" open>
+  <sl-icon slot="icon" name="info-circle"></sl-icon>
+</sl-alert>
+
+
   <sl-tab-group>
     <sl-tab slot="nav" panel="Role & Experience">Role & Experience</sl-tab>
-    <sl-tab slot="nav" panel="Sector & Industry" >Sector & Industry</sl-tab>
+    <sl-tab slot="nav" panel="Industries" >Industries</sl-tab>
     <sl-tab slot="nav" panel="Board Service" >Board Service</sl-tab>
 
     <sl-tab-panel name="Role & Experience">
@@ -20,16 +25,10 @@
 
     </sl-tab-panel>
 
-    <sl-tab-panel name="Sector & Industry">
-
-      Current Sectors:
-      <sl-select placeholder="Select one or more tags" multiple clearable id="tags_current_sector"></sl-select>
-
-      Past Sectors:
-      <sl-select placeholder="Select one or more tags" multiple clearable id="tags_past_sectors"></sl-select>
+    <sl-tab-panel name="Industries">
 
       Current Industry:
-      <sl-select placeholder="Select one or more tags" multiple clearable id="tags_current_industry"></sl-select>
+      <sl-select placeholder="Select one or more tags" multiple clearable id="tags_current_industries"></sl-select>
 
       Past Industries:
       <sl-select placeholder="Select one or more tags" multiple clearable id="tags_past_industries"></sl-select>

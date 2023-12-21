@@ -324,6 +324,10 @@
   sl-tab-panel sl-select {
     margin-bottom: var(--sl-spacing-large);
   }
+  sl-select {
+    margin-left: .25rem;
+    margin-right: .25rem;
+  }
   .subhead {
     font-size: var(--sl-font-size-medium);
     font-style: italic;
