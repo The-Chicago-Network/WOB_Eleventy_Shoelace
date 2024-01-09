@@ -1,64 +1,36 @@
 ---
 layout: layouts/profile.liquid
-title: Esther *ET* Rebecca Franklin
+title: Esther *E.T.* Rebecca Franklin
 id: esther_et_rebecca_franklin
 prefix: ""
-first: Esther *ET*
+first: Esther *E.T.*
 middle: Rebecca
 last: Franklin
 suffix: null
 currentOrg: Spark Foundry
-bio: Esther *ET* Franklin is a Cultural Change Agent. An innovative strategist
-  within the advertising/media sector, she’s guided strategic direction/vision,
-  impactful performance &amp; growth at Spark Foundry (media agency of the year
-  AdAge &amp; AdWeek 2022) and across its global client roster. An experienced
-  Capability Builder &amp; Integrator, Esther brings a Whole-View-Perspective to
-  corporations and boards. Additionally, her work is evidence of gains she has
-  driven against Environmental, Social &amp; Governance concerns &amp; building
-  organizational culture. As a Capability Builder her 20+ years of leadership
-  &amp; experience has driven significant impact in a variety of ways; <br
-  />Constructed a new way of working&#58; yielding +63% revenue &amp; 90% growth
-  conversion outpacing industry — Architected a comprehensive, equity
-  structure&#58; driving measured impact across all baseline efforts including
-  employee diversity and more — Innovated &amp; produced a new function filling
-  a capability gap (Consumer Context Planning)&#58; redefining the
-  organization’s role with partners/clients — Engineered the Cultural Identity
-  Center of Excellence&#58; driving new &amp; organic growth — Initiated a
-  cross-sector, corporate/public university partnership in the local
-  community&#58; generating incremental internships and family-sustaining-wage
-  employment opportunities. <br />In 2022 Esther was elevated to Global Chief
-  Strategy | Cultural Fluency Officer at Spark Foundry; the largest Publicis
-  Media brand; a division of Publicis Groupe. In this role *ET* is an Integrator
-  holding accountability &amp; responsibility for the organization’s strategic
-  vision, way of working and overseeing the largest practice within the
-  organization; 400+ Media &amp; Communications Strategists across 80+ client
-  teams. Her ability to thoughtfully listen, drive respectful, fact-based
-  dialogue inside complex situations &amp; facilitate difficult
-  opinions/personalities leading to successful outcomes has not only driven
-  growth…importantly, it has repositioned the organization from media company to
-  marketing partner whose concerns extend into areas critical to humanity such
-  as resource depletion, waste, etc. <br />Ms. Franklin, an industry icon, has
-  held numerous leadership positions inside Advertising &amp; Media agencies.
-  Experience amassed yields a Whole-View-Perspective; Global Strategy &amp;
-  Cultural Fluency, US Multicultural &amp; Latin America, Advertising &amp;
-  Media agencies, Product Excellence - Cannes Festival of Creativity &amp;
-  Global Festival of Media Juries, Jay Chiat Strategy Awards Jury Chair. The
-  result… an elevated &amp; genuine appreciation of cultural differences -
-  critical to assessing, solving &amp; affecting the disruptions &amp;
-  challenges modern organizations confront today. <br />Recognization of
-  Esther’s leadership has surfaced in many ways; Advertising Woman of the Year
-  Chicago &amp; Advertising Legend - AdColor. Her current board service
-  includes; The Chicago Urban League (Secretary), The Family Institute @
-  Northwestern University (Vice Chair) &amp; WTTW. She also serves on the
-  Multicultural Advisory Committee for Lurie’s Children’s Hospital. Esther’s
-  advisory roles are shaped &amp; informed by her desire to stay ahead of board
-  considerations, via participation in Kellogg’s Corporate Governance
-  Conference; Northwestern University, over numerous years and the Deloitte
-  Board Readiness Program, garnering knowledge around evolving board protocols;
-  composition, diversity, structure, executive pay+. <br />Ms. Franklin is a
-  graduate of Northwestern University, Kellogg Executive Management Program. She
-  received her BS in Business Administration, Marketing Concentration, from the
-  University of Illinois - Urbana/Champaign.
+bio: >-
+  EXPERTISE: Business Development/Growth, Consumer Marketing/Audience Insights,
+  Digital Media/Technology/Innovation, DE&I, Executive Management,
+  Marketing/Brand Management, Mergers/Acquisitions, Senior Leadership, Strategy
+  Development/Transformation.
+
+
+  Esther helped lead Spark Foundry through 2 mergers, after joining in 2016, strategically transforming the organization, and leading its repositioning…from a media entity to a marketing partner.  During her tenure, she guided Spark’s growth to a large cap organization with an exploding employee base; from 160 to 3,000+, across 50 countries. Esther sits on the Operating Committee & leads the largest practice within Spark, guiding a team of 450+, Media Planners/Strategists, including Senior Leaders & Executive Management.
+
+
+  Esther’s competency lives at the intersection of digital media + technology + innovation.  Her decades-long expertise in global media strategy & planning roots her sensibilities in digital/media landscapes. Esther’s strength resides in overseeing tech & digital enablement; helping marketers get comfortable understanding the evolving, digital eco-scape in ways that can be strategically leveraged to drive growth. From the pervasive halo of digital media, modern marketing can’t do without, to the explosion of social platforms, eCommerce and the new AI-driven frontier (Web 3.0, Metaverse, GPT-4, etc.), Esther’s continuously, up-leveled expertise grounds her leadership perspective & voice.
+
+
+  Esther’s strategic acumen in gleaming consumer/audience insights from 0/1st/ 2nd/3rd party & other data sources enables her to successfully guide Fortune 100/500 companies through category disruptions. She is skilled in leveraging data and inclusive audience insights to help companies pivot & unlock growth. Over her vast career, she’s  guided business & strategic development, driving impact against brands & sectors including; Disney Parks (global consolidation), Macy’s (digital retail), Meta (always-on evolution), Kimberly Clark (diverse audience prioritization), Starbucks (after COVID transformation), Lowe’s (Experience Design) - automotive, beauty, health care sectors and more. 
+
+
+  Under Esther’s stewardship & guidance, measurable impact against Environmental, Societal, Governance/DEI concerns has bolstered Spark Foundry’s culture. 
+
+
+  Esther currently holds board seats at The Chicago Urban League (Secretary), The Family Institute at Northwestern University (Chair), WTTW (Strategic Planning Committee) and, serves on the Advisory Boards of Lurie Children’s Hospital (Multicultural) & WARC (Rankings). She earned the Advertising Woman of the Year award by the Chicago Advertising Federation and the Advertising Legend award from ADCOLOR.  She stays ahead of board considerations by participating in a variety of board conferences & readiness programs.
+
+
+  Esther received her M.M. from Northwestern University – Kellogg School of Management. And her B.S. in Business Administration from the University of Illinois – Urbana/Champaign.
 tiktok: null
 twitter: https://twitter.com/etwise
 aboutme: null
@@ -66,8 +38,8 @@ insta: null
 orgURL: null
 snapchat: null
 personalURL: null
-smallHeadshotURL: assets/images/headshots/ET%20Headshot%20Nov%2021%5B86%5D_converted_scaled.avif
-originalHeadshotURL: assets/images/headshots/ET%20Headshot%20Nov%2021%5B86%5D_converted_scaled.avif
+smallHeadshotURL: /assets/images/headshots/franklin_e.t._square.jpg
+originalHeadshotURL: /assets/images/headshots/franklin_e.t._square.jpg
 tags-current-industries:
   - Advertising
   - Amusement, Gambling, and Recreation Industries
