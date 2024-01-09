@@ -79,9 +79,10 @@ boards-current-corporate-public:
   - Norfolk Southern Corporation | Member | Audit and Governance and Nominating
     Committees
 boards-current-nonprofit:
-  - The Chicago Network, Board Member
-  - The Chicago Council on Global Affairs, Board Member, Audit Committee Member
-  - AWESOME, Board Member
+  - The Chicago Network
+  - Board Member
+  - AWESOME
+  - Board Member
 boards-current-privateequity: null
 boards-current-spac: null
 boards-current-vc: null
