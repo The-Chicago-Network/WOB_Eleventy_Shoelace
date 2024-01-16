@@ -10,3 +10,24 @@ subhead:
     <sl-textarea name="Message" label="Message"></sl-textarea>
 	<sl-button type="submit" variant="primary" class="submitButton">Send</sl-button>
 </form>
+
+<script>
+	const handleSubmit = (event) => {
+	event.preventDefault();
+
+	const myForm = event.target;
+	const formData = new FormData(myForm);
+
+	fetch("/", {
+		method: "POST",
+		headers: { "Content-Type": "application/x-www-form-urlencoded" },
+		body: new URLSearchParams(formData).toString(),
+	})
+		.then(() => console.log("Form successfully submitted"))
+		.catch((error) => alert(error));
+	};
+
+	document
+	.querySelector(".contactForm")
+	.addEventListener("submit", handleSubmit);
+</script>
