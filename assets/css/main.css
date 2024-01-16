@@ -446,7 +446,7 @@
   header:not(#indexHeader):before {
     content: "";
     width: 100vw;
-    height: 20rem;
+    height: 30rem;
     background-color: white;
     position: absolute;
     top: 0;
@@ -490,15 +490,9 @@
       display: none;
     }
     #credit {
-<<<<<<< HEAD
     border-top: 1px solid black;
     margin-top: 2rem;
     padding-top: 1rem;
-=======
-      border-top: 1px solid black;
-      margin-top: 2rem;
-      padding-top: 1rem;
->>>>>>> ab621fbb028b781f2f2cebc9572c68bd9e57f918
     }
     header {
       border-bottom: 1px solid black;
