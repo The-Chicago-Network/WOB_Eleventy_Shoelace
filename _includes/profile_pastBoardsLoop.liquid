@@ -1,0 +1,42 @@
+{% if boards-past-corporate-private or boards-past-corporate-public or boards-past-nonprofit or boards-past-privateequity or boards-past-spac or boards-past-vc %}
+<div class="noBreak">
+	<h2>Past Board Service:</h2>
+	<ul>
+		{% if boards-past-corporate-private %}
+			{% for x in boards-past-corporate-private %}
+				<li>{{x}}</li>
+			{% endfor %}
+		{% endif %}
+
+		{% if boards-past-corporate-public %}
+			{% for x in boards-past-corporate-public %}
+				<li>{{x}}</li>
+			{% endfor %}
+		{% endif %}
+
+		{% if boards-past-nonprofit %}
+			{% for x in boards-past-nonprofit %}
+				<li>{{x}}</li>
+			{% endfor %}
+		{% endif %}
+
+		{% if boards-past-privateequity %}
+			{% for x in boards-past-privateequity %}
+				<li>{{x}}</li>
+			{% endfor %}
+		{% endif %}
+
+		{% if boards-past-spac %}
+			{% for x in boards-past-spac %}
+				<li>{{x}}</li>
+			{% endfor %}
+		{% endif %}
+
+		{% if boards-past-vc %}
+			{% for x in boards-past-vc %}
+				<li>{{x}}</li>
+			{% endfor %}
+		{% endif %}
+	</ul>
+</div>
+{% endif %}

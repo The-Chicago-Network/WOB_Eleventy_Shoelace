@@ -1,6 +1,7 @@
 import { buildResultCards } from './buildResultCards.js';
 import { emptyNest } from './emptyNest.js';
-import { runSearch } from './runSearch.js';
+import { spacesOrUnderscores } from './spacesOrUnderscores.js'
+
 
 // Holds filter states and renders page elements on change.
 export let filterStore = {
@@ -8,15 +9,13 @@ export let filterStore = {
 	tags_past_positions: [],
 	tags_experience: [],
 	tags_general: [],
-	tags_current_sector: [],
-	tags_past_sectors: [],
 	tags_current_industries: [],
 	tags_past_industries: [],
 	tags_current_board_service: [],
 	tags_past_board_service: [],
 	isEmpty: function() {
 		let empty = true;
-		for ( const key in filterStore ) {
+		for (const key in filterStore) {
 			if (key.match("tags")) {
 				filterStore.key[0] ? null : empty = false;
 			};
@@ -34,9 +33,14 @@ export let filterStore = {
 			return allMatchesSuccessful;
 		})
 	},
-	// Pass the contents of a watched input element to this[key]
+	// Stores current number of filtered results
+	resultCount: 0,
+	getResultCount: function(resultsArr) {
+		this.resultCount = resultsArr.length;
+	},
+	// Pass the contents (selected filters) of a watched input element (sl-select) to this[key]
 	update: function(key, watchedElementIndex) {
-		this[key] = this.watchedElements[watchedElementIndex].value.flat(Infinity);
+		this[key] = this.watchedElements[watchedElementIndex].value.flat(Infinity).map(x => spacesOrUnderscores(x)); // sl-option values cannot contain spaces, so spacesOrUnderscores() will swap them to underscores
 	},
 	render: function(searchResults, outputContainer) {
 		// Clear unfiltered search result from DOM
@@ -47,16 +51,26 @@ export let filterStore = {
 				filteredResults = this.filterResultsByTag(filteredResults, filterStore[key], key);
 			}
 		}
+
+		// Get elements to update with result count in filter dialog
+		let resultCount = document.getElementById('resultCount');
+		let resultWord = document.getElementById('resultWord');
+
+		// Update this.resultCount
+		this.getResultCount(filteredResults);
+
+		// Update element text in filter dialog with result count
+		resultCount.textContent = this.resultCount + `${this.resultCount != 1 ? ' results found.' : ' result found.'}`;
+
 		buildResultCards(filteredResults, outputContainer);
 	},
-	// Add event listeners to each input element to be watched for changes
+	// Add event listeners to each <sl-select> in the filter modal / dialog
 	watch: function(outputContainer) {
-		// Add event listener to each watched element
-		for (let i=0; i< this.watchedElements.length; i++) {
+		for (let i = 0; i < this.watchedElements.length; i++) {
 			this.watchedElements[i].addEventListener('sl-change', event => {
-				//let filteredResults = this.searchResults.hits;
+				// Update this.key with the contents (selected filters) of a watched element (sl-select) with matching ID
+				// For example, an array of selected filters from sl-select#tags_general would be passed to this.tags_general
 				let key = this.watchedElements[i].id;
-				// Update this.key with value of watched element with matching ID
 				this.update(key, i);
 				this.isEmpty && !this.searchResults ? null : this.render(this.searchResults, outputContainer);
 			})

@@ -1,15 +1,21 @@
 <form class="WOB-Search">
-  <sl-input
-    type="search"
-    class="searchInput label-on-left"
-    clearable
-  >
-  <label slot="label"><sl-visually-hidden>Search</sl-visually-hidden></label>
-    <sl-icon name="search" slot="prefix"></sl-icon>
-  </sl-input>
+  <sl-tooltip content="Try typing in a name, company, or industry.">
+    <sl-input
+      type="search"
+      class="searchInput label-on-left"
+      clearable
+    >
+    <label slot="label"><sl-visually-hidden>Search</sl-visually-hidden></label>
+      <sl-icon name="search" slot="prefix"></sl-icon>
+    </sl-input>
+  </sl-tooltip>
   <div class="buttonContainer">
-    <sl-button type="submit" variant="primary" class="submitButton">Search</sl-button>
-    <sl-button type="button" variant="secondary" class="dialogToggle filterButton">Filter</sl-button>
+    <sl-tooltip content="Run your search.">
+      <sl-button type="submit" variant="primary" class="submitButton">Search</sl-button>
+    </sl-tooltip>
+    <sl-tooltip content="Apply filters to fine-tune search results.">
+      <sl-button type="button" variant="secondary" class="dialogToggle filterButton">Filter</sl-button>
+    </sl-tooltip>
   </div>
 </form>
 

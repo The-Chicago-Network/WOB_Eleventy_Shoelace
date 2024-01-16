@@ -199,6 +199,12 @@
   .contactLinks {
     margin-left: -.2rem;
   }
+  .resourceButton {
+    margin-top: .5rem;
+  }
+  .contactLinks {
+    margin-left: -.2rem;
+  }
   .contactLinks a {
     color: var(--sl-color-primary-500);
   }
@@ -484,9 +490,15 @@
       display: none;
     }
     #credit {
+<<<<<<< HEAD
     border-top: 1px solid black;
     margin-top: 2rem;
     padding-top: 1rem;
+=======
+      border-top: 1px solid black;
+      margin-top: 2rem;
+      padding-top: 1rem;
+>>>>>>> ab621fbb028b781f2f2cebc9572c68bd9e57f918
     }
     header {
       border-bottom: 1px solid black;
