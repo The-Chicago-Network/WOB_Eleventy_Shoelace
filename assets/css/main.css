@@ -51,11 +51,15 @@
 }
 
 @layer defaults {
+  a {
+    color: var(--sl-color-teal-700);
+  }
   body {
     font-family: 'Noto Sans', sans-serif;
     font-weight: var(--sl-font-weight-normal);
     font-size: var(--sl-font-size-small);
     overflow-x: hidden;
+    margin: 0;
 
   }
   body::before {
@@ -207,7 +211,7 @@
   .filterButton::part(base) {
     background-color: var(--sl-color-neutral-400);
   }
-  form {
+  form:not(.contactForm) {
     background-color: white;
     padding: 1rem 1rem 1rem 1rem;
     align-items: center;
@@ -224,14 +228,12 @@
   nav {
     background-color: white;
     width: 100vw;
+    height: 3rem;
     padding: var(--sl-spacing-x-small);
     padding-top: var(--sl-spacing-small);
-    padding-left: var(--sl-spacing-2x-large);
     margin-top: -.5rem;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 100;
+    display: flex;
+    justify-content: space-between;
   }
   nav a {
     color: var(--sl-color-neutral-500);
@@ -239,11 +241,22 @@
     text-decoration: none;
     text-transform: uppercase;
     letter-spacing: var(--sl-letter-spacing-looser);
-    font-size: var(--sl-font-size-2x-small);
+    font-size: var(--sl-font-size-x-small);
     transition: all .5s;
   }
   nav a:hover {
     color: var(--sl-color-neutral-800);
+  }
+  nav a img {
+    width: 15rem;
+  }
+  nav ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin-right: var(--sl-spacing-large);
+  }
+  nav ul li {
+    display: inline;
   }
   .printButton {
     margin-top: 1.5rem;
@@ -311,10 +324,13 @@
   sl-dialog::part(panel) {
     box-shadow: var(--shadow-elevation-high);
   }
-  sl-input::part(base) {
+  sl-input.contactForm, sl-textarea {
+    margin-bottom: 1rem;
+  }
+  sl-input:not(.contactForm)::part(base) {
     background-color: var(--sl-color-primary-200);
   }
-  sl-input::part(input) {
+  sl-input:not(.contactForm)::part(input) {
     background-color: var(--sl-color-primary-200);
     font-family: var(--sl-font-sans);
   }
@@ -421,7 +437,7 @@
   header:not(#indexHeader):before {
     content: "";
     width: 100vw;
-    height: 40vh;
+    height: 20rem;
     background-color: white;
     position: absolute;
     top: 0;
@@ -475,6 +491,9 @@
     }
     .headerCopy {
       margin-left: auto;
+    }
+    nav {
+      display: none;
     }
     .noBreak {
       page-break-inside: avoid;
