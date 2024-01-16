@@ -3,7 +3,7 @@
 
 /* Imports */
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,400;0,600;0,900;1,200&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Display:ital,wght@0,600;1,400;1,600&display=swap');
 :root {
   /* Color */
   --sl-color-primary-50: rgb(244 250 255);
@@ -20,6 +20,7 @@
 
   /* Type */
   --sl-font-sans: 'Noto Sans', sans-serif;
+  --font-serif: 'Noto Serif Display', serif;
 
   --font-weight-thin: 100;
   --sl-font-weight-light: 200;
@@ -50,11 +51,15 @@
 }
 
 @layer defaults {
+  a {
+    color: var(--sl-color-teal-700);
+  }
   body {
     font-family: 'Noto Sans', sans-serif;
     font-weight: var(--sl-font-weight-normal);
     font-size: var(--sl-font-size-small);
     overflow-x: hidden;
+    margin: 0;
 
   }
   body::before {
@@ -88,11 +93,14 @@
   }
   h1 {
     font-size: var(--sl-font-size-2x-large);
-    font-weight: var(--sl-font-weight-normal);
+    font-weight: var(--sl-font-weight-semibold);
+    font-family: var(--font-serif);
   }
   h2 {
-    font-weight: var(--font-weight-thin);
-    font-size: var(--sl-font-size-small);
+    font-weight: var(--font-weight-normal);
+    font-size: var(--sl-font-size-large);
+    font-family: var(--font-serif);
+    font-style: italic;
   }
   main {
     max-width: 40rem;
@@ -115,6 +123,17 @@
     background-color: white;
     border-radius: var(--sl-border-radius-medium);
     box-shadow: var(--shadow-elevation-high);
+  }
+  .bioContainer p:not(.noCap):first-of-type:first-letter {
+    float: left;
+    font-size: 4rem;
+    line-height: 60px;
+    padding: .5rem .5rem .5rem .5rem;
+    font-family: var(--font-serif);
+    font-weight: var(--font-weight-semibold);
+    border-radius: .2em;
+    border-top-left-radius: 0;
+    margin-bottom: -.2em;
   }
   .bioContainer sl-tag {
     margin-bottom: .5rem;
@@ -150,8 +169,10 @@
     display: flex;
     flex-flow: column nowrap;
     align-items: flex-start;
-    font-weight: var(--sl-font-weight-light);
+    font-weight: var(--sl-font-weight-semibold);
     font-size: var(--sl-font-size-large);
+    font-family: var(--font-serif);
+    font-style: italic;
   }
 }
 
@@ -172,9 +193,17 @@
   #closeButton {
     width: 100%;
   }
+  .resourceButton {
+    margin-top: .5rem;
+  }
+  .contactLinks {
+    margin-left: -.2rem;
+  }
   .contactLinks a {
-    margin-left: var(--sl-spacing-x-small);
     color: var(--sl-color-primary-500);
+  }
+  .contactLinks sl-button {
+    margin-top: .5rem;
   }
   .filterButton {
     width: 3.5rem;
@@ -182,7 +211,7 @@
   .filterButton::part(base) {
     background-color: var(--sl-color-neutral-400);
   }
-  form {
+  form:not(.contactForm) {
     background-color: white;
     padding: 1rem 1rem 1rem 1rem;
     align-items: center;
@@ -199,14 +228,12 @@
   nav {
     background-color: white;
     width: 100vw;
+    height: 3rem;
     padding: var(--sl-spacing-x-small);
     padding-top: var(--sl-spacing-small);
-    padding-left: var(--sl-spacing-2x-large);
     margin-top: -.5rem;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 100;
+    display: flex;
+    justify-content: space-between;
   }
   nav a {
     color: var(--sl-color-neutral-500);
@@ -214,11 +241,26 @@
     text-decoration: none;
     text-transform: uppercase;
     letter-spacing: var(--sl-letter-spacing-looser);
-    font-size: var(--sl-font-size-2x-small);
+    font-size: var(--sl-font-size-x-small);
     transition: all .5s;
   }
   nav a:hover {
     color: var(--sl-color-neutral-800);
+  }
+  nav a img {
+    width: 15rem;
+  }
+  nav ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin-right: var(--sl-spacing-large);
+  }
+  nav ul li {
+    display: inline;
+  }
+  .printButton {
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
   }
   .profileHeader {
     display: flex;
@@ -256,15 +298,18 @@
   sl-button {
     margin-left: var(--sl-spacing-2x-small);
   }
-  sl-button::part(base) {
+  sl-button:not(.printButton, .filterButton)::part(base) {
     background-color: var(--sl-color-teal-500);
   }
-  sl-button::part(label) {
+  sl-button:not(.printButton)::part(label) {
     color: white;
     font-family: var(--sl-font-sans);
   }
   sl-card::part(body) {
     font-weight: var(--sl-font-weight-light);
+  }
+  sl-details {
+    margin-top: 2rem;
   }
   sl-dialog::part(body) {
     margin-top: -1rem;
@@ -279,10 +324,13 @@
   sl-dialog::part(panel) {
     box-shadow: var(--shadow-elevation-high);
   }
-  sl-input::part(base) {
+  sl-input.contactForm, sl-textarea {
+    margin-bottom: 1rem;
+  }
+  sl-input:not(.contactForm)::part(base) {
     background-color: var(--sl-color-primary-200);
   }
-  sl-input::part(input) {
+  sl-input:not(.contactForm)::part(input) {
     background-color: var(--sl-color-primary-200);
     font-family: var(--sl-font-sans);
   }
@@ -291,6 +339,10 @@
   }
   sl-tab-panel sl-select {
     margin-bottom: var(--sl-spacing-large);
+  }
+  sl-select {
+    margin-left: .25rem;
+    margin-right: .25rem;
   }
   .subhead {
     font-size: var(--sl-font-size-medium);
@@ -309,6 +361,9 @@
     left: 0;
     right: 0;
     margin: auto;
+  }
+  .printOnly {
+    display: none;
   }
 }
 
@@ -353,6 +408,13 @@
       width: 100%;
 
     }
+    sl-button.printButton::part(base) {
+      background-color: white;
+    }
+    sl-button.printButton::part(label) {
+      color: black;
+      font-family: var(--sl-font-sans);
+    }
     sl-input {
       margin-top: -1.4rem;
       width: 100%;
@@ -375,8 +437,8 @@
   header:not(#indexHeader):before {
     content: "";
     width: 100vw;
-    height: 40vh;
-    background-color: var(--sl-color-primary-500);
+    height: 20rem;
+    background-color: white;
     position: absolute;
     top: 0;
     left: 0;
@@ -397,6 +459,61 @@
   @keyframes spin {
     100% {
       transform: rotate(360deg);
+    }
+  }
+  @media print {
+    body, body::before, body::after, html {
+      background: white;
+      color: black;
+    }
+    h2 {
+      font-weight: var(--sl-font-weight-normal);
+      page-break-after: avoid;
+    }
+    .bioContainer {
+      max-width: auto;
+      padding: 0;
+      background-color: white;
+      border-radius: 0;
+      box-shadow: none;
+    }
+    .contactLinks {
+      display: none;
+    }
+    #credit {
+      border-top: 1px solid black;
+      margin-top: 2rem;
+      padding-top: 1rem;
+    }
+    header {
+      border-bottom: 1px solid black;
+      padding-bottom: 1rem;
+    }
+    .headerCopy {
+      margin-left: auto;
+    }
+    nav {
+      display: none;
+    }
+    .noBreak {
+      page-break-inside: avoid;
+    }
+    p {
+      width: auto;
+    }
+    .printButton {
+      display: none;
+    }
+    .printOnly {
+      display: block;
+    }
+    sl-avatar {
+      margin-right: 1.5rem;
+      padding-top: 2rem;
+      --size: 7rem;
+    }
+    sl-details {
+      display: none;
     }
   }
 }

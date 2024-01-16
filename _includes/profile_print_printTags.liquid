@@ -1,0 +1,76 @@
+{% if tags-current-position %}
+<div class="noBreak">
+	<h2>Current Position</h2>
+	<ul>
+	{% for x in tags-current-position %}
+		<li>{{x}}</li>
+	{% endfor %}
+	</ul>
+</div>
+{% endif %}
+
+{% if tags-past-position %}
+<div class="noBreak">
+	<h2>Positions Held</h2>
+	<ul>
+	{% for x in tags-past-position %}
+		<li>{{x}}</li>
+	{% endfor %}
+	</ul>
+</div>
+{% endif %}
+
+{% if tags-experience %}
+<div class="noBreak">
+	<h2>Experience</h2>
+	<ul>
+	{% for x in tags-experience %}
+		<li>{{x}}</li>
+	{% endfor %}
+	</ul>
+</div>
+{% endif %}
+
+{% if tags-current-industries %}
+<div class="noBreak">
+	<h2>Current Industries</h2>
+	<ul>
+	{% for x in tags-current-industries %}
+		<li>{{x}}</li>
+	{% endfor %}
+	</ul>
+</div>
+{% endif %}
+
+{% if tags-past-industries %}
+<div class="noBreak">
+	<h2>Past Industries</h2>
+	<ul>
+	{% for x in tags-past-industries %}
+		<li>{{x}}</li>
+	{% endfor %}
+	</ul>
+</div>
+{% endif %}
+
+{% if tags-current-board-service %}
+<div class="noBreak">
+	<h2>Current Board Service Categories</h2>
+	<ul>
+	{% for x in tags-current-board-service %}
+		<li>{{x}}</li>
+	{% endfor %}
+	</ul>
+</div>
+{% endif %}
+
+{% if tags-past-board-service %}
+<div class="noBreak">
+	<h2>Past Board Service Categories</h2>
+	<ul>
+	{% for x in tags-past-board-service %}
+		<li>{{x}}</li>
+	{% endfor %}
+	</ul>
+</div>
+{% endif %}

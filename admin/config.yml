@@ -72,6 +72,12 @@ collections:
           required: false,
         }
       - {
+          label: "Resume PDF",
+          name: "resumepdf",
+          widget: "file",
+          required: false,
+        }
+      - {
           label: "Tags: Experience",
           name: "tags-experience",
           widget: "select",
