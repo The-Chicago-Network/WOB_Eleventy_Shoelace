@@ -8,7 +8,7 @@ middle: Ann
 last: Cruzan
 suffix: null
 currentOrg: U.S. Bank
-bio: Marsha Cruzan is a strategic President and a great connector who is highly
+bio: "Marsha Cruzan is a strategic President and a great connector who is highly
   experienced with Board succession and compensation topics, adept at
   identifying attainable summits, managing risk, leading/assessing/motivating
   talent and necessary components—in other words, a true mountain climber in
@@ -27,60 +27,59 @@ bio: Marsha Cruzan is a strategic President and a great connector who is highly
   with method, priorities, competing needs analysis that identified and is
   allocating best efforts for top mission results delivery.<br /><br />Marsha
   has been a long-time nonprofit board director for major civic institutions, a
-  few of which will be terming out in the near future.<br /><br />Ø Currently,
+  few of which will be terming out in the near future.<br /><br />· Currently,
   she is on the Board of Trustees and is Co-Chair of the Nominating Committee
   and a Member of the Executive Committee for the GOODMAN THEATRE, Chicago’s
   oldest currently active nonprofit theater organization, where she has advised
   the CFO and CEO on capital structure optimal communication techniques to gain
-  best outcomes.<br /><br />Ø LINCOLN PARK ZOO, the4th oldest zoo in NA &amp;
-  one of the few free admission zoos in the U.S., where she is on the Board of
-  Trustees and is Chair of the Nominating Committee and a Member of the
-  Executive Committee and Diversity Committee. Of note, she led the strategy and
+  best outcomes.<br /><br />· LINCOLN PARK ZOO, the4th oldest zoo in NA & one of
+  the few free admission zoos in the U.S., where she is on the Board of Trustees
+  and is Chair of the Nominating Committee and a Member of the Executive
+  Committee and Diversity Committee. Of note, she led the strategy and
   recruitment efforts that successfully diversified the board with outstanding
-  community leaders.<br /><br />Ø THE FIELD MUSEUM, one of the largest, most
+  community leaders.<br /><br />· THE FIELD MUSEUM, one of the largest, most
   prestigious, natural history museums in the world, where she is on the Board
   of Trustees and is the Chair of the Governance Committee and a Member of the
-  Executive Committee. Of note, Marsha&#58;<br /><br />ü Grew board talent&#58;
-  Bob Arthur, corporate citizen &amp; founder, Magellan—a global premier metals
+  Executive Committee. Of note, Marsha:<br /><br />· Grew board talent: Bob
+  Arthur, corporate citizen & founder, Magellan—a global premier metals
   technical advisor/supplier; Jennifer Sherman, CEO, Federal Signal, NYSE global
   machinery manufacturer; and Scott Rafferty leading Sterling Bay’s IR.<br /><br
-  />ü Provides insights for Museum’s strategic plan, enabling continuing
+  />· Provides insights for Museum’s strategic plan, enabling continuing
   renowned status for its educational/scientific programs.<br /><br />· THE
   LYRIC OPERA, a leading U.S. opera company that opened in 1954 with Maria
   Callas’s American debut, where, as part of the Executive Committee, she helped
   determine the actions that resolved a union strike and renegotiated new
   contracts.<br /><br />Marsha’s CORPORATE EXPERIENCE is with U.S. BANK N.A.,
   the 5th largest U.S. commercial bank, a U.S. Bancorp (NYSE) subsidiary, where
-  she is Regional President, Illinois, Indiana, &amp; Michigan; Chair, U.S.
-  Bank’s Chicago Advisory Board; and Management Supervisor for All FINRA
-  licensed Commercial Banking employees.<br /><br />As Regional President,
-  Marsha is accountable for full profit and loss in a three-state Midwest
-  region. She is responsible for analyzing all risk issues of global middle
-  market public/private companies. Marsha also discusses public policy and
+  she is Regional President, Illinois, Indiana, & Michigan; Chair, U.S. Bank’s
+  Chicago Advisory Board; and Management Supervisor for All FINRA licensed
+  Commercial Banking employees.<br /><br />As Regional President, Marsha is
+  accountable for full profit and loss in a three-state Midwest region. She is
+  responsible for analyzing all risk issues of global middle market
+  public/private companies. Marsha also discusses public policy and
   develops/maintains relationships with U.S senators and congressmen, in
   addition to working closely with Communications to monitor reputation risk. Of
-  note, Marsha has&#58;<br /><br />Ø Completed numerous M&amp;A transactions
-  with advice/connections, paving the path to a 15% compound annual growth
-  rate.<br /><br />Ø Integrated Royal Bank of Scotland’s Chicago commercial
-  group into U.S. Bank.<br /><br />Ø Successfully educated U.S.
-  Senators/Representatives to simplify the PPP forgiveness process; making
-  progress with apt parties with Community Reinvestment Act reforms to meet
-  changing needs of constituents and financial industry’s digital
-  transformation.<br /><br />Ø Transferring titles, responsibilities,
-  connections, knowledge to new group over five years as move to corporate board
-  careerist role.<br /><br />Ø In the last 10 years, doubled the income of
-  Chicago Commercial Banking; increased by 90% pre-profit income.<br /><br
-  />Previously, Marsha worked for JP MORGAN where she started with the
-  predecessor company as an International Treasury Management Consultant;
-  followed by roles as Electric/Gas Senior Banker; Head, Syndications, Private
-  Placements/High Yield; Head, Syndicated Leveraged Finance, Commercial Banking;
-  Management Supervisor for all FINRA licensed Commercial Banking employees.
-  Marsha&#58;<br /><br />Ø Strategized successful solutions with corporate
-  Boards and C-suite clients during financial crises.<br /><br />Ø With a 60%
-  headcount reduction over 4 years, increased revenue from deals by 23%.<br
-  /><br />Ø In middle market, doubled revenues with number of middle market
-  deals increasing 29%.<br /><br />Ø Doubled investment banking client revenues
-  in Asset-Based Lending.
+  note, Marsha has:<br /><br />· Completed numerous M&A transactions with
+  advice/connections, paving the path to a 15% compound annual growth rate.<br
+  /><br />· Integrated Royal Bank of Scotland’s Chicago commercial group into
+  U.S. Bank.<br /><br />· Successfully educated U.S. Senators/Representatives to
+  simplify the PPP forgiveness process; making progress with apt parties with
+  Community Reinvestment Act reforms to meet changing needs of constituents and
+  financial industry’s digital transformation.<br /><br />· Transferring titles,
+  responsibilities, connections, knowledge to new group over five years as move
+  to corporate board careerist role.<br /><br />· In the last 10 years, doubled
+  the income of Chicago Commercial Banking; increased by 90% pre-profit
+  income.<br /><br />Previously, Marsha worked for JP MORGAN where she started
+  with the predecessor company as an International Treasury Management
+  Consultant; followed by roles as Electric/Gas Senior Banker; Head,
+  Syndications, Private Placements/High Yield; Head, Syndicated Leveraged
+  Finance, Commercial Banking; Management Supervisor for all FINRA licensed
+  Commercial Banking employees. Marsha:<br /><br />· Strategized successful
+  solutions with corporate Boards and C-suite clients during financial
+  crises.<br /><br />· With a 60% headcount reduction over 4 years, increased
+  revenue from deals by 23%.<br /><br />· In middle market, doubled revenues
+  with number of middle market deals increasing 29%.<br /><br />· Doubled
+  investment banking client revenues in Asset-Based Lending."
 tiktok: null
 twitter: https://mcruzan@sbcglobal.net
 aboutme: null
@@ -88,8 +87,8 @@ insta: null
 orgURL: null
 snapchat: null
 personalURL: null
-smallHeadshotURL: assets/images/headshots/Marsha%20Cruzan_01_030_Web_converted_scaled.avif
-originalHeadshotURL: assets/images/headshots/Marsha%20Cruzan_01_030_Web_converted_scaled.avif
+smallHeadshotURL: /assets/images/headshots/Marsha Cruzan_01_030_Web_converted_scaled.avif
+originalHeadshotURL: /assets/images/headshots/Marsha Cruzan_01_030_Web_converted_scaled.avif
 tags-current-industries:
   - Arts, Entertainment, and Recreation
   - Associations
