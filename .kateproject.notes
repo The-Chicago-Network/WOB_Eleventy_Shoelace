@@ -4,3 +4,5 @@ TODO
 * Add option to clear or retain filters on new search
 * Implement nav
 * Add 'X results' on filter popup indicating number of filtered results
+* Fix filtering by sector
+* Hide filter options unused by any profile
