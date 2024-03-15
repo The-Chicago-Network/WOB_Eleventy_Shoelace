@@ -1,4 +1,4 @@
-{% if linkedin or tiktok or twitter or aboutme or insta or orgURL or snapchat or personalURL or resumeFile %}
+{% if linkedin or tiktok or twitter or aboutme or insta or orgURL or snapchat or personalURL or resumepdf %}
 <p class="contactLinks">
 {% if linkedin %}
 	<sl-button class="downloadButton" type="button" variant="primary" size="small" href="{{ linkedin }}" pill>
@@ -48,10 +48,10 @@
 		{{ personalURL }}
 	</sl-button>
 {% endif %}
-{% if resumeFile %}
+{% if resumepdf %}
 	<sl-button class="resourceButton" type="button" variant="primary" size="small" href="/{{resumeFile}}" pill>
 		<sl-icon slot="prefix" name="paperclip"></sl-icon>
-		Download Resume
+		Download Résumé
 	</sl-button>
 {% endif %}
 </p>
