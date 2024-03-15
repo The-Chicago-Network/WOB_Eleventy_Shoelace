@@ -77,119 +77,23 @@ personalURL: null
 smallHeadshotURL: /assets/images/headshots/24_kim20033-2-_8783.jpg
 originalHeadshotURL: /assets/images/headshots/24_kim20033-2-_8783.jpg
 tags-current-industries:
-  - Accommodation
-  - Accommodation and Food Services
-  - Accounting
-  - Administrative and Support Services
-  - Administrative and Support and Waste Management and Remediation Services
-  - Advertising
-  - Agriculture, Forestry, Fishing and Hunting
-  - Air Transportation
-  - Ambulatory Health Care Services
-  - Amusement, Gambling, and Recreation Industries
-  - Animal Production
-  - Apparel Manufacturing
-  - Architecture
-  - Art Services
-  - Arts, Entertainment, and Recreation
   - Associations
-  - Author
-  - Beverage and Tobacco Product Manufacturing
-  - Broadcasting (except Internet)
-  - Chemical Manufacturing
   - Civic/Public Policy
-  - Clothing and Clothing Accessories Stores
-  - Community Development/Organizing
-  - Computer and Electronic Product Manufacturing
-  - Construction
-  - Construction of Buildings
-  - Consulting
-  - Couriers and Messengers
-  - Corporate Directorships
-  - Cultural Institution
-  - Credit Intermediation and Related Activities
-  - Data Processing, Hosting, and Related Services
-  - Design
-  - Education and Health Services
   - Educational Services
-  - Electrical Equipment, Appliance, and Component Manufacturing
-  - Electronics and Appliance Stores
-  - Energy/Utilities
-  - Engineering
   - Executive Recruitment/Transition
-  - Fabricated Metal Product Manufacturing
-  - Family Office
-  - Finance and Insurance
-  - Financial Activities
-  - Fitness
   - Food Manufacturing
-  - Food Services and Drinking Places
-  - Food and Beverage Stores
-  - Forestry and Logging
-  - Foundations/Granting Agency
-  - Funds, Trusts, and Other Financial Vehicles
-  - Furniture and Home Furnishings Stores
-  - Furniture and Related Product Manufacturing
-  - General Merchandise Stores
   - Goods-Producing Industries
-  - Government
-  - Health Care and Social Assistance
-  - Health and Personal Care Stores
-  - Heavy and Civil Engineering Construction
-  - Hospitals
-  - Hospitality/Food Services
-  - Human Services
-  - Incubator
   - Information
-  - Insurance Carriers and Related Activities
-  - Internet Publishing and Broadcasting
-  - Investment Banking
-  - Investment Management
-  - Law
   - Leisure and Hospitality
-  - Machinery Manufacturing
   - Management of Companies and Enterprises
   - Manufacturing
   - Marketing/Sales
   - Media
-  - Medical Equipment/Devices
-  - Merchant Wholesalers, Durable Goods
-  - Merchant Wholesalers, Nondurable Goods
-  - Miscellaneous Manufacturing
-  - Miscellaneous Store Retailers
-  - Monetary Authorities - Central Bank
-  - Motion Picture and Sound Recording Industries
-  - Museums, Historical Sites, and Similar Institutions
-  - Other Services (except Public Administration)
-  - Performing Arts, Spectator Sports, and Related Industries
-  - Plastics and Rubber Products Manufacturing
   - PR/Communications
-  - Printing and Related Support Activities
   - Private Equity
-  - Private Households
-  - Professional and Business Services
   - Professional, Scientific, and Technical Services
-  - Publishing Industries (except Internet)
-  - Rail Transportation
-  - Real Estate
-  - Real Estate and Rental and Leasing
-  - Recycling
-  - Religious, Grantmaking, Civic, Professional, and Similar Organizations
-  - Rental and Leasing Services
-  - Retail Trade
-  - Social Assistance
-  - Sporting Goods, Hobby, Book, and Music Stores
   - Supply Chain/Distribution/Logistics
-  - Tax/Business Advisory
-  - Technology
-  - Telecommunications
-  - Trade, Transportation, and Utilities
-  - Transportation Equipment Manufacturing
-  - Transportation and Warehousing
-  - Truck Transportation
-  - Venture Capital
   - Warehousing and Storage
-  - Waste Management and Remediation Services
 tags-current-position:
   - CEO / Chief Executive Officer
   - President
@@ -200,66 +104,33 @@ tags-past-industries:
   - Amusement, Gambling, and Recreation Industries
   - Arts, Entertainment, and Recreation
   - Associations
-  - Beverage and Tobacco Product Manufacturing
   - Civic/Public Policy
-  - Clothing and Clothing Accessories Stores
   - Community Development/Organizing
-  - Computer and Electronic Product Manufacturing
   - Consulting
-  - Cultural Institution
   - Data Processing, Hosting, and Related Services
-  - Education and Health Services
   - Educational Services
-  - Electrical Equipment, Appliance, and Component Manufacturing
-  - Electronics and Appliance Stores
-  - Energy/Utilities
-  - Executive Recruitment/Transition
   - Finance and Insurance
   - Food Manufacturing
   - Food Services and Drinking Places
-  - Food and Beverage Stores
   - Government
-  - Health and Personal Care Stores
   - Hospitals
   - Hospitality/Food Services
   - Incubator
-  - Internet Publishing and Broadcasting
   - Investment Banking
-  - Law
-  - Leisure and Hospitality
+  - Investment Management
   - Management of Companies and Enterprises
+  - Manufacturing
   - Marketing/Sales
   - Media
   - Medical Equipment/Devices
-  - Miscellaneous Manufacturing
-  - Miscellaneous Store Retailers
-  - Museums, Historical Sites, and Similar Institutions
-  - Nursing and Residential Care Facilities
-  - Performing Arts, Spectator Sports, and Related Industries
-  - Plastics and Rubber Products Manufacturing
   - PR/Communications
   - Private Equity
   - Professional and Business Services
-  - Professional, Scientific, and Technical Services
-  - Real Estate
-  - Recycling
-  - Religious, Grantmaking, Civic, Professional, and Similar Organizations
-  - Retail Trade
-  - Sporting Goods, Hobby, Book, and Music Stores
   - Supply Chain/Distribution/Logistics
-  - Technology
-  - Telecommunications
   - Venture Capital
-  - Waste Management and Remediation Services
-  - Wholesale Electronic Markets and Agents and Brokers
-  - Wholesale Trade
 tags-past-position:
   - CEO / Chief Executive Officer
-  - EVP / Executive Vice President
-  - Founder
   - President
-  - SVP / Senior Vice President
-  - VP / Vice President
 tags-current-board-service:
   - Corporate Private
   - Nonprofit
@@ -269,66 +140,51 @@ tags-past-board-service:
   - Nonprofit
   - VC
 boards-current-corporate-private:
-  - Cynergi Health Partners, Advisory Board
-  - First Women's Bank, Advisory Board
+  - NEXT Integrative Minds Life Sciences, Advisory Board Member
+  - First Women's Bank, Advisory Board Member
 boards-current-corporate-public: null
 boards-current-nonprofit:
-  - University of Chicago Alumni Board, President
-  - Associated Colleges of Illinois, Corporate Trustee
-boards-current-privateequity: null
+  - Executives' Club of Chicago, CEO and Board Director
+  - Lurie Children's Hospital Foundation, Board Director
+boards-current-privateequity: 
+  - Everfresh Fruit Company, Director
 boards-current-spac: null
-boards-current-vc:
-  - First Women's Bank, Advisory Board
+boards-current-vc: null
 boards-past-corporate-private:
-  - Ollipsis Fertility, Advisory Board
+  - Ollipsis Fertility, Board Member
 boards-past-corporate-public: null
 boards-past-nonprofit:
-  - Ballet Chicago, Advisory Board
+  - University of Chicago Alumni Board, President
 boards-past-privateequity: null
 boards-past-spac: null
-boards-past-vc:
-  - Ollipsis Fertility, Advisory Board
+boards-past-vc: null
 linkedin: https://www.linkedin.com/in/margaretmueller/
 currentTitle: CEO
 tags-experience:
-  - Accounting
+  - Audit Committee
   - B2B
   - B2C
   - Business Development
   - Corporate Development
-  - Digital
-  - Finance
-  - Global
+  - Current Director: Corporate Board
+  - Digital Transformation
+  - Executive Committee
+  - Finance Committee
+  - Nomination / Governance Committee
   - Governance
+  - ESG Experience
   - HR / Human Resources
   - Information Security
   - International
-  - Legal
   - Mergers & Acquisitions
   - Marketing
+  - P&L&#58; $0-$500M
   - PR / Public Relations
-  - Privacy
   - Private Companies
-  - Procurement
   - Public Companies
   - Supply Chain
-  - Accounting
-  - B2B
-  - B2C
-  - Business Development
-  - Corporate Development
-  - Digital
-  - Finance
-  - Global
-  - Governance
-  - HR / Human Resources
-  - International
-  - Mergers & Acquisitions
-  - Marketing
-  - PR / Public Relations
-  - Privacy
-  - Private Companies
-  - Procurement
-  - Public Companies
-  - Supply Chain
+  - Startup
+  - Transformational and Growth
+  - Turnaround
+  - Venture Capital
 ---
