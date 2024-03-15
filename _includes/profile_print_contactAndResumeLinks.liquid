@@ -1,4 +1,4 @@
-{% if linkedin or tiktok or twitter or aboutme or insta or orgURL or snapchat or personalURL or resumeFile %}
+{% if linkedin or tiktok or twitter or aboutme or insta or orgURL or snapchat or personalURL or resumepdf %}
 <!-- Contact links for print -->
 <h2>Links</h2>
 <ul>
@@ -9,7 +9,7 @@
 	<li>TikTok: {{ tiktok }}</li>
 {% endif %}
 {% if twitter %}
-	<li>X: {{ X }}</li>
+	<li>X: {{ twitter }}</li>
 {% endif %}
 {% if aboutme %}
 	<li>About.me: {{ aboutme }}</li>
@@ -25,6 +25,9 @@
 {% endif %}
 {% if personalURL %}
 	<li>{{ personalURL }}</li>
+{% endif %}
+% if resumepdf %}
+	<li>Résumé: {{ resumepdf }}</li>
 {% endif %}
 </ul>
 {% endif %}
