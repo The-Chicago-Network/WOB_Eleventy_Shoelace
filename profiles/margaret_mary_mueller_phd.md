@@ -7,6 +7,7 @@ first: Margaret
 middle: Mary
 last: Mueller
 suffix: Ph.D.
+currentTitle: CEO
 currentOrg: Executives' Club of Chicago
 bio: "Margaret is a Board Director and results-driven CEO who excels at
   creating, building and growing companies. Highly adept with regulated
@@ -76,6 +77,7 @@ snapchat: null
 personalURL: null
 smallHeadshotURL: /assets/images/headshots/24_kim20033-2-_8783.jpg
 originalHeadshotURL: /assets/images/headshots/24_kim20033-2-_8783.jpg
+resumepdf: /assets/images/headshots/margaret-mueller-cv-2023.pdf
 tags-current-industries:
   - Associations
   - Civic/Public Policy
@@ -146,7 +148,7 @@ boards-current-corporate-public: null
 boards-current-nonprofit:
   - Executives' Club of Chicago, CEO and Board Director
   - Lurie Children's Hospital Foundation, Board Director
-boards-current-privateequity: 
+boards-current-privateequity:
   - Everfresh Fruit Company, Director
 boards-current-spac: null
 boards-current-vc: null
@@ -159,7 +161,6 @@ boards-past-privateequity: null
 boards-past-spac: null
 boards-past-vc: null
 linkedin: https://www.linkedin.com/in/margaretmueller/
-currentTitle: CEO
 tags-experience:
   - Audit Committee
   - B2B
