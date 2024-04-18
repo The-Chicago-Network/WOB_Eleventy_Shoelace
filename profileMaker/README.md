@@ -3,7 +3,7 @@
 This script outputs .MD files from a JSON file containing an array of profile objects. These objects should be formatted as below. First convert your CSV to JSON via the [csvtojson cli](https://github.com/Keyang/node-csvtojson), first ensuring that you have changed all column headers to match the object properties below.
 
 ## Instructions
-1. Install csv2json, if necessary
+1. Install csvtojson, if necessary
 ``` bash
 	npm i -g csvtojson
  ```

@@ -5,6 +5,8 @@ const sanitize = (string, allowNewLine) => {
 		newString = newString.replace(/(?:(?:\\n|\n)+(?:\\n+|\n+|\s+)+)+/gm, "<br /><br />").replace(/\n/g, "<br />");
 	}
 	return newString = newString.replace(/§/g, "")
+		.replace(/\t+/g, " ")
+		.replace(/\r+/g, " ")
 		.replace(/ +/g, " ")
 		.replace(/ +(?= )/g, "")
 		.replace(/:/g, "&#58;")

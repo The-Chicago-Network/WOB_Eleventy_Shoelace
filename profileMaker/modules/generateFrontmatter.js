@@ -14,7 +14,6 @@ return `---
 layout: layouts/profile.liquid
 title: ${printName(object.name)}
 id: ${formatID(printName(object.name))}
-prefix: ${object.name.prefix}
 first: ${object.name.first}
 middle: ${object.name.middle}
 last: ${object.name.last}
