@@ -70,8 +70,8 @@ insta: null
 orgURL: null
 snapchat: null
 personalURL: null
-smallHeadshotURL: assets/images/headshots/Winkler%20pic%204_converted_scaled.avif
-originalHeadshotURL: assets/images/headshots/Winkler%20pic%204_converted_scaled.avif
+smallHeadshotURL: /assets/images/headshots/winkler_yasmine.jpg
+originalHeadshotURL: /assets/images/headshots/winkler_yasmine.jpg
 tags-current-industries:
   - Associations
   - Insurance Carriers and Related Activities
