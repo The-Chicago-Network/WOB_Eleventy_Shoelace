@@ -100,16 +100,12 @@ bio: Innovative Strategist, Brand Marketer, Experienced Director of High Growth
   Member 1988 to present<br /><br />Previous<br /><br />Black Ensemble Theatre
   2007 to 2011<br /><br />· Co-Chair, Capital Campaign<br /><br />· Raised the
   money to build a new theatre, its first permanent home<br /><br />Brandeis
-  University, Trustee 1991 to 2000<br /><br
-  />mso-bidi-font-family&#58;Arial;mso-bidi-theme-font&#58;minor-bidi"&gt;Chair,
-  Budget &amp; Finance Committee from 1993 to 1998<br /><br
-  />mso-bidi-font-family&#58;Arial;mso-bidi-theme-font&#58;minor-bidi"&gt;Member,
-  Executive Committee from 1993 to 1998<br /><br
-  />mso-bidi-font-family&#58;Arial;mso-bidi-theme-font&#58;minor-bidi"&gt;Member,
-  Academic Affairs Committee from 1991 to 1993<br /><br />American Civil
-  Liberties Union 1979 to 1994 <br /><br />· Director, Illinois Affiliate <br
-  /><br />Magazine Publishers of America 1991 to 2008<br /><br />· Executive
-  Committee member
+  University, Trustee 1991 to 2000<br /><br />Chair, Budget &amp; Finance
+  Committee from 1993 to 1998<br /><br />Member, Executive Committee from 1993
+  to 1998<br /><br />Member, Academic Affairs Committee from 1991 to 1993<br
+  /><br />American Civil Liberties Union 1979 to 1994 <br /><br />· Director,
+  Illinois Affiliate <br /><br />Magazine Publishers of America 1991 to 2008<br
+  /><br />· Executive Committee member
 tiktok: null
 twitter: null
 aboutme: null
@@ -117,8 +113,8 @@ insta: null
 orgURL: null
 snapchat: null
 personalURL: null
-smallHeadshotURL: assets/images/headshots/
-originalHeadshotURL: assets/images/headshots/
+smallHeadshotURL: /assets/images/headshots/hefner_christie.jpg
+originalHeadshotURL: /assets/images/headshots/hefner_christie.jpg
 tags-current-industries: null
 tags-current-position: null
 tags-past-industries: null
