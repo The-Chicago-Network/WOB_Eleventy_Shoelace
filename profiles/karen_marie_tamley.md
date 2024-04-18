@@ -8,8 +8,7 @@ middle: Marie
 last: Tamley
 suffix: null
 currentOrg: Access Living
-bio: https&#58;//accessliving.org/newsroom/teammember/karen-tamley/<br /><br
-  />In March 2020, Karen Tamley became the new President and CEO of Access
+bio: In March 2020, Karen Tamley became the new President and CEO of Access
   Living, a Chicago-based service and advocacy non-profit organization for
   people with disabilities. In her new role, Karen has returned to her roots,
   having served in multiple positions at Access Living from 1996 to 2005, under
@@ -42,8 +41,8 @@ insta: https://www.instagram.com/accounts/login/?next=/karentamley/
 orgURL: https://Accessliving.org
 snapchat: null
 personalURL: null
-smallHeadshotURL: assets/images/headshots/
-originalHeadshotURL: assets/images/headshots/
+smallHeadshotURL: /assets/images/headshots/tamley_karen.jpg
+originalHeadshotURL: /assets/images/headshots/tamley_karen.jpg
 tags-current-industries:
   - Cultural Institution
   - Government
