@@ -56,8 +56,8 @@ insta: null
 orgURL: null
 snapchat: null
 personalURL: https://www.verit.com
-smallHeadshotURL: assets/images/headshots/Mary%20Josephs-former%20HS1_converted_scaled.avif
-originalHeadshotURL: assets/images/headshots/Mary%20Josephs-former%20HS1_converted_scaled.avif
+smallHeadshotURL: /assets/images/headshots/josephs_mary.jpg
+originalHeadshotURL: /assets/images/headshots/josephs_mary.jpg
 tags-current-industries:
   - Corporate Directorships
   - Finance and Insurance
