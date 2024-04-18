@@ -55,8 +55,8 @@ insta: null
 orgURL: https://www.corporateleadership.org
 snapchat: null
 personalURL: null
-smallHeadshotURL: assets/images/headshots/Cheryl%20Francis_MG_9839_converted_scaled.avif
-originalHeadshotURL: assets/images/headshots/Cheryl%20Francis_MG_9839_converted_scaled.avif
+smallHeadshotURL: /assets/images/headshots/francis_cheryl.jpg
+originalHeadshotURL: /assets/images/headshots/francis_cheryl.jpg
 tags-current-industries:
   - Corporate Directorships
   - Educational Services
