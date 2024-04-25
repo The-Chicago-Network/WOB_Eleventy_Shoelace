@@ -95,16 +95,11 @@ boards-current-vc:
 boards-past-corporate-private: null
 boards-past-corporate-public: null
 boards-past-nonprofit:
-  - Black Ensemble Theatre
-  - Co-Chair -Capital Campaign
-  - Brandeis University
-  - Trustee
-  - American Civil Liberties Union
-  - Director
-  - Magazine Publishers of America
-  - Director
-  - Goodman Theatre
-  - Director
+  - Black Ensemble Theatre, Co-Chair - Capital Campaign
+  - Brandeis University,Trustee
+  - American Civil Liberties Union, Director
+  - Magazine Publishers of America, Director
+  - Goodman Theatre, Director
 boards-past-privateequity: null
 boards-past-spac: null
 boards-past-vc:
