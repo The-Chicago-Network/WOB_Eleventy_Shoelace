@@ -75,17 +75,12 @@ tags-past-board-service:
   - VC
 boards-current-corporate-private: null
 boards-current-corporate-public:
-  - R.D. Offutt Company
-  - Advisory Board Member
+  - R.D. Offutt Company, Advisory Board Member
 boards-current-nonprofit:
-  - Rush University Medical Center
-  - Trustee
-  - Center for American Progress Action
-  - Director
-  - Better Government Association
-  - Director
-  - Press Forward
-  - Director
+  - Rush University Medical Center, Trustee
+  - Center for American Progress Action, Director
+  - Better Government Association, Director
+  - Press Forward, Director
 boards-current-privateequity:
   - Hatch Beauty Brands, Chairman
 boards-current-spac:
