@@ -74,8 +74,18 @@ tags-current-board-service:
 tags-past-board-service:
   - VC
 boards-current-corporate-private: null
-boards-current-corporate-public: null
-boards-current-nonprofit: null
+boards-current-corporate-public:
+  - R.D. Offutt Company
+  - Advisory Board Member
+boards-current-nonprofit:
+  - Rush University Medical Center
+  - Trustee
+  - Center for American Progress Action
+  - Director
+  - Better Government Association
+  - Director
+  - Press Forward
+  - Director
 boards-current-privateequity:
   - Hatch Beauty Brands, Chairman
 boards-current-spac:
@@ -84,7 +94,17 @@ boards-current-vc:
   - Fyllo, Director
 boards-past-corporate-private: null
 boards-past-corporate-public: null
-boards-past-nonprofit: null
+boards-past-nonprofit:
+  - Black Ensemble Theatre
+  - Co-Chair -Capital Campaign
+  - Brandeis University
+  - Trustee
+  - American Civil Liberties Union
+  - Director
+  - Magazine Publishers of America
+  - Director
+  - Goodman Theatre
+  - Director
 boards-past-privateequity: null
 boards-past-spac: null
 boards-past-vc:
