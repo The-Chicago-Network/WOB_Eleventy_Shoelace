@@ -61,8 +61,8 @@ insta: null
 orgURL: null
 snapchat: null
 personalURL: null
-smallHeadshotURL: /assets/images/headshots/hefner_christie.jpg
-originalHeadshotURL: /assets/images/headshots/hefner_christie.jpg
+smallHeadshotURL: /assets/images/headshots/hefner_christie-2-.jpg
+originalHeadshotURL: /assets/images/headshots/hefner_christie-2-.jpg
 tags-current-industries: null
 tags-current-position: null
 tags-past-industries: null
