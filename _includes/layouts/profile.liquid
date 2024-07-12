@@ -36,4 +36,15 @@
 	Print this Profile
 </sl-button>
 
+<sl-button
+	class="printButton"
+	type="button"
+	variant="default"
+	size="medium"
+	href=" mailto:?subject=Potential%20candidate%20for%20board%20service&body=I%20thought%20you%20might%20be%20interested%20in%20{{ first }}%20{{ last }}'s%20profile%3B%20here's%20a%20link%3A%20https%3A//womenlead.io/profiles/{{id}}%0D%0A---------------------------------%0D%0AShared%20via%20womenlead.io "
+>
+	<sl-icon slot="prefix" name="envelope-at"></sl-icon>
+	Email this Profile
+</sl-button>
+
 {% include 'foot.liquid' %}
