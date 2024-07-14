@@ -2,8 +2,8 @@
 @layer reset, defaults, patterns, components, utilities, overrides;
 
 /* Imports */
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,400;0,600;0,900;1,200&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Display:ital,wght@0,600;1,400;1,600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,400;0,600;0,900;1,200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+Display:ital,wght@0,600;1,400;1,600&display=swap");
 :root {
   /* Color */
   --sl-color-primary-50: rgb(244 250 255);
@@ -19,8 +19,8 @@
   --sl-color-primary-950: rgb(32 40 45);
 
   /* Type */
-  --sl-font-sans: 'Noto Sans', sans-serif;
-  --font-serif: 'Noto Serif Display', serif;
+  --sl-font-sans: "Noto Sans", sans-serif;
+  --font-serif: "Noto Serif Display", serif;
 
   --font-weight-thin: 100;
   --sl-font-weight-light: 200;
@@ -30,24 +30,21 @@
 
   /* Shadow */
   --shadow-color: 201deg 42% 54%;
-  --shadow-elevation-low:
-  0.3px 0.5px 0.7px hsl(var(--shadow-color) / 0.34),
-  0.4px 0.8px 1px -1.2px hsl(var(--shadow-color) / 0.34),
-  1px 2px 2.5px -2.5px hsl(var(--shadow-color) / 0.34);
-  --shadow-elevation-medium:
-  0.3px 0.5px 0.7px hsl(var(--shadow-color) / 0.36),
-  0.8px 1.6px 2px -0.8px hsl(var(--shadow-color) / 0.36),
-  2.1px 4.1px 5.2px -1.7px hsl(var(--shadow-color) / 0.36),
-  5px 10px 12.6px -2.5px hsl(var(--shadow-color) / 0.36);
-  --shadow-elevation-high:
-  0.3px 0.5px 0.7px hsl(var(--shadow-color) / 0.34),
-  1.5px 2.9px 3.7px -0.4px hsl(var(--shadow-color) / 0.34),
-  2.7px 5.4px 6.8px -0.7px hsl(var(--shadow-color) / 0.34),
-  4.5px 8.9px 11.2px -1.1px hsl(var(--shadow-color) / 0.34),
-  7.1px 14.3px 18px -1.4px hsl(var(--shadow-color) / 0.34),
-  11.2px 22.3px 28.1px -1.8px hsl(var(--shadow-color) / 0.34),
-  17px 33.9px 42.7px -2.1px hsl(var(--shadow-color) / 0.34),
-  25px 50px 62.9px -2.5px hsl(var(--shadow-color) / 0.34);
+  --shadow-elevation-low: 0.3px 0.5px 0.7px hsl(var(--shadow-color) / 0.34),
+    0.4px 0.8px 1px -1.2px hsl(var(--shadow-color) / 0.34),
+    1px 2px 2.5px -2.5px hsl(var(--shadow-color) / 0.34);
+  --shadow-elevation-medium: 0.3px 0.5px 0.7px hsl(var(--shadow-color) / 0.36),
+    0.8px 1.6px 2px -0.8px hsl(var(--shadow-color) / 0.36),
+    2.1px 4.1px 5.2px -1.7px hsl(var(--shadow-color) / 0.36),
+    5px 10px 12.6px -2.5px hsl(var(--shadow-color) / 0.36);
+  --shadow-elevation-high: 0.3px 0.5px 0.7px hsl(var(--shadow-color) / 0.34),
+    1.5px 2.9px 3.7px -0.4px hsl(var(--shadow-color) / 0.34),
+    2.7px 5.4px 6.8px -0.7px hsl(var(--shadow-color) / 0.34),
+    4.5px 8.9px 11.2px -1.1px hsl(var(--shadow-color) / 0.34),
+    7.1px 14.3px 18px -1.4px hsl(var(--shadow-color) / 0.34),
+    11.2px 22.3px 28.1px -1.8px hsl(var(--shadow-color) / 0.34),
+    17px 33.9px 42.7px -2.1px hsl(var(--shadow-color) / 0.34),
+    25px 50px 62.9px -2.5px hsl(var(--shadow-color) / 0.34);
 }
 
 @layer defaults {
@@ -55,12 +52,11 @@
     color: var(--sl-color-teal-700);
   }
   body {
-    font-family: 'Noto Sans', sans-serif;
+    font-family: "Noto Sans", sans-serif;
     font-weight: var(--sl-font-weight-normal);
     font-size: var(--sl-font-size-small);
     overflow-x: hidden;
     margin: 0;
-
   }
   body::before {
     content: "";
@@ -89,7 +85,7 @@
     background-position: center;
     background-attachment: fixed;
     z-index: -1;
-    opacity: .3;
+    opacity: 0.3;
   }
   h1 {
     font-size: var(--sl-font-size-2x-large);
@@ -113,7 +109,6 @@
     margin-top: var(--sl-spacing-small);
     margin-bottom: var(--sl-spacing-3x-large);
   }
-
 }
 
 @layer patterns {
@@ -128,15 +123,15 @@
     float: left;
     font-size: 4rem;
     line-height: 60px;
-    padding: .5rem .5rem .5rem .5rem;
+    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
     font-family: var(--font-serif);
     font-weight: var(--font-weight-semibold);
-    border-radius: .2em;
+    border-radius: 0.2em;
     border-top-left-radius: 0;
-    margin-bottom: -.2em;
+    margin-bottom: -0.2em;
   }
   .bioContainer sl-tag {
-    margin-bottom: .5rem;
+    margin-bottom: 0.5rem;
   }
   header {
     display: flex;
@@ -156,14 +151,14 @@
     margin-left: var(--sl-spacing-x-large);
   }
   #indexHeader {
-  display: flex;
-  flex-flow: column nowrap;
-  align-items: center;
-  text-align: center;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    text-align: center;
   }
   #indexHeader p {
-  margin-top: var(--sl-spacing-1x-large);
-  margin-bottom: var(--sl-spacing-2x-large);
+    margin-top: var(--sl-spacing-1x-large);
+    margin-bottom: var(--sl-spacing-2x-large);
   }
   .titleEmployer {
     display: flex;
@@ -183,7 +178,7 @@
     flex-flow: row nowrap;
     align-items: center;
     height: 100%;
-    margin-left: .5rem;
+    margin-left: 0.5rem;
   }
   .card-overview [slot="footer"] {
     display: flex;
@@ -191,31 +186,25 @@
     align-items: center;
   }
   #closeButton {
-  width: 100%;
+    width: 100%;
   }
   .resourceButton {
-    margin-top: .5rem;
+    margin-top: 0.5rem;
   }
   .contactLinks {
-    margin-left: -.2rem;
+    margin-left: -0.2rem;
   }
   .resourceButton {
-    margin-top: .5rem;
+    margin-top: 0.5rem;
   }
   .contactLinks {
-    margin-left: -.2rem;
+    margin-left: -0.2rem;
   }
   .contactLinks a {
     color: var(--sl-color-primary-500);
   }
   .contactLinks sl-button {
-    margin-top: .5rem;
-  }
-  .filterButton {
-    width: 3.5rem;
-  }
-  .filterButton::part(base) {
-    background-color: var(--sl-color-neutral-400);
+    margin-top: 0.5rem;
   }
   form:not(.contactForm) {
     background-color: white;
@@ -225,11 +214,18 @@
     display: flex;
     flex-flow: row nowrap;
     height: 2rem;
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
     box-shadow: var(--shadow-elevation-high);
   }
+  #indexHeader h1 {
+    font-size: var(--sl-font-size-4x-large);
+    font-weight: var(--sl-font-weight-semibold);
+    font-family: var(--font-serif);
+    font-style: italic;
+    text-transform: uppercase;
+  }
   #largeAvatar {
-  --size: 10rem;
+    --size: 10rem;
   }
   nav {
     background-color: white;
@@ -237,18 +233,18 @@
     height: 3rem;
     padding: var(--sl-spacing-x-small);
     padding-top: var(--sl-spacing-small);
-    margin-top: -.5rem;
+    margin-top: -0.5rem;
     display: flex;
     justify-content: space-between;
   }
   nav a {
     color: var(--sl-color-neutral-500);
-    margin-right: .5rem;
+    margin-right: 0.5rem;
     text-decoration: none;
     text-transform: uppercase;
     letter-spacing: var(--sl-letter-spacing-looser);
     font-size: var(--sl-font-size-x-small);
-    transition: all .5s;
+    transition: all 0.5s;
   }
   nav a:hover {
     color: var(--sl-color-neutral-800);
@@ -279,6 +275,9 @@
   .resultHeader sl-avatar {
     margin-right: var(--sl-spacing-small);
   }
+  #searchInfo {
+    margin-bottom: 1rem;
+  }
   .searchInput {
     width: 80%;
     height: 100%;
@@ -304,15 +303,12 @@
   sl-button {
     margin-left: var(--sl-spacing-2x-small);
   }
-  sl-button:not(.printButton, .filterButton)::part(base) {
+  sl-button:not(.printButton)::part(base) {
     background-color: var(--sl-color-teal-500);
   }
   sl-button:not(.printButton)::part(label) {
     color: white;
     font-family: var(--sl-font-sans);
-  }
-  sl-card::part(body) {
-    font-weight: var(--sl-font-weight-light);
   }
   sl-details {
     margin-top: 2rem;
@@ -322,7 +318,7 @@
   }
   sl-dialog::part(overlay) {
     background-color: var(--sl-color-primary-200);
-    opacity: .3;
+    opacity: 0.3;
   }
   sl-dialog::part(footer) {
     margin-top: -2.5rem;
@@ -330,7 +326,8 @@
   sl-dialog::part(panel) {
     box-shadow: var(--shadow-elevation-high);
   }
-  sl-input.contactForm, sl-textarea {
+  sl-input.contactForm,
+  sl-textarea {
     margin-bottom: 1rem;
   }
   sl-input:not(.contactForm)::part(base) {
@@ -347,8 +344,8 @@
     margin-bottom: var(--sl-spacing-large);
   }
   sl-select {
-    margin-left: .25rem;
-    margin-right: .25rem;
+    margin-left: 0.25rem;
+    margin-right: 0.25rem;
   }
   .subhead {
     font-size: var(--sl-font-size-medium);
@@ -381,7 +378,7 @@
     .buttonContainer {
       width: 100%;
       margin-left: 0;
-      margin-top: .5rem;
+      margin-top: 0.5rem;
     }
     form:not(.contactForm) {
       text-align: center;
@@ -415,7 +412,6 @@
     }
     p {
       width: 100%;
-
     }
     sl-button.printButton::part(base) {
       background-color: white;
@@ -440,9 +436,6 @@
       width: 100%;
     }
   }
-  header .description {
-    font-weight: var(--sl-font-weight-light);
-  }
   header:not(#indexHeader):before {
     content: "";
     width: 100vw;
@@ -454,15 +447,15 @@
     z-index: -1;
   }
   #indexHeader {
-  margin-top: 15vh;
+    margin-top: 15vh;
   }
   #loader {
-  border: 12px solid #f3f3f3;
-  border-radius: 50%;
-  border-top: 12px solid #444444;
-  width: 70px;
-  height: 70px;
-  animation: spin 1s linear infinite;
+    border: 12px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 12px solid #444444;
+    width: 70px;
+    height: 70px;
+    animation: spin 1s linear infinite;
   }
 
   @keyframes spin {
@@ -471,7 +464,10 @@
     }
   }
   @media print {
-    body, body::before, body::after, html {
+    body,
+    body::before,
+    body::after,
+    html {
       background: white;
       color: black;
     }
@@ -490,9 +486,9 @@
       display: none;
     }
     #credit {
-    border-top: 1px solid black;
-    margin-top: 2rem;
-    padding-top: 1rem;
+      border-top: 1px solid black;
+      margin-top: 2rem;
+      padding-top: 1rem;
     }
     header {
       border-bottom: 1px solid black;

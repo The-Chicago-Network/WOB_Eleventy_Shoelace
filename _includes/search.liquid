@@ -11,13 +11,18 @@
   </sl-tooltip>
   <div class="buttonContainer">
     <sl-tooltip content="Run your search.">
-      <sl-button type="submit" variant="primary" class="submitButton">Search</sl-button>
+      <sl-button type="submit" variant="primary" class="submitButton"><sl-icon slot="prefix" name="search"></sl-icon>Search</sl-button>
     </sl-tooltip>
     <sl-tooltip content="Apply filters to fine-tune search results.">
-      <sl-button type="button" variant="secondary" class="dialogToggle filterButton">Filter</sl-button>
+      <sl-button type="button" variant="secondary" id="filterButton" class="dialogToggle" disabled><sl-icon style="color: white;" slot="prefix" name="funnel"></sl-icon>Filter</sl-button>
     </sl-tooltip>
   </div>
 </form>
+
+<sl-alert id="searchInfo" variant="primary" open closable class="alert-closable">
+  <sl-icon slot="icon" name="info-circle"></sl-icon>
+  <strong>New: </strong>Search "All" to view our entire database of profiles!
+</sl-alert>
 
 {% include 'filterModal.liquid' %}
 <div class="searchResults"></div>

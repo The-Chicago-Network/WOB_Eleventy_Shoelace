@@ -1,3 +1,1 @@
-import { filterStore } from './filterStore.js';
-
-console.log("Hello!");
+import { filterStore } from "./filterStore.js";
