@@ -97,67 +97,42 @@ tags-past-board-service:
   - Corporate Public
   - Nonprofit
 boards-current-corporate-private:
-  - The Offut Companies
-  - Advisory Board member
-  - Fyllo
-  - Director
-  - Scent Beauty
-  - Director
-  - member Compensation Committee
-  - Public Good
-  - Director
+  - The Offut Companies - Advisory Board member
+  - Fyllo - Director
+  - Scent Beauty - Director / member Compensation Committee
+  - Public Good - Director
 boards-current-corporate-public:
-  - The Offut Companies
-  - Advisory Board member
-  - Fyllo
-  - Director
-  - Scent Beauty
-  - Director and member Compensation Committee
-  - Public Good
+  - The Offut Companies - Advisory Board member
+  - Fyllo - Director
+  - Scent Beauty - Director and member Compensation Committee
+  - Public Good - Director
 boards-current-nonprofit:
-  - Director and Audit Committee
-  - Rush University Medical Center
-  - Trustee
-  - Better Government Association
-  - Civic Advisory Board Member
-  - Springboard Enterprises
-  - Advisory Board Member
+  - Rush University Medical Center - Trustee
+  - Better Government Association - Civic Advisory Board Member
+  - Springboard Enterprises - Advisory Board Member
 boards-current-privateequity: null
 boards-current-spac: null
 boards-current-vc:
-  - Director, Fyllo
-  - Director, Public Good
-  - Advisory Board member,
+  - Fyllo - Director
+  - Public Good - Advisory Board member
 boards-past-corporate-private:
-  - Canyon Ranch
-  - Director
-  - Hatch Beauty Brands
-  - Chairman
+  - Canyon Ranch - Director
+  - Hatch Beauty Brands - Chairman
 boards-past-corporate-public:
-  - Healthwell
-  - Director and Audit Committee
-  - Marketwatch.com
-  - Director
-  - Playboy Enterprises
-  - Chairman
-  - Telocity
-  - Director
+  - Healthwell - Director and Audit Committee
+  - Marketwatch.com - Director
+  - Playboy Enterprises - Chairman
+  - Telocity - Director
 boards-past-nonprofit:
-  - Museum of Contemporary Art
-  - Director
-  - Illinois ACLU
-  - Director
-  - Donors Forum
-  - Director
-  - Goodman Theater
-  - Chairman
+  - Museum of Contemporary Art - Director
+  - Illinois ACLU - Director
+  - Donors Forum - Director
+  - Goodman Theater - Chairman
 boards-past-privateequity: []
 boards-past-spac:
-  - Healthwell
-  - Director and Audit Committee
+  - Healthwell - Director and Audit Committee
 boards-past-vc:
-  - Luminary
-  - Director
+  - Luminary - Director
 linkedin: null
 currentTitle: Corporate Board Director
 tags-experience:
