@@ -8,7 +8,7 @@ A little node script that outputs Markdown files from a JSON containing an array
 3. Install [Miller](https://miller.readthedocs.io/en/latest/), if necessary, and use it to convert your CSV into `data.json`. For example, on Arch Linux:
 ```bash
 sudo pacman -S miller
-mlr --c2j clean-whitespace myCSV.csv > data.json   
+mlr --c2j cat myCSV.csv > data.json   
 ```
 4. Place `data.json` into the directory containing profileMaker.js
 5. Execute `./node profileMaker.js`.
