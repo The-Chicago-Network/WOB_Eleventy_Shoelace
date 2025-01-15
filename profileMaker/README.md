@@ -1,16 +1,15 @@
 # Profile Maker
 
-This script outputs .MD files from a JSON file containing an array of profile objects. These objects should be formatted as below. First convert your CSV to JSON via the [csvtojson cli](https://github.com/Keyang/node-csvtojson), first ensuring that you have changed all column headers to match the object properties below.
+A little node script that outputs Markdown files from a JSON containing an array of profile objects. 
 
-## Instructions
-1. Install csvtojson, if necessary
-``` bash
-	npm i -g csvtojson
- ```
-2. Export a CSV or all responses from JotForm, and change all headers to match the property names used in the template literals in profileMaker.js.
-3. Convert your CSV to a JSON file called `data.json` via the [csvtojson cli](https://github.com/Keyang/node-csvtojson).
-``` bash
-csvtojson myfile.csv > data.json
+## How to use
+1. Download the CSV export of form responses.
+2. Replace the column headers with those in `csvHeaders.csv`.
+3. Install [Miller](https://miller.readthedocs.io/en/latest/), if necessary, and use it to convert your CSV into `data.json`. For example, on Arch Linux:
+```bash
+sudo pacman -S miller
+mlr --c2j clean-whitespace myCSV.csv > data.json   
 ```
 4. Place `data.json` into the directory containing profileMaker.js
 5. Execute `./node profileMaker.js`.
+6. Move the markdown files from `WOB_Eleventy_Shoelace/profileMaker/profiles/` into `WOB_Eleventy_Shoelace/profiles/`.
