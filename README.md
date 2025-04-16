@@ -37,6 +37,7 @@ mlr --c2j cat myCSV.csv > data.json
 ```bash
 node ./profileMaker.js
 ```
+3. Move the generated markdown profile documents into `./profiles`.
 
 ### Filtering and Rendering Results with filterStore
 #### Rendering Filtered Results
