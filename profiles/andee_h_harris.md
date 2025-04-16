@@ -44,8 +44,8 @@ insta: null
 orgURL: null
 snapchat: null
 personalURL: null
-smallHeadshotURL: assets/images/headshots/Harris_Andee%20copy%203_converted_scaled.avif
-originalHeadshotURL: assets/images/headshots/Harris_Andee%20copy%203_converted_scaled.avif
+smallHeadshotURL: /assets/images/headshots/Harris_Andee copy 3_converted_scaled.avif
+originalHeadshotURL: /assets/images/headshots/Harris_Andee copy 3_converted_scaled.avif
 resumepdf: /assets/images/headshots/andee-harris-resume-oct-2024.pdf
 tags-current-industries:
   - Animal Production
