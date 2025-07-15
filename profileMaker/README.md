@@ -11,5 +11,5 @@ sudo pacman -S miller
 mlr --c2j cat myCSV.csv > data.json   
 ```
 4. Place `data.json` into the directory containing profileMaker.js
-5. Execute `./node profileMaker.js`.
+5. Execute `node profileMaker.js`.
 6. Move the markdown files from `WOB_Eleventy_Shoelace/profileMaker/profiles/` into `WOB_Eleventy_Shoelace/profiles/`.

@@ -2,4 +2,6 @@ _site/profiles/
 _site/assets/
 _site/README/
 _site/index.html/
-
+_site/*
+node_modules/
+profileMaker/profiles/*
