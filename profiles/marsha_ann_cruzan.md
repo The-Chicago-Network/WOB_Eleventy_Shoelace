@@ -2,254 +2,181 @@
 layout: layouts/profile.liquid
 title: Marsha Ann Cruzan
 id: marsha_ann_cruzan
-prefix: ""
 first: Marsha
 middle: Ann
 last: Cruzan
-suffix: null
-currentOrg: U.S. Bank
-bio: "Marsha Cruzan is a strategic President and a great connector who is highly
-  experienced with Board succession and compensation topics, adept at
-  identifying attainable summits, managing risk, leading/assessing/motivating
-  talent and necessary components—in other words, a true mountain climber in
-  every sense.<br /><br />She’s very knowledgeable regarding distribution,
-  manufacturing, and highly regulated industries—e.g., finance, banking, capital
-  markets, healthcare, insurance; navigating policy to achieve results; and
-  engaging stakeholders—in other words, working with community, talent, and
-  government to gain results and reach goals.<br /><br />Marsha’s BOARD
-  EXPERIENCE consists of her first fiduciary corporate board, MEDICARE WIZARD,
-  LLC, a health tech firm providing insurance agents in most U.S. states
-  Medicare client options through a vertically integrated, online marketplace,
-  where Marsha is an Independent Corporate Board Director since 2022.<br /><br
-  />In 2021, Marsha joined the Board of Trustees and an Audit and Investment
-  Committee Member for RUSH UNIVERSITY MEDICAL CENTER, a major teaching hospital
-  excelling at caring for the most medically complex, where she has assisted
-  with method, priorities, competing needs analysis that identified and is
-  allocating best efforts for top mission results delivery.<br /><br />Marsha
-  has been a long-time nonprofit board director for major civic institutions, a
-  few of which will be terming out in the near future.<br /><br />· Currently,
-  she is on the Board of Trustees and is Co-Chair of the Nominating Committee
-  and a Member of the Executive Committee for the GOODMAN THEATRE, Chicago’s
-  oldest currently active nonprofit theater organization, where she has advised
-  the CFO and CEO on capital structure optimal communication techniques to gain
-  best outcomes.<br /><br />· LINCOLN PARK ZOO, the4th oldest zoo in NA & one of
-  the few free admission zoos in the U.S., where she is on the Board of Trustees
-  and is Chair of the Nominating Committee and a Member of the Executive
-  Committee and Diversity Committee. Of note, she led the strategy and
-  recruitment efforts that successfully diversified the board with outstanding
-  community leaders.<br /><br />· THE FIELD MUSEUM, one of the largest, most
-  prestigious, natural history museums in the world, where she is on the Board
-  of Trustees and is the Chair of the Governance Committee and a Member of the
-  Executive Committee. Of note, Marsha:<br /><br />· Grew board talent: Bob
-  Arthur, corporate citizen & founder, Magellan—a global premier metals
-  technical advisor/supplier; Jennifer Sherman, CEO, Federal Signal, NYSE global
-  machinery manufacturer; and Scott Rafferty leading Sterling Bay’s IR.<br /><br
-  />· Provides insights for Museum’s strategic plan, enabling continuing
-  renowned status for its educational/scientific programs.<br /><br />· THE
-  LYRIC OPERA, a leading U.S. opera company that opened in 1954 with Maria
-  Callas’s American debut, where, as part of the Executive Committee, she helped
-  determine the actions that resolved a union strike and renegotiated new
-  contracts.<br /><br />Marsha’s CORPORATE EXPERIENCE is with U.S. BANK N.A.,
-  the 5th largest U.S. commercial bank, a U.S. Bancorp (NYSE) subsidiary, where
-  she is Regional President, Illinois, Indiana, & Michigan; Chair, U.S. Bank’s
-  Chicago Advisory Board; and Management Supervisor for All FINRA licensed
-  Commercial Banking employees.<br /><br />As Regional President, Marsha is
-  accountable for full profit and loss in a three-state Midwest region. She is
-  responsible for analyzing all risk issues of global middle market
-  public/private companies. Marsha also discusses public policy and
-  develops/maintains relationships with U.S senators and congressmen, in
-  addition to working closely with Communications to monitor reputation risk. Of
-  note, Marsha has:<br /><br />· Completed numerous M&A transactions with
-  advice/connections, paving the path to a 15% compound annual growth rate.<br
-  /><br />· Integrated Royal Bank of Scotland’s Chicago commercial group into
-  U.S. Bank.<br /><br />· Successfully educated U.S. Senators/Representatives to
-  simplify the PPP forgiveness process; making progress with apt parties with
-  Community Reinvestment Act reforms to meet changing needs of constituents and
-  financial industry’s digital transformation.<br /><br />· Transferring titles,
-  responsibilities, connections, knowledge to new group over five years as move
-  to corporate board careerist role.<br /><br />· In the last 10 years, doubled
-  the income of Chicago Commercial Banking; increased by 90% pre-profit
-  income.<br /><br />Previously, Marsha worked for JP MORGAN where she started
-  with the predecessor company as an International Treasury Management
-  Consultant; followed by roles as Electric/Gas Senior Banker; Head,
-  Syndications, Private Placements/High Yield; Head, Syndicated Leveraged
-  Finance, Commercial Banking; Management Supervisor for all FINRA licensed
-  Commercial Banking employees. Marsha:<br /><br />· Strategized successful
-  solutions with corporate Boards and C-suite clients during financial
-  crises.<br /><br />· With a 60% headcount reduction over 4 years, increased
-  revenue from deals by 23%.<br /><br />· In middle market, doubled revenues
-  with number of middle market deals increasing 29%.<br /><br />· Doubled
-  investment banking client revenues in Asset-Based Lending."
-tiktok: null
-twitter: https://mcruzan@sbcglobal.net
-aboutme: null
-insta: null
-orgURL: null
-snapchat: null
-personalURL: null
-smallHeadshotURL: /assets/images/headshots/Marsha Cruzan_01_030_Web_converted_scaled.avif
-originalHeadshotURL: /assets/images/headshots/Marsha Cruzan_01_030_Web_converted_scaled.avif
-tags-current-industries:
-  - Arts, Entertainment, and Recreation
-  - Associations
-  - Building Material and Garden Equipment and Supplies Dealers
-  - Civic/Public Policy
-  - Community Development/Organizing
-  - Construction
-  - Consulting
-  - Cultural Institution
-  - Education and Health Services
-  - Electrical Equipment, Appliance, and Component Manufacturing
-  - Fabricated Metal Product Manufacturing
-  - Finance and Insurance
-  - Financial Activities
-  - Food Manufacturing
-  - Food and Beverage Stores
-  - Foundations/Granting Agency
-  - Health Care and Social Assistance
-  - Hospitals
-  - Investment Banking
-  - Investment Management
-  - Machinery Manufacturing
-  - Manufacturing
-  - Marketing/Sales
-  - Merchant Wholesalers, Nondurable Goods
-  - Miscellaneous Manufacturing
-  - Motor Vehicle and Parts Dealers
-  - Museums, Historical Sites, and Similar Institutions
-  - Performing Arts, Spectator Sports, and Related Industries
-  - Plastics and Rubber Products Manufacturing
-  - Primary Metal Manufacturing
-  - Private Equity
-  - Professional and Business Services
-  - Professional, Scientific, and Technical Services
-  - Real Estate and Rental and Leasing
-  - Transportation Equipment Manufacturing
-tags-current-position:
-  - Executive Director
-  - President
-  - SVP / Senior Vice President
-  - VP / Vice President
-tags-past-industries:
-  - Arts, Entertainment, and Recreation
-  - Associations
-  - Beverage and Tobacco Product Manufacturing
-  - Building Material and Garden Equipment and Supplies Dealers
-  - Civic/Public Policy
-  - Community Development/Organizing
-  - Computer and Electronic Product Manufacturing
-  - Construction
-  - Construction of Buildings
-  - Consulting
-  - Cultural Institution
-  - Credit Intermediation and Related Activities
-  - Education and Health Services
-  - Educational Services
-  - Electrical Equipment, Appliance, and Component Manufacturing
-  - Energy/Utilities
-  - Executive Recruitment/Transition
-  - Fabricated Metal Product Manufacturing
-  - Finance and Insurance
-  - Food and Beverage Stores
-  - Foundations/Granting Agency
-  - Goods-Producing Industries
-  - Health Care and Social Assistance
-  - Hospitals
-  - Investment Banking
-  - Investment Management
-  - Machinery Manufacturing
-  - Manufacturing
-  - Marketing/Sales
-  - Medical Equipment/Devices
-  - Merchant Wholesalers, Durable Goods
-  - Mining (except Oil and Gas)
-  - Mining, Quarrying, and Oil and Gas Extraction
-  - Miscellaneous Manufacturing
-  - Museums, Historical Sites, and Similar Institutions
-  - Natural Resources and Mining
-  - Oil and Gas Extraction
-  - Performing Arts, Spectator Sports, and Related Industries
-  - Petroleum and Coal Products Manufacturing
-  - Pipeline Transportation
-  - Plastics and Rubber Products Manufacturing
-  - Primary Metal Manufacturing
-  - Private Equity
-  - Professional and Business Services
-  - Real Estate and Rental and Leasing
-  - Retail Trade
-  - Securities, Commodity Contracts, and Other Financial Investments and Related
-    Activities
-  - Service-Providing Industries
-  - Social Assistance
-  - Support Activities for Mining
-  - Tax/Business Advisory
-  - Technology
-  - Trade, Transportation, and Utilities
-  - Transportation Equipment Manufacturing
-  - Transportation and Warehousing
-  - Truck Transportation
-  - Venture Capital
-  - Warehousing and Storage
-tags-past-position:
-  - Executive Director
-  - President
-  - SVP / Senior Vice President
-  - VP / Vice President
-tags-current-board-service:
-  - Corporate Private
-  - Nonprofit
-tags-past-board-service:
-  - Nonprofit
-boards-current-corporate-private:
-  - Medicare Wizard,
-boards-current-corporate-public: null
-boards-current-nonprofit:
-  - Lyric Opera, Board of Trustees, Chair of Civic Engagement Committee, and
-    member of the Executive Committee
-  - The Field Museum, Board of Trustees, Chair of Governance Committee, and
-    member of the Executive Committee
-  - Rush University Hospital, Board of Trustees, member of Audit and Investment
-    Committees
-  - Goodman Theatre, Board of Trustees, Co-Chair of Nominating Committee, and
-    member of Executive Committee
-boards-current-privateequity: null
-boards-current-spac: null
-boards-current-vc: null
-boards-past-corporate-private: null
-boards-past-corporate-public: null
-boards-past-nonprofit:
-  - Lincoln Park Zoo, member of Executive committee, Diversity committee and
-    governance committeeno,
-  - Junior Achievement, member of Volunteer Committeeo,
-boards-past-privateequity: null
-boards-past-spac: null
-boards-past-vc: null
-linkedin: https://www.linkedin.com/in/marsha-cruzan-137a692/
-currentTitle: Regional President
-tags-experience:
-  - Business Development
-  - Capital Markets
-  - Finance
-  - Global
-  - Governance
-  - Mergers & Acquisitions
-  - Marketing
-  - P&L&#58; $0-$500M
-  - Private Companies
-  - Public Companies
-  - Turnaround
-  - Venture Capital
-  - Business Development
-  - Capital Markets
-  - Finance
-  - Global
-  - Governance
-  - Mergers & Acquisitions
-  - Marketing
-  - P&L&#58; $0-$500M
-  - Private Companies
-  - Public Companies
-  - Transformational and Growth
-  - Turnaround
-  - Venture Capital
+suffix: 
+currentTitle: Board Director and former Regional President
+currentOrg: Medicarewizard.biz, Goodman Theatre - Board Chair, Field Musem - Chair of Governance committee and member of Board of Directors, Rush Hospital - Member of Audit and Investment Committees, The Chicago Network - Chair of Governance Committee and Board of Directors
+bio: Marsha Cruzan is a trusted Board Director adept with crafting public/private companies’ business growth strategies by&#58; <br /><br />• Resolving turnaround situations via quick identification of needed financial and strategic pivots. <br /><br />• Connecting people/navigating policies to achieve results that engage community/government stakeholders. <br /><br />• Utilizing regulatory, healthcare, insurance, compensation, and succession planning Board expertise. <br /><br />Marsha’s current BOARD EXPERIENCE&#58; <br /><br />• GOODMAN THEATRE, Board of Trustees Chair, Executive Committee, former Co-Chair, Nominating Committee. Instrumental in guiding strategy for successful outcomes in reaction to Covid and changing conditions and in advising management on optimal capital structure to ensure long-term financial stability. <br /><br />• MEDICARE WIZARD, LLC, a U.S. health tech, Independent Corporate Board Director. <br /><br />• FIELD MUSEUM, Executive Committee and Chair, Governance Committee. She grew the stature of board talent and offered strategic plan insights that enhanced the museum’s renowned global status. <br /><br />• RUSH UNIVERSITY MEDICAL CENTER, Board of Trustees, Member, Audit and Investment Committees, assisting with method, priorities, and competing needs analysis that provides the best allocation of medical resources to achieve top outcomes. <br /><br />Marsha’s CORPORATE EXPERIENCE was with U.S. BANK N.A., the 5th largest U.S. commercial bank where she was Regional President, Illinois, Indiana, &amp; Michigan; Chair, U.S. Bank’s Chicago Advisory Board; and responsible for FINRA licensed Commercial Bankers until she left to commence her board career. <br /><br />As Regional President with full profit and loss responsibility, Marsha led the three-state Midwest region, including the analysis of risk for global middle market public and private companies. She discussed public policy and developed/maintained relationships with members of Congress. Additionally, Marsha worked closely with Communications to monitor reputation risk. <br />• Completed numerous M&amp;A transactions, offering additional advice and providing connections to further build relevant businesses. <br /><br />• Integrated Royal Bank of Scotland’s Chicago commercial group into U.S. Bank. <br /><br />• Successfully educated Congress regarding PPP forgiveness process and ways to improve Community Reinvestment Act to better meet constituents’ changing needs; advised on financial industry’s digital transformation. <br /><br />• Doubled Chicago Commercial Banking income by growing existing and new clients&#58; <br />✓ For a packaging company, advised management on&#58; <br />▪ Risk Reduction (reduced export risk by suggesting ways to minimize currency risk), Cost Cutting (streamlined supply chain, payments, payroll, and inventory processes), and Increased Market Share (improved services while expanding global production facilities). <br /><br />✓ For a beverage retailer, advised management on&#58; <br />▪ Risk Reduction (minimized both seasonality impacts and cybersecurity fraud risks), Cost Cutting (streamlined in-store payment systems processes), and Increased Market Share (maximized real estate footprint). <br /><br />✓ For a meat processing manufacturer, increased equipment and facility efficiency and expanded distribution network—production capacity doubled, lead times shortened, and profits increased significantly. <br /><br />Previously, Marsha worked for JP MORGAN where she started as an International Treasury Management Consultant; followed by Electric and Gas Senior Banker; Head, Syndications, Private Placements and High Yield; Head, Regional Syndicated Leveraged Finance; responsible for all FINRA licensed Regional Syndicated Leveraged Finance bankers. Of note, she&#58; <br /><br />• Strategized successful solutions with corporate Boards and C-suite clients during financial crises. <br /><br />• With diminishing headcount, increased revenue for JPM by 25% by growing clients’ companies, even in difficult markets. <br /><br />• Doubled asset-based lending investment banking revenues via offering effective solutions for companies. <br /><br />Marsha is the current Chair, Governance Committee and Executive Committee Member for THE CHICAGO NETWORK. <br />She earned her MBA, Thunderbird School of Global Management and her BA, Political Science, University of Illinois Urbana Champaign. <br /><br />She is a former Board of Trustees, Chair, Nominating Committee and Member, Executive Committee for LINCOLN PARK ZOO, where she led the inclusion strategy that added outstanding community leaders, and an Executive Committee Member for THE LYRIC OPERA, where she resolved a union strike and renegotiated new contracts.
+linkedin: https://www.linkedin.com/in/marsha-cruzan
+tiktok: 
+twitter: 
+aboutme: 
+insta: 
+orgURL: 
+snapchat: 
+personalURL: 
+smallHeadshotURL: assets/images/headshots/Marsha%20Cruzan_01_030_Web_converted_scaled.avif
+originalHeadshotURL: assets/images/headshots/Marsha%20Cruzan_01_030_Web_converted_scaled.avif
+tags-experience: 
+ - Business Development
+ - Capital Markets
+ - Corporate Development
+ - Finance
+ - Global
+ - Governance
+ - Mergers & Acquisitions
+ - Marketing
+ - P&L&#58; $0-$500M
+ - P&L&#58; $500M-$1B
+ - Private Companies
+ - Public Companies
+ - Turnaround
+ - Venture Capital
+ - Business Development
+ - Capital Markets
+ - Corporate Development
+ - Finance
+ - Global
+ - Governance
+ - Mergers & Acquisitions
+ - Marketing
+ - P&L&#58; $0-$500M
+ - P&L&#58; $500M-$1B
+ - Private Companies
+ - Public Companies
+ - Transformational and Growth
+ - Turnaround
+ - Venture Capital
+tags-current-industries: 
+ - Accounting
+ - Arts, Entertainment, and Recreation
+ - Associations
+ - Civic/Public Policy
+ - Community Development/Organizing
+ - Consulting
+ - Cultural Institution
+ - Education and Health Services
+ - Finance and Insurance
+ - Financial Activities
+ - Health Care and Social Assistance
+ - Hospitals
+ - Insurance Carriers and Related Activities
+ - Investment Management
+ - Marketing/Sales
+ - Museums, Historical Sites, and Similar Institutions
+ - Performing Arts, Spectator Sports, and Related Industries
+ - Private Equity
+ - Professional and Business Services
+ - Professional, Scientific, and Technical Services
+tags-current-position: 
+ - Chairman
+ - President
+ - SVP / Senior Vice President
+ - VP / Vice President
+tags-past-industries: 
+ - Arts, Entertainment, and Recreation
+ - Associations
+ - Beverage and Tobacco Product Manufacturing
+ - Building Material and Garden Equipment and Supplies Dealers
+ - Civic/Public Policy
+ - Community Development/Organizing
+ - Computer and Electronic Product Manufacturing
+ - Construction
+ - Construction of Buildings
+ - Consulting
+ - Cultural Institution
+ - Credit Intermediation and Related Activities
+ - Education and Health Services
+ - Educational Services
+ - Electrical Equipment, Appliance, and Component Manufacturing
+ - Energy/Utilities
+ - Executive Recruitment/Transition
+ - Fabricated Metal Product Manufacturing
+ - Family Office
+ - Finance and Insurance
+ - Financial Activities
+ - Food Manufacturing
+ - Food and Beverage Stores
+ - Foundations/Granting Agency
+ - Goods-Producing Industries
+ - Government
+ - Health Care and Social Assistance
+ - Hospitals
+ - Insurance Carriers and Related Activities
+ - Investment Banking
+ - Investment Management
+ - Machinery Manufacturing
+ - Management of Companies and Enterprises
+ - Manufacturing
+ - Marketing/Sales
+ - Medical Equipment/Devices
+ - Merchant Wholesalers, Durable Goods
+ - Mining (except Oil and Gas)
+ - Mining, Quarrying, and Oil and Gas Extraction
+ - Miscellaneous Manufacturing
+ - Museums, Historical Sites, and Similar Institutions
+ - Natural Resources and Mining
+ - Oil and Gas Extraction
+ - Performing Arts, Spectator Sports, and Related Industries
+ - Petroleum and Coal Products Manufacturing
+ - Pipeline Transportation
+ - Plastics and Rubber Products Manufacturing
+ - Primary Metal Manufacturing
+ - Private Equity
+ - Professional and Business Services
+ - Real Estate and Rental and Leasing
+ - Religious, Grantmaking, Civic, Professional, and Similar Organizations
+ - Retail Trade
+ - Securities, Commodity Contracts, and Other Financial Investments and Related Activities
+ - Service-Providing Industries
+ - Social Assistance
+ - Support Activities for Mining
+ - Tax/Business Advisory
+ - Technology
+ - Trade, Transportation, and Utilities
+ - Transportation Equipment Manufacturing
+ - Transportation and Warehousing
+ - Truck Transportation
+ - Venture Capital
+ - Warehousing and Storage
+tags-past-position: 
+ - Chairman
+ - Executive Director
+ - President
+ - SVP / Senior Vice President
+ - VP / Vice President
+tags-current-board-service: 
+    - Corporate Private
+    - Corporate Public
+    - Nonprofit
+tags-past-board-service: 
+    - Corporate Private
+    - Nonprofit
+boards-current-corporate-private: 
+ - Medicare Wizard, Investor and Board of Directors
+boards-current-corporate-public: 
+ - Medicarewizardbiz, Investor and Board of Directors
+ - The Goodman Theatre, Chair of the Board
+ - The Field Museum, Chair of Governance Committee and member of Executive Committee
+ - Rush Hospital, Member of Audit and Investment Committee
+boards-current-nonprofit: 
+ - The Goodman Theatre, Board Chair
+ - The Field Museum, Board of Trustees, Chair of Governance Committee, and member of the Executive Committee
+ - Rush University Hospital, Board of Trustees, member of Audit and Investment Committees
+ - The Chicago Network, Board of Trustees, Chair of Governance CommitteeCo-Chair of Nominating Committee, and member of Executive Committee
+boards-current-privateequity: 
+boards-current-spac: 
+boards-current-vc: 
+boards-past-corporate-private: 
+ - Medicare Wizard, Investor and Board of Directors
+boards-past-corporate-public: 
+boards-past-nonprofit: 
+ - Lincoln Park Zoo, member of Executive committee, Diversity commi, Member of Executive committee
+ - Junior Achievement, Member of Board and Volunteer Committee
+ - The Lyric Opera, Board, Chair of Civic Engagement Committe and member of Executive Committee and member of the
+boards-past-privateequity: 
+boards-past-spac: 
+boards-past-vc: 
 ---
