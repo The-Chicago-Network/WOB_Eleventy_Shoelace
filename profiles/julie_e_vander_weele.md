@@ -59,8 +59,8 @@ insta: null
 orgURL: null
 snapchat: null
 personalURL: null
-smallHeadshotURL: /assets/images/headshots/vander-weele_julie.jpg
-originalHeadshotURL: /assets/images/headshots/vander-weele_julie.jpg
+smallHeadshotURL: /assets/images/headshots/jvw-headshot.jpeg
+originalHeadshotURL: /assets/images/headshots/jvw-headshot.jpeg
 tags-current-industries:
   - Consulting
   - Hospitals
@@ -106,7 +106,7 @@ boards-past-privateequity: null
 boards-past-spac: null
 boards-past-vc: null
 linkedin: null
-currentTitle: Chief Operating Officer
+currentTitle: Former Chief Operating Officer
 tags-experience:
   - Finance
   - HR / Human Resources
